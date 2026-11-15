@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: 'If you use this toolkit in your research or teaching, please cite it as below.'
+authors:
+  - family-names: 'Azadi'
+    given-names: 'Poria'
+    affiliation: 'Institute of Biochemistry and Biophysics (IBB), University of Tehran'
+title: 'The Collective Intelligence & Info-Dynamics Toolkit'
+version: 1.0.0
+date-released: 2026-11-15
+url: 'https://github.com/poria-azadi96/The-Collective-Intelligence-Toolkit'
