@@ -1,0 +1,424 @@
+{
+  "module": "06_Physarum_Contagion_and_Flocking",
+  "title": "Module 06: Physarum Self-Organization, Complex Contagion & Vicsek Flocking",
+  "records": [
+    {
+      "file": "01_Physarum_Tokyo_Rail_Solver/01_Physarum_fault_tolerant_mesh_gamma0.50.png",
+      "category": "Baseline Dashboard",
+      "focus": "Physarum Fault-Tolerant Mesh (mu=0.50): resilient loop mesh",
+      "parameters": {
+        "mode": "Physarum Tokyo Rail",
+        "mu": 0.5,
+        "disrupt_edges": false
+      },
+      "metrics": {
+        "mode": "Physarum",
+        "cost_ratio": 3.2955706646494236,
+        "efficiency_ratio": 1.3325466852631866,
+        "fault_tolerance": 1.0,
+        "mst_fault_tolerance": 0.0
+      }
+    },
+    {
+      "file": "01_Physarum_Tokyo_Rail_Solver/02_Physarum_balanced_backbone_gamma0.60.png",
+      "category": "Baseline Dashboard",
+      "focus": "Physarum Balanced Backbone (mu=0.60): matches MST efficiency",
+      "parameters": {
+        "mode": "Physarum Tokyo Rail",
+        "mu": 0.6,
+        "disrupt_edges": false
+      },
+      "metrics": {
+        "mode": "Physarum",
+        "cost_ratio": 3.2955706646494236,
+        "efficiency_ratio": 1.3325466852631866,
+        "fault_tolerance": 1.0,
+        "mst_fault_tolerance": 0.0
+      }
+    },
+    {
+      "file": "01_Physarum_Tokyo_Rail_Solver/04_Physarum_optimal_default_gamma1.40.png",
+      "category": "Baseline Dashboard",
+      "focus": "Physarum Optimal Pruning (mu=1.40): hub-centered rail backbone",
+      "parameters": {
+        "mode": "Physarum Tokyo Rail",
+        "mu": 1.4,
+        "disrupt_edges": false
+      },
+      "metrics": {
+        "mode": "Physarum",
+        "cost_ratio": 1.8470031727305882,
+        "efficiency_ratio": 1.1558490558283514,
+        "fault_tolerance": 1.0,
+        "mst_fault_tolerance": 0.0
+      }
+    },
+    {
+      "file": "01_Physarum_Tokyo_Rail_Solver/05_Physarum_strong_pruning_gamma2.00.png",
+      "category": "Baseline Dashboard",
+      "focus": "Physarum Strong Pruning (mu=2.00): minimal hub core",
+      "parameters": {
+        "mode": "Physarum Tokyo Rail",
+        "mu": 2.0,
+        "disrupt_edges": false
+      },
+      "metrics": {
+        "mode": "Physarum",
+        "cost_ratio": 1.1179883955068646,
+        "efficiency_ratio": 0.924612516406568,
+        "fault_tolerance": 0.0,
+        "mst_fault_tolerance": 0.0
+      }
+    },
+    {
+      "file": "01_Physarum_Tokyo_Rail_Solver/06_Physarum_hub_disruption_recovery_gamma0.60.png",
+      "category": "Baseline Dashboard",
+      "focus": "Physarum Live Trunk Severing Recovery (mu=0.60, Cut=True)",
+      "parameters": {
+        "mode": "Physarum Tokyo Rail",
+        "mu": 0.6,
+        "disrupt_edges": true
+      },
+      "metrics": {
+        "mode": "Physarum",
+        "cost_ratio": 3.207584395480086,
+        "efficiency_ratio": 1.310073214945547,
+        "fault_tolerance": 1.0,
+        "mst_fault_tolerance": 0.0
+      }
+    },
+    {
+      "file": "01_Physarum_Tokyo_Rail_Solver/07_Physarum_hub_disruption_recovery_gamma1.40.png",
+      "category": "Baseline Dashboard",
+      "focus": "Physarum Live Trunk Severing Recovery (mu=1.40, Cut=True)",
+      "parameters": {
+        "mode": "Physarum Tokyo Rail",
+        "mu": 1.4,
+        "disrupt_edges": true
+      },
+      "metrics": {
+        "mode": "Physarum",
+        "cost_ratio": 1.810219990688206,
+        "efficiency_ratio": 1.072764680930461,
+        "fault_tolerance": 0.9714285714285714,
+        "mst_fault_tolerance": 0.0
+      }
+    },
+    {
+      "file": "02_Simple_vs_Complex_Contagion/08_Contagion_Clustered_Lattice_p0.02.png",
+      "category": "Baseline Dashboard",
+      "focus": "Clustered Lattice (p_rewire=0.02): Complex Contagion succeeds",
+      "parameters": {
+        "mode": "Complex Contagion",
+        "rewire_prob": 0.02,
+        "contagion_threshold": 2
+      },
+      "metrics": {
+        "mode": "Contagion",
+        "clustering": 0.49083333333333334,
+        "final_simple": 0.5083333333333333,
+        "final_complex": 0.23333333333333334,
+        "p_sweep": [
+          0.0,
+          0.1,
+          0.2,
+          0.30000000000000004,
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "complex_reach_sweep": [
+          0.6083333333333333,
+          0.06666666666666667,
+          0.025,
+          0.06666666666666667,
+          0.025,
+          0.041666666666666664,
+          0.03333333333333333,
+          0.03333333333333333,
+          0.025,
+          0.025,
+          0.025
+        ]
+      }
+    },
+    {
+      "file": "02_Simple_vs_Complex_Contagion/09_Contagion_Small_World_Shortcuts_p0.35.png",
+      "category": "Baseline Dashboard",
+      "focus": "Small-World Shortcuts (p_rewire=0.35): Complex Contagion collapses",
+      "parameters": {
+        "mode": "Complex Contagion",
+        "rewire_prob": 0.35,
+        "contagion_threshold": 2
+      },
+      "metrics": {
+        "mode": "Contagion",
+        "clustering": 0.14908730158730155,
+        "final_simple": 1.0,
+        "final_complex": 0.025,
+        "p_sweep": [
+          0.0,
+          0.1,
+          0.2,
+          0.30000000000000004,
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "complex_reach_sweep": [
+          0.6083333333333333,
+          0.06666666666666667,
+          0.025,
+          0.06666666666666667,
+          0.025,
+          0.041666666666666664,
+          0.03333333333333333,
+          0.03333333333333333,
+          0.025,
+          0.025,
+          0.025
+        ]
+      }
+    },
+    {
+      "file": "03_Vicsek_Collective_Flocking/10_Vicsek_Ordered_Flocking_low_noise_eta0.40.png",
+      "category": "Baseline Dashboard",
+      "focus": "Vicsek Ordered Flocking (eta=0.40): coherent polarization",
+      "parameters": {
+        "mode": "Vicsek Flocking",
+        "vicsek_eta": 0.4
+      },
+      "metrics": {
+        "mode": "Vicsek",
+        "final_phi": 0.9926942919310152,
+        "etas": [
+          0.0,
+          0.5235987755982988,
+          1.0471975511965976,
+          1.5707963267948966,
+          2.0943951023931953,
+          2.617993877991494,
+          3.141592653589793,
+          3.665191429188092,
+          4.1887902047863905,
+          4.71238898038469,
+          5.235987755982988,
+          5.759586531581287,
+          6.283185307179586
+        ],
+        "phis": [
+          0.998789781665687,
+          0.8220408444246898,
+          0.7691819853360966,
+          0.847559060095547,
+          0.7033953904055956,
+          0.6758844998082438,
+          0.5167920188604149,
+          0.20617022735345233,
+          0.1449378734025422,
+          0.12319614980816847,
+          0.0761907132978218,
+          0.08712478886491364,
+          0.07725552628611888
+        ]
+      }
+    },
+    {
+      "file": "03_Vicsek_Collective_Flocking/12_Vicsek_Transition_Regime_eta2.80.png",
+      "category": "Baseline Dashboard",
+      "focus": "Vicsek Transition Regime (eta=2.80): partial local alignment",
+      "parameters": {
+        "mode": "Vicsek Flocking",
+        "vicsek_eta": 2.8
+      },
+      "metrics": {
+        "mode": "Vicsek",
+        "final_phi": 0.6463630703997488,
+        "etas": [
+          0.0,
+          0.5235987755982988,
+          1.0471975511965976,
+          1.5707963267948966,
+          2.0943951023931953,
+          2.617993877991494,
+          3.141592653589793,
+          3.665191429188092,
+          4.1887902047863905,
+          4.71238898038469,
+          5.235987755982988,
+          5.759586531581287,
+          6.283185307179586
+        ],
+        "phis": [
+          0.998789781665687,
+          0.8220408444246898,
+          0.7691819853360966,
+          0.847559060095547,
+          0.7033953904055956,
+          0.6758844998082438,
+          0.5167920188604149,
+          0.20617022735345233,
+          0.1449378734025422,
+          0.12319614980816847,
+          0.0761907132978218,
+          0.08712478886491364,
+          0.07725552628611888
+        ]
+      }
+    },
+    {
+      "file": "03_Vicsek_Collective_Flocking/13_Vicsek_Disordered_Gas_high_noise_eta4.40.png",
+      "category": "Baseline Dashboard",
+      "focus": "Vicsek Disordered Gas (eta=4.40): collapsed polarization",
+      "parameters": {
+        "mode": "Vicsek Flocking",
+        "vicsek_eta": 4.4
+      },
+      "metrics": {
+        "mode": "Vicsek",
+        "final_phi": 0.18103658717393148,
+        "etas": [
+          0.0,
+          0.5235987755982988,
+          1.0471975511965976,
+          1.5707963267948966,
+          2.0943951023931953,
+          2.617993877991494,
+          3.141592653589793,
+          3.665191429188092,
+          4.1887902047863905,
+          4.71238898038469,
+          5.235987755982988,
+          5.759586531581287,
+          6.283185307179586
+        ],
+        "phis": [
+          0.998789781665687,
+          0.8220408444246898,
+          0.7691819853360966,
+          0.847559060095547,
+          0.7033953904055956,
+          0.6758844998082438,
+          0.5167920188604149,
+          0.20617022735345233,
+          0.1449378734025422,
+          0.12319614980816847,
+          0.0761907132978218,
+          0.08712478886491364,
+          0.07725552628611888
+        ]
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier1_Physarum_Tokyo_Rail.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 1: Physarum sparse-Laplacian self-organization vs MST",
+      "parameters": {},
+      "metrics": {
+        "mode": "Physarum",
+        "cost_ratio": 1.8470031727305882,
+        "efficiency_ratio": 1.1558490558283514,
+        "fault_tolerance": 1.0,
+        "mst_fault_tolerance": 0.0
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier2_Complex_Contagion_Rewiring.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 2: Watts-Strogatz rewiring sweep showing clustering collapse",
+      "parameters": {},
+      "metrics": {
+        "mode": "Contagion",
+        "clustering": 0.14908730158730155,
+        "final_simple": 1.0,
+        "final_complex": 0.025,
+        "p_sweep": [
+          0.0,
+          0.1,
+          0.2,
+          0.30000000000000004,
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "complex_reach_sweep": [
+          0.6083333333333333,
+          0.06666666666666667,
+          0.025,
+          0.06666666666666667,
+          0.025,
+          0.041666666666666664,
+          0.03333333333333333,
+          0.03333333333333333,
+          0.025,
+          0.025,
+          0.025
+        ]
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier3_Vicsek_Transition_and_Severing.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 3: Vicsek phi(eta) phase curve & live Physarum edge severing",
+      "parameters": {},
+      "metrics": {
+        "vicsek_phi_low_noise": 0.998789781665687,
+        "vicsek_phi_high_noise": 0.07725552628611888,
+        "physarum_cut_cost_ratio": 1.8523776562807632,
+        "physarum_cut_eff_ratio": 1.0774428996958705,
+        "physarum_cut_fault_tolerance": 1.0
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App1_Resilient_Transit_Power_Grid.png",
+      "category": "Real-World Demo",
+      "focus": "App 6.1: Self-healing Tokyo grid under live severing & non-uniform demand",
+      "parameters": {},
+      "metrics": {
+        "intact_ft": 1.0,
+        "severed_ft": 1.0,
+        "mst_ft": 0.0,
+        "severed_eff_ratio": 1.069615302799402
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App2_Public_Health_Diffusion.png",
+      "category": "Real-World Demo",
+      "focus": "App 6.2: Clustered vs dispersed seeding for T=2 behavioral adoption",
+      "parameters": {},
+      "metrics": {
+        "clustered_final": 0.23333333333333334,
+        "shortcut_final": 0.03333333333333333,
+        "clustered_seed_final": 0.6083333333333333,
+        "dispersed_seed_final": 0.025
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App3_Autonomous_Drone_Swarm.png",
+      "category": "Real-World Demo",
+      "focus": "App 6.3: Decentralized 2D autonomous drone obstacle-avoidance swarm",
+      "parameters": {},
+      "metrics": {
+        "low_noise_phi": 0.96477345615802,
+        "high_noise_phi": 0.38243241334278893
+      }
+    }
+  ],
+  "gifs": [
+    "animations/01_physarum_tokyo_rail_self_healing.gif",
+    "animations/02_vicsek_flocking_phase_transition.gif",
+    "animations/03_autonomous_drone_swarm_obstacles.gif"
+  ]
+}

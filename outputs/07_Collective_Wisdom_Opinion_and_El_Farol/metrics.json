@@ -1,0 +1,348 @@
+{
+  "module": "07_Collective_Wisdom_Opinion_and_El_Farol",
+  "title": "Module 07: Collective Wisdom, Bounded Confidence & El Farol Market",
+  "records": [
+    {
+      "file": "01_Diversity_Prediction_Theorem/01_DPT_Low_Correlation_rho0.05.png",
+      "category": "Baseline Dashboard",
+      "focus": "DPT Low Error Correlation (rho=0.05): strong crowd wisdom gain",
+      "parameters": {
+        "study": "1. Diversity Prediction Theorem",
+        "rho": 0.05
+      },
+      "metrics": {
+        "study": "DPT",
+        "e_coll": 5.944354009962621,
+        "e_indiv": 100.21095328145304,
+        "div_pred": 94.26659927149043,
+        "theory_coll": 6.9,
+        "exact_single_trial": [
+          0.3071819121777783,
+          86.01403414608575,
+          85.70685223390792
+        ],
+        "identity_residual": 4.64628335805628e-14
+      }
+    },
+    {
+      "file": "01_Diversity_Prediction_Theorem/02_DPT_Moderate_Correlation_rho0.25.png",
+      "category": "Baseline Dashboard",
+      "focus": "DPT Moderate Error Correlation (rho=0.25): partial diversity benefit",
+      "parameters": {
+        "study": "1. Diversity Prediction Theorem",
+        "rho": 0.25
+      },
+      "metrics": {
+        "study": "DPT",
+        "e_coll": 22.97669827542825,
+        "e_indiv": 97.39769770028911,
+        "div_pred": 74.42099942486085,
+        "theory_coll": 26.5,
+        "exact_single_trial": [
+          0.1812365310469297,
+          67.8445409262374,
+          67.66330439519047
+        ],
+        "identity_residual": 4.912736883966318e-15
+      }
+    },
+    {
+      "file": "01_Diversity_Prediction_Theorem/03_DPT_High_Correlation_Groupthink_rho0.80.png",
+      "category": "Baseline Dashboard",
+      "focus": "DPT High Correlation / Groupthink (rho=0.80): diversity collapses",
+      "parameters": {
+        "study": "1. Diversity Prediction Theorem",
+        "rho": 0.8
+      },
+      "metrics": {
+        "study": "DPT",
+        "e_coll": 71.64137136855113,
+        "e_indiv": 91.48697121518072,
+        "div_pred": 19.845599846629558,
+        "theory_coll": 80.4,
+        "exact_single_trial": [
+          4.659280098147266,
+          22.702827936864654,
+          18.043547838717462
+        ],
+        "identity_residual": 7.37188088351104e-14
+      }
+    },
+    {
+      "file": "02_Bounded_Confidence_Opinion_Dynamics/04_HK_Fragmentation_eps0.08.png",
+      "category": "Baseline Dashboard",
+      "focus": "Hegselmann-Krause Fragmentation (eps=0.05): isolated echo chambers",
+      "parameters": {
+        "study": "2. Bounded Confidence (HK vs DeGroot)",
+        "eps": 0.05
+      },
+      "metrics": {
+        "study": "HK",
+        "eps": 0.05,
+        "n_clusters": 9,
+        "eps_grid": [
+          0.05,
+          0.07500000000000001,
+          0.1,
+          0.125,
+          0.15000000000000002,
+          0.175,
+          0.2,
+          0.22500000000000003,
+          0.25,
+          0.275,
+          0.3,
+          0.325,
+          0.35000000000000003,
+          0.375,
+          0.4,
+          0.425,
+          0.45
+        ],
+        "cluster_counts": [
+          9,
+          6,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "file": "02_Bounded_Confidence_Opinion_Dynamics/05_HK_Polarization_eps0.18.png",
+      "category": "Baseline Dashboard",
+      "focus": "Hegselmann-Krause Polarization (eps=0.18): multipolar clusters",
+      "parameters": {
+        "study": "2. Bounded Confidence (HK vs DeGroot)",
+        "eps": 0.18
+      },
+      "metrics": {
+        "study": "HK",
+        "eps": 0.18,
+        "n_clusters": 2,
+        "eps_grid": [
+          0.05,
+          0.07500000000000001,
+          0.1,
+          0.125,
+          0.15000000000000002,
+          0.175,
+          0.2,
+          0.22500000000000003,
+          0.25,
+          0.275,
+          0.3,
+          0.325,
+          0.35000000000000003,
+          0.375,
+          0.4,
+          0.425,
+          0.45
+        ],
+        "cluster_counts": [
+          9,
+          6,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "file": "02_Bounded_Confidence_Opinion_Dynamics/07_HK_Full_Consensus_eps0.40.png",
+      "category": "Baseline Dashboard",
+      "focus": "Hegselmann-Krause Global Consensus (eps=0.40): 1 unified cluster",
+      "parameters": {
+        "study": "2. Bounded Confidence (HK vs DeGroot)",
+        "eps": 0.4
+      },
+      "metrics": {
+        "study": "HK",
+        "eps": 0.4,
+        "n_clusters": 1,
+        "eps_grid": [
+          0.05,
+          0.07500000000000001,
+          0.1,
+          0.125,
+          0.15000000000000002,
+          0.175,
+          0.2,
+          0.22500000000000003,
+          0.25,
+          0.275,
+          0.3,
+          0.325,
+          0.35000000000000003,
+          0.375,
+          0.4,
+          0.425,
+          0.45
+        ],
+        "cluster_counts": [
+          9,
+          6,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "file": "03_El_Farol_and_Minority_Game/08_El_Farol_and_MG_Independent_M3.png",
+      "category": "Baseline Dashboard",
+      "focus": "El Farol Bar & Minority Game Independent Agents (below coin-flip)",
+      "parameters": {
+        "study": "3. El Farol Bar & Minority Game",
+        "memory_m": 3,
+        "herding_ext": false
+      },
+      "metrics": {
+        "study": "ElFarol_MG",
+        "el_farol_mean": 57.86666666666667,
+        "el_farol_std": 11.103896070141683,
+        "alpha_c": 0.6336633663366337,
+        "min_volatility_indep": 0.6910581683168316,
+        "herding_volatility_at_M": 4.548593653310643
+      }
+    },
+    {
+      "file": "03_El_Farol_and_Minority_Game/09_El_Farol_and_MG_Herding_Extension_M3.png",
+      "category": "Baseline Dashboard",
+      "focus": "El Farol & Minority Game with Networked Herding (q=0.35 spike)",
+      "parameters": {
+        "study": "3. El Farol Bar & Minority Game",
+        "memory_m": 3,
+        "herding_q": 0.35,
+        "herding_ext": true
+      },
+      "metrics": {
+        "study": "ElFarol_MG",
+        "el_farol_mean": 57.86666666666667,
+        "el_farol_std": 11.103896070141683,
+        "alpha_c": 0.6336633663366337,
+        "min_volatility_indep": 0.6910581683168316,
+        "herding_volatility_at_M": 4.548593653310643
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier1_DPT_Identity_and_Rho_Sweep.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 1: Page single-trial identity & rho correlation sweep",
+      "parameters": {},
+      "metrics": {
+        "study": "DPT",
+        "e_coll": 22.97669827542825,
+        "e_indiv": 97.39769770028911,
+        "div_pred": 74.42099942486085,
+        "theory_coll": 26.5,
+        "exact_single_trial": [
+          0.1812365310469297,
+          67.8445409262374,
+          67.66330439519047
+        ],
+        "identity_residual": 4.912736883966318e-15
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier2_HK_Bifurcation_vs_DeGroot.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 2: HK presets (0.05, 0.18, 0.40) vs DeGroot linear consensus",
+      "parameters": {},
+      "metrics": {
+        "eps=0.05": 9,
+        "eps=0.18": 2,
+        "eps=0.40": 1
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier3_ElFarol_MinorityGame_Herding.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 3: El Farol L=60, MG cusp alpha_c & networked herding volatility",
+      "parameters": {},
+      "metrics": {
+        "study": "ElFarol_MG",
+        "el_farol_mean": 57.86666666666667,
+        "el_farol_std": 11.103896070141683,
+        "alpha_c": 0.6336633663366337,
+        "min_volatility_indep": 0.6910581683168316,
+        "herding_volatility_at_M": 3.6936857015779703
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App1_Financial_Limit_Order_Book.png",
+      "category": "Real-World Demo",
+      "focus": "App 7.1: Chartist vs fundamentalist order book & flash-crash liquidity drought",
+      "parameters": {},
+      "metrics": {
+        "calm_std": 0.8529986977911148,
+        "crash_std": 2.453169974460249,
+        "min_crash_price": 70.13862555141135,
+        "min_liquidity": 0.5800000000000001
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App2_Forecasting_Delphi_Ensemble.png",
+      "category": "Real-World Demo",
+      "focus": "App 7.2: Delphi decorrelation & diversity-weighted forecasting pipeline",
+      "parameters": {},
+      "metrics": {
+        "mse_naive": 13.402544822444305,
+        "mse_delphi": 12.559554141075022,
+        "error_reduction_pct": 0.06289780728489604
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App3_LLM_Multi_Agent_Debate.png",
+      "category": "Real-World Demo",
+      "focus": "App 7.3: Multi-agent AI/LLM debate accuracy vs sycophantic convergence",
+      "parameters": {},
+      "metrics": {
+        "final_acc_diverse": 1.0,
+        "final_acc_sycophantic": 0.9833333333333333,
+        "final_div_diverse": 0.02400404269936489,
+        "final_div_sycophantic": 0.0009262697014804425
+      }
+    }
+  ],
+  "gifs": [
+    "animations/01_hk_opinion_bifurcation.gif",
+    "animations/02_el_farol_and_minority_herding.gif"
+  ]
+}

@@ -1,0 +1,1652 @@
+{
+  "modules_05_08_figures": 58,
+  "modules_05_08_gifs": 8,
+  "gif_files": [
+    "05_RBN_and_Immune_Cognition/animations/01_rbn_derrida_phase_transition.gif",
+    "05_RBN_and_Immune_Cognition/animations/02_immune_clonal_selection_maturation.gif",
+    "06_Physarum_Contagion_and_Flocking/animations/01_physarum_tokyo_rail_self_healing.gif",
+    "06_Physarum_Contagion_and_Flocking/animations/02_vicsek_flocking_phase_transition.gif",
+    "06_Physarum_Contagion_and_Flocking/animations/03_autonomous_drone_swarm_obstacles.gif",
+    "07_Collective_Wisdom_Opinion_and_El_Farol/animations/01_hk_opinion_bifurcation.gif",
+    "07_Collective_Wisdom_Opinion_and_El_Farol/animations/02_el_farol_and_minority_herding.gif",
+    "08_Research_Design_and_Validation_Lab/animations/01_trackA_bh_fdr_power_calibration.gif"
+  ],
+  "records": {
+    "module_05": [
+      {
+        "file": "01_RBN_Phase_Transitions_and_Derrida_Curves/01_Ordered_Phase_K1_p0.50.png",
+        "category": "Baseline Dashboard",
+        "focus": "Ordered Regime (K=1, p=0.50, s=0.50 < 1): perturbations die out",
+        "parameters": {
+          "mode": "1. RBN Dynamics & Derrida Curve",
+          "k_inputs": 1,
+          "bias_p": 0.5,
+          "knockout_gene": false
+        },
+        "metrics": {
+          "mode": "RBN",
+          "sensitivity_s": 0.5,
+          "regime": "ORDERED (s < 1)",
+          "n_attractors_wt": 1,
+          "n_attractors": 1,
+          "basin_sizes": [
+            1024
+          ],
+          "cycle_lengths": [
+            1
+          ],
+          "async_fixed_fraction": 1.0
+        }
+      },
+      {
+        "file": "01_RBN_Phase_Transitions_and_Derrida_Curves/02_Ordered_Canalizing_Bias_K3_p0.15.png",
+        "category": "Baseline Dashboard",
+        "focus": "Ordered via Canalizing Bias (K=3, p=0.15, s=0.765 < 1)",
+        "parameters": {
+          "mode": "1. RBN Dynamics & Derrida Curve",
+          "k_inputs": 3,
+          "bias_p": 0.15,
+          "knockout_gene": false
+        },
+        "metrics": {
+          "mode": "RBN",
+          "sensitivity_s": 0.7649999999999999,
+          "regime": "ORDERED (s < 1)",
+          "n_attractors_wt": 1,
+          "n_attractors": 1,
+          "basin_sizes": [
+            1024
+          ],
+          "cycle_lengths": [
+            1
+          ],
+          "async_fixed_fraction": 1.0
+        }
+      },
+      {
+        "file": "01_RBN_Phase_Transitions_and_Derrida_Curves/03_Critical_Edge_K2_p0.50.png",
+        "category": "Baseline Dashboard",
+        "focus": "Critical Edge of Chaos (K=2, p=0.50, s=1.00): tangent to 45-deg line",
+        "parameters": {
+          "mode": "1. RBN Dynamics & Derrida Curve",
+          "k_inputs": 2,
+          "bias_p": 0.5,
+          "knockout_gene": false,
+          "seed": 6
+        },
+        "metrics": {
+          "mode": "RBN",
+          "sensitivity_s": 1.0,
+          "regime": "CRITICAL EDGE (s ~ 1)",
+          "n_attractors_wt": 6,
+          "n_attractors": 6,
+          "basin_sizes": [
+            493,
+            398,
+            80,
+            25,
+            14,
+            14
+          ],
+          "cycle_lengths": [
+            3,
+            1,
+            3,
+            2,
+            2,
+            1
+          ],
+          "async_fixed_fraction": 0.9333333333333333
+        }
+      },
+      {
+        "file": "01_RBN_Phase_Transitions_and_Derrida_Curves/04_Critical_Edge_Tuned_Bias_K3_p0.20.png",
+        "category": "Baseline Dashboard",
+        "focus": "Near-Critical Tuned Bias (K=3, p=0.20, s=0.96)",
+        "parameters": {
+          "mode": "1. RBN Dynamics & Derrida Curve",
+          "k_inputs": 3,
+          "bias_p": 0.2,
+          "knockout_gene": false
+        },
+        "metrics": {
+          "mode": "RBN",
+          "sensitivity_s": 0.9600000000000002,
+          "regime": "CRITICAL EDGE (s ~ 1)",
+          "n_attractors_wt": 1,
+          "n_attractors": 1,
+          "basin_sizes": [
+            1024
+          ],
+          "cycle_lengths": [
+            1
+          ],
+          "async_fixed_fraction": 1.0
+        }
+      },
+      {
+        "file": "01_RBN_Phase_Transitions_and_Derrida_Curves/05_Chaotic_Phase_K3_p0.50.png",
+        "category": "Baseline Dashboard",
+        "focus": "Chaotic Regime (K=3, p=0.50, s=1.50 > 1): damage amplification",
+        "parameters": {
+          "mode": "1. RBN Dynamics & Derrida Curve",
+          "k_inputs": 3,
+          "bias_p": 0.5,
+          "knockout_gene": false
+        },
+        "metrics": {
+          "mode": "RBN",
+          "sensitivity_s": 1.5,
+          "regime": "CHAOTIC (s > 1)",
+          "n_attractors_wt": 2,
+          "n_attractors": 2,
+          "basin_sizes": [
+            932,
+            92
+          ],
+          "cycle_lengths": [
+            16,
+            1
+          ],
+          "async_fixed_fraction": 0.7583333333333333
+        }
+      },
+      {
+        "file": "01_RBN_Phase_Transitions_and_Derrida_Curves/06_Deep_Chaos_K4_p0.50.png",
+        "category": "Baseline Dashboard",
+        "focus": "Deep Chaos Regime (K=4, p=0.50, s=2.00): steep Derrida curve",
+        "parameters": {
+          "mode": "1. RBN Dynamics & Derrida Curve",
+          "k_inputs": 4,
+          "bias_p": 0.5,
+          "knockout_gene": false
+        },
+        "metrics": {
+          "mode": "RBN",
+          "sensitivity_s": 2.0,
+          "regime": "CHAOTIC (s > 1)",
+          "n_attractors_wt": 2,
+          "n_attractors": 2,
+          "basin_sizes": [
+            1017,
+            7
+          ],
+          "cycle_lengths": [
+            26,
+            1
+          ],
+          "async_fixed_fraction": 0.55
+        }
+      },
+      {
+        "file": "02_Gene_Knockout_Attractor_Shifts/08_Knockout_Node0_Critical_K2_p0.50.png",
+        "category": "Baseline Dashboard",
+        "focus": "Knockout Node 0 in Critical K=2 RBN: basin merging & robustness",
+        "parameters": {
+          "mode": "1. RBN Dynamics & Derrida Curve",
+          "k_inputs": 2,
+          "bias_p": 0.5,
+          "knockout_gene": true,
+          "seed": 6
+        },
+        "metrics": {
+          "mode": "RBN",
+          "sensitivity_s": 1.0,
+          "regime": "CRITICAL EDGE (s ~ 1)",
+          "n_attractors_wt": 6,
+          "n_attractors": 3,
+          "basin_sizes": [
+            480,
+            448,
+            96
+          ],
+          "cycle_lengths": [
+            1,
+            2,
+            1
+          ],
+          "async_fixed_fraction": 1.0
+        }
+      },
+      {
+        "file": "02_Gene_Knockout_Attractor_Shifts/09_Knockout_Node0_Chaotic_K3_p0.50.png",
+        "category": "Baseline Dashboard",
+        "focus": "Knockout Node 0 in Chaotic K=3 RBN: structural cycle collapse",
+        "parameters": {
+          "mode": "1. RBN Dynamics & Derrida Curve",
+          "k_inputs": 3,
+          "bias_p": 0.5,
+          "knockout_gene": true
+        },
+        "metrics": {
+          "mode": "RBN",
+          "sensitivity_s": 1.5,
+          "regime": "CHAOTIC (s > 1)",
+          "n_attractors_wt": 2,
+          "n_attractors": 2,
+          "basin_sizes": [
+            960,
+            64
+          ],
+          "cycle_lengths": [
+            5,
+            1
+          ],
+          "async_fixed_fraction": 0.8833333333333333
+        }
+      },
+      {
+        "file": "02_Gene_Knockout_Attractor_Shifts/10_Knockout_Node0_DeepChaos_K4_p0.50.png",
+        "category": "Baseline Dashboard",
+        "focus": "Knockout Node 0 in Deep Chaos K=4 RBN: dramatic basin split",
+        "parameters": {
+          "mode": "1. RBN Dynamics & Derrida Curve",
+          "k_inputs": 4,
+          "bias_p": 0.5,
+          "knockout_gene": true
+        },
+        "metrics": {
+          "mode": "RBN",
+          "sensitivity_s": 2.0,
+          "regime": "CHAOTIC (s > 1)",
+          "n_attractors_wt": 2,
+          "n_attractors": 2,
+          "basin_sizes": [
+            538,
+            486
+          ],
+          "cycle_lengths": [
+            4,
+            1
+          ],
+          "async_fixed_fraction": 0.7666666666666667
+        }
+      },
+      {
+        "file": "03_Immune_Clonal_Selection_and_Proofreading/12_Immune_Clonal_Selection_and_Kinetic_Proofreading.png",
+        "category": "Baseline Dashboard",
+        "focus": "Immune Clonal Selection (45 Gens) & McKeithan Kinetic Proofreading",
+        "parameters": {
+          "mode": "2. Immune Clonal Selection & Proofreading",
+          "proofreading_steps": 8
+        },
+        "metrics": {
+          "mode": "Immune",
+          "initial_mean_affinity": 0.6872527792049362,
+          "final_mean_affinity": 0.8704147456370929,
+          "final_max_affinity": 0.9269714706932847,
+          "purged_self_clones": 10,
+          "selected_proofreading_gain": 110.19960576000011
+        }
+      },
+      {
+        "file": "03_3Tier_Protocol/Tier1_Observation_Derrida_K1_to_K4.png",
+        "category": "3-Tier Protocol",
+        "focus": "Tier 1: Sweep K=1..4 at p=0.50 showing Derrida crossing s=1",
+        "parameters": {},
+        "metrics": {
+          "sensitivities": {
+            "1": 0.5,
+            "2": 1.0,
+            "3": 1.5,
+            "4": 2.0
+          }
+        }
+      },
+      {
+        "file": "03_3Tier_Protocol/Tier2_Analysis_Knockout_Sync_vs_Async.png",
+        "category": "3-Tier Protocol",
+        "focus": "Tier 2: Knockout Node 0 basin merging & Sync vs Async convergence",
+        "parameters": {},
+        "metrics": {
+          "wt_attractors": 6,
+          "ko_attractors": 3,
+          "wt_basins": [
+            493,
+            398,
+            80,
+            25,
+            14,
+            14
+          ],
+          "ko_basins": [
+            480,
+            448,
+            96
+          ],
+          "wt_async_fixed": 0.9333333333333333,
+          "ko_async_fixed": 1.0,
+          "sync_counts_k1_4": [
+            1,
+            6,
+            5,
+            4
+          ],
+          "async_fixed_k1_4": [
+            1.0,
+            0.97,
+            0.98,
+            0.27
+          ]
+        }
+      },
+      {
+        "file": "03_3Tier_Protocol/Tier3_Advanced_Immune_Proofreading.png",
+        "category": "3-Tier Protocol",
+        "focus": "Tier 3: 45-gen Clonal Maturation & N=1..10 exponential specificity",
+        "parameters": {},
+        "metrics": {
+          "final_mean_affinity": 0.8704147456370929,
+          "final_max_affinity": 0.9269714706932847,
+          "gain_step_1": 1.8000000000000003,
+          "gain_step_10": 357.0467226624004
+        }
+      },
+      {
+        "file": "04_Real_World_Applications/App1_Cancer_Attractor_Landscape.png",
+        "category": "Real-World Demo",
+        "focus": "App 5.1: Oncogenic mutations distorting epigenetic cell-fate basins",
+        "parameters": {},
+        "metrics": {
+          "wt_n_attractors": 6,
+          "mut_n_attractors": 1,
+          "wt_dominant_basin": 440,
+          "mut_dominant_basin": 1024
+        }
+      },
+      {
+        "file": "04_Real_World_Applications/App2_Immunotherapy_Specificity.png",
+        "category": "Real-World Demo",
+        "focus": "App 5.2: T-cell tolerance & kinetic proofreading therapeutic window",
+        "parameters": {},
+        "metrics": {
+          "optimal_tumor_affinity": 0.8919777355854708,
+          "proofreading_gain_N10": 288.9257786777773
+        }
+      },
+      {
+        "file": "04_Real_World_Applications/App3_Canalizing_Async_GRNs.png",
+        "category": "Real-World Demo",
+        "focus": "App 5.3: Canalizing truth tables stabilizing asynchronous GRNs",
+        "parameters": {},
+        "metrics": {
+          "rand_async": [
+            0.76,
+            0.5025000000000001,
+            0.4625
+          ],
+          "canalizing_async": [
+            0.8,
+            0.8,
+            0.5974999999999999
+          ],
+          "rand_dmg": [
+            0.10685714285714284,
+            0.1454285714285714,
+            0.19942857142857143
+          ],
+          "can_dmg": [
+            0.08457142857142858,
+            0.10314285714285713,
+            0.12685714285714286
+          ]
+        }
+      }
+    ],
+    "module_06": [
+      {
+        "file": "01_Physarum_Tokyo_Rail_Solver/01_Physarum_fault_tolerant_mesh_gamma0.50.png",
+        "category": "Baseline Dashboard",
+        "focus": "Physarum Fault-Tolerant Mesh (mu=0.50): resilient loop mesh",
+        "parameters": {
+          "mode": "Physarum Tokyo Rail",
+          "mu": 0.5,
+          "disrupt_edges": false
+        },
+        "metrics": {
+          "mode": "Physarum",
+          "cost_ratio": 3.2955706646494236,
+          "efficiency_ratio": 1.3325466852631866,
+          "fault_tolerance": 1.0,
+          "mst_fault_tolerance": 0.0
+        }
+      },
+      {
+        "file": "01_Physarum_Tokyo_Rail_Solver/02_Physarum_balanced_backbone_gamma0.60.png",
+        "category": "Baseline Dashboard",
+        "focus": "Physarum Balanced Backbone (mu=0.60): matches MST efficiency",
+        "parameters": {
+          "mode": "Physarum Tokyo Rail",
+          "mu": 0.6,
+          "disrupt_edges": false
+        },
+        "metrics": {
+          "mode": "Physarum",
+          "cost_ratio": 3.2955706646494236,
+          "efficiency_ratio": 1.3325466852631866,
+          "fault_tolerance": 1.0,
+          "mst_fault_tolerance": 0.0
+        }
+      },
+      {
+        "file": "01_Physarum_Tokyo_Rail_Solver/04_Physarum_optimal_default_gamma1.40.png",
+        "category": "Baseline Dashboard",
+        "focus": "Physarum Optimal Pruning (mu=1.40): hub-centered rail backbone",
+        "parameters": {
+          "mode": "Physarum Tokyo Rail",
+          "mu": 1.4,
+          "disrupt_edges": false
+        },
+        "metrics": {
+          "mode": "Physarum",
+          "cost_ratio": 1.8470031727305882,
+          "efficiency_ratio": 1.1558490558283514,
+          "fault_tolerance": 1.0,
+          "mst_fault_tolerance": 0.0
+        }
+      },
+      {
+        "file": "01_Physarum_Tokyo_Rail_Solver/05_Physarum_strong_pruning_gamma2.00.png",
+        "category": "Baseline Dashboard",
+        "focus": "Physarum Strong Pruning (mu=2.00): minimal hub core",
+        "parameters": {
+          "mode": "Physarum Tokyo Rail",
+          "mu": 2.0,
+          "disrupt_edges": false
+        },
+        "metrics": {
+          "mode": "Physarum",
+          "cost_ratio": 1.1179883955068646,
+          "efficiency_ratio": 0.924612516406568,
+          "fault_tolerance": 0.0,
+          "mst_fault_tolerance": 0.0
+        }
+      },
+      {
+        "file": "01_Physarum_Tokyo_Rail_Solver/06_Physarum_hub_disruption_recovery_gamma0.60.png",
+        "category": "Baseline Dashboard",
+        "focus": "Physarum Live Trunk Severing Recovery (mu=0.60, Cut=True)",
+        "parameters": {
+          "mode": "Physarum Tokyo Rail",
+          "mu": 0.6,
+          "disrupt_edges": true
+        },
+        "metrics": {
+          "mode": "Physarum",
+          "cost_ratio": 3.207584395480086,
+          "efficiency_ratio": 1.310073214945547,
+          "fault_tolerance": 1.0,
+          "mst_fault_tolerance": 0.0
+        }
+      },
+      {
+        "file": "01_Physarum_Tokyo_Rail_Solver/07_Physarum_hub_disruption_recovery_gamma1.40.png",
+        "category": "Baseline Dashboard",
+        "focus": "Physarum Live Trunk Severing Recovery (mu=1.40, Cut=True)",
+        "parameters": {
+          "mode": "Physarum Tokyo Rail",
+          "mu": 1.4,
+          "disrupt_edges": true
+        },
+        "metrics": {
+          "mode": "Physarum",
+          "cost_ratio": 1.810219990688206,
+          "efficiency_ratio": 1.072764680930461,
+          "fault_tolerance": 0.9714285714285714,
+          "mst_fault_tolerance": 0.0
+        }
+      },
+      {
+        "file": "02_Simple_vs_Complex_Contagion/08_Contagion_Clustered_Lattice_p0.02.png",
+        "category": "Baseline Dashboard",
+        "focus": "Clustered Lattice (p_rewire=0.02): Complex Contagion succeeds",
+        "parameters": {
+          "mode": "Complex Contagion",
+          "rewire_prob": 0.02,
+          "contagion_threshold": 2
+        },
+        "metrics": {
+          "mode": "Contagion",
+          "clustering": 0.49083333333333334,
+          "final_simple": 0.5083333333333333,
+          "final_complex": 0.23333333333333334,
+          "p_sweep": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "complex_reach_sweep": [
+            0.6083333333333333,
+            0.06666666666666667,
+            0.025,
+            0.06666666666666667,
+            0.025,
+            0.041666666666666664,
+            0.03333333333333333,
+            0.03333333333333333,
+            0.025,
+            0.025,
+            0.025
+          ]
+        }
+      },
+      {
+        "file": "02_Simple_vs_Complex_Contagion/09_Contagion_Small_World_Shortcuts_p0.35.png",
+        "category": "Baseline Dashboard",
+        "focus": "Small-World Shortcuts (p_rewire=0.35): Complex Contagion collapses",
+        "parameters": {
+          "mode": "Complex Contagion",
+          "rewire_prob": 0.35,
+          "contagion_threshold": 2
+        },
+        "metrics": {
+          "mode": "Contagion",
+          "clustering": 0.14908730158730155,
+          "final_simple": 1.0,
+          "final_complex": 0.025,
+          "p_sweep": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "complex_reach_sweep": [
+            0.6083333333333333,
+            0.06666666666666667,
+            0.025,
+            0.06666666666666667,
+            0.025,
+            0.041666666666666664,
+            0.03333333333333333,
+            0.03333333333333333,
+            0.025,
+            0.025,
+            0.025
+          ]
+        }
+      },
+      {
+        "file": "03_Vicsek_Collective_Flocking/10_Vicsek_Ordered_Flocking_low_noise_eta0.40.png",
+        "category": "Baseline Dashboard",
+        "focus": "Vicsek Ordered Flocking (eta=0.40): coherent polarization",
+        "parameters": {
+          "mode": "Vicsek Flocking",
+          "vicsek_eta": 0.4
+        },
+        "metrics": {
+          "mode": "Vicsek",
+          "final_phi": 0.9926942919310152,
+          "etas": [
+            0.0,
+            0.5235987755982988,
+            1.0471975511965976,
+            1.5707963267948966,
+            2.0943951023931953,
+            2.617993877991494,
+            3.141592653589793,
+            3.665191429188092,
+            4.1887902047863905,
+            4.71238898038469,
+            5.235987755982988,
+            5.759586531581287,
+            6.283185307179586
+          ],
+          "phis": [
+            0.998789781665687,
+            0.8220408444246898,
+            0.7691819853360966,
+            0.847559060095547,
+            0.7033953904055956,
+            0.6758844998082438,
+            0.5167920188604149,
+            0.20617022735345233,
+            0.1449378734025422,
+            0.12319614980816847,
+            0.0761907132978218,
+            0.08712478886491364,
+            0.07725552628611888
+          ]
+        }
+      },
+      {
+        "file": "03_Vicsek_Collective_Flocking/12_Vicsek_Transition_Regime_eta2.80.png",
+        "category": "Baseline Dashboard",
+        "focus": "Vicsek Transition Regime (eta=2.80): partial local alignment",
+        "parameters": {
+          "mode": "Vicsek Flocking",
+          "vicsek_eta": 2.8
+        },
+        "metrics": {
+          "mode": "Vicsek",
+          "final_phi": 0.6463630703997488,
+          "etas": [
+            0.0,
+            0.5235987755982988,
+            1.0471975511965976,
+            1.5707963267948966,
+            2.0943951023931953,
+            2.617993877991494,
+            3.141592653589793,
+            3.665191429188092,
+            4.1887902047863905,
+            4.71238898038469,
+            5.235987755982988,
+            5.759586531581287,
+            6.283185307179586
+          ],
+          "phis": [
+            0.998789781665687,
+            0.8220408444246898,
+            0.7691819853360966,
+            0.847559060095547,
+            0.7033953904055956,
+            0.6758844998082438,
+            0.5167920188604149,
+            0.20617022735345233,
+            0.1449378734025422,
+            0.12319614980816847,
+            0.0761907132978218,
+            0.08712478886491364,
+            0.07725552628611888
+          ]
+        }
+      },
+      {
+        "file": "03_Vicsek_Collective_Flocking/13_Vicsek_Disordered_Gas_high_noise_eta4.40.png",
+        "category": "Baseline Dashboard",
+        "focus": "Vicsek Disordered Gas (eta=4.40): collapsed polarization",
+        "parameters": {
+          "mode": "Vicsek Flocking",
+          "vicsek_eta": 4.4
+        },
+        "metrics": {
+          "mode": "Vicsek",
+          "final_phi": 0.18103658717393148,
+          "etas": [
+            0.0,
+            0.5235987755982988,
+            1.0471975511965976,
+            1.5707963267948966,
+            2.0943951023931953,
+            2.617993877991494,
+            3.141592653589793,
+            3.665191429188092,
+            4.1887902047863905,
+            4.71238898038469,
+            5.235987755982988,
+            5.759586531581287,
+            6.283185307179586
+          ],
+          "phis": [
+            0.998789781665687,
+            0.8220408444246898,
+            0.7691819853360966,
+            0.847559060095547,
+            0.7033953904055956,
+            0.6758844998082438,
+            0.5167920188604149,
+            0.20617022735345233,
+            0.1449378734025422,
+            0.12319614980816847,
+            0.0761907132978218,
+            0.08712478886491364,
+            0.07725552628611888
+          ]
+        }
+      },
+      {
+        "file": "03_3Tier_Protocol/Tier1_Physarum_Tokyo_Rail.png",
+        "category": "3-Tier Protocol",
+        "focus": "Tier 1: Physarum sparse-Laplacian self-organization vs MST",
+        "parameters": {},
+        "metrics": {
+          "mode": "Physarum",
+          "cost_ratio": 1.8470031727305882,
+          "efficiency_ratio": 1.1558490558283514,
+          "fault_tolerance": 1.0,
+          "mst_fault_tolerance": 0.0
+        }
+      },
+      {
+        "file": "03_3Tier_Protocol/Tier2_Complex_Contagion_Rewiring.png",
+        "category": "3-Tier Protocol",
+        "focus": "Tier 2: Watts-Strogatz rewiring sweep showing clustering collapse",
+        "parameters": {},
+        "metrics": {
+          "mode": "Contagion",
+          "clustering": 0.14908730158730155,
+          "final_simple": 1.0,
+          "final_complex": 0.025,
+          "p_sweep": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "complex_reach_sweep": [
+            0.6083333333333333,
+            0.06666666666666667,
+            0.025,
+            0.06666666666666667,
+            0.025,
+            0.041666666666666664,
+            0.03333333333333333,
+            0.03333333333333333,
+            0.025,
+            0.025,
+            0.025
+          ]
+        }
+      },
+      {
+        "file": "03_3Tier_Protocol/Tier3_Vicsek_Transition_and_Severing.png",
+        "category": "3-Tier Protocol",
+        "focus": "Tier 3: Vicsek phi(eta) phase curve & live Physarum edge severing",
+        "parameters": {},
+        "metrics": {
+          "vicsek_phi_low_noise": 0.998789781665687,
+          "vicsek_phi_high_noise": 0.07725552628611888,
+          "physarum_cut_cost_ratio": 1.8523776562807632,
+          "physarum_cut_eff_ratio": 1.0774428996958705,
+          "physarum_cut_fault_tolerance": 1.0
+        }
+      },
+      {
+        "file": "04_Real_World_Applications/App1_Resilient_Transit_Power_Grid.png",
+        "category": "Real-World Demo",
+        "focus": "App 6.1: Self-healing Tokyo grid under live severing & non-uniform demand",
+        "parameters": {},
+        "metrics": {
+          "intact_ft": 1.0,
+          "severed_ft": 1.0,
+          "mst_ft": 0.0,
+          "severed_eff_ratio": 1.069615302799402
+        }
+      },
+      {
+        "file": "04_Real_World_Applications/App2_Public_Health_Diffusion.png",
+        "category": "Real-World Demo",
+        "focus": "App 6.2: Clustered vs dispersed seeding for T=2 behavioral adoption",
+        "parameters": {},
+        "metrics": {
+          "clustered_final": 0.23333333333333334,
+          "shortcut_final": 0.03333333333333333,
+          "clustered_seed_final": 0.6083333333333333,
+          "dispersed_seed_final": 0.025
+        }
+      },
+      {
+        "file": "04_Real_World_Applications/App3_Autonomous_Drone_Swarm.png",
+        "category": "Real-World Demo",
+        "focus": "App 6.3: Decentralized 2D autonomous drone obstacle-avoidance swarm",
+        "parameters": {},
+        "metrics": {
+          "low_noise_phi": 0.96477345615802,
+          "high_noise_phi": 0.38243241334278893
+        }
+      }
+    ],
+    "module_07": [
+      {
+        "file": "01_Diversity_Prediction_Theorem/01_DPT_Low_Correlation_rho0.05.png",
+        "category": "Baseline Dashboard",
+        "focus": "DPT Low Error Correlation (rho=0.05): strong crowd wisdom gain",
+        "parameters": {
+          "study": "1. Diversity Prediction Theorem",
+          "rho": 0.05
+        },
+        "metrics": {
+          "study": "DPT",
+          "e_coll": 5.944354009962621,
+          "e_indiv": 100.21095328145304,
+          "div_pred": 94.26659927149043,
+          "theory_coll": 6.9,
+          "exact_single_trial": [
+            0.3071819121777783,
+            86.01403414608575,
+            85.70685223390792
+          ],
+          "identity_residual": 4.64628335805628e-14
+        }
+      },
+      {
+        "file": "01_Diversity_Prediction_Theorem/02_DPT_Moderate_Correlation_rho0.25.png",
+        "category": "Baseline Dashboard",
+        "focus": "DPT Moderate Error Correlation (rho=0.25): partial diversity benefit",
+        "parameters": {
+          "study": "1. Diversity Prediction Theorem",
+          "rho": 0.25
+        },
+        "metrics": {
+          "study": "DPT",
+          "e_coll": 22.97669827542825,
+          "e_indiv": 97.39769770028911,
+          "div_pred": 74.42099942486085,
+          "theory_coll": 26.5,
+          "exact_single_trial": [
+            0.1812365310469297,
+            67.8445409262374,
+            67.66330439519047
+          ],
+          "identity_residual": 4.912736883966318e-15
+        }
+      },
+      {
+        "file": "01_Diversity_Prediction_Theorem/03_DPT_High_Correlation_Groupthink_rho0.80.png",
+        "category": "Baseline Dashboard",
+        "focus": "DPT High Correlation / Groupthink (rho=0.80): diversity collapses",
+        "parameters": {
+          "study": "1. Diversity Prediction Theorem",
+          "rho": 0.8
+        },
+        "metrics": {
+          "study": "DPT",
+          "e_coll": 71.64137136855113,
+          "e_indiv": 91.48697121518072,
+          "div_pred": 19.845599846629558,
+          "theory_coll": 80.4,
+          "exact_single_trial": [
+            4.659280098147266,
+            22.702827936864654,
+            18.043547838717462
+          ],
+          "identity_residual": 7.37188088351104e-14
+        }
+      },
+      {
+        "file": "02_Bounded_Confidence_Opinion_Dynamics/04_HK_Fragmentation_eps0.08.png",
+        "category": "Baseline Dashboard",
+        "focus": "Hegselmann-Krause Fragmentation (eps=0.05): isolated echo chambers",
+        "parameters": {
+          "study": "2. Bounded Confidence (HK vs DeGroot)",
+          "eps": 0.05
+        },
+        "metrics": {
+          "study": "HK",
+          "eps": 0.05,
+          "n_clusters": 9,
+          "eps_grid": [
+            0.05,
+            0.07500000000000001,
+            0.1,
+            0.125,
+            0.15000000000000002,
+            0.175,
+            0.2,
+            0.22500000000000003,
+            0.25,
+            0.275,
+            0.3,
+            0.325,
+            0.35000000000000003,
+            0.375,
+            0.4,
+            0.425,
+            0.45
+          ],
+          "cluster_counts": [
+            9,
+            6,
+            4,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "file": "02_Bounded_Confidence_Opinion_Dynamics/05_HK_Polarization_eps0.18.png",
+        "category": "Baseline Dashboard",
+        "focus": "Hegselmann-Krause Polarization (eps=0.18): multipolar clusters",
+        "parameters": {
+          "study": "2. Bounded Confidence (HK vs DeGroot)",
+          "eps": 0.18
+        },
+        "metrics": {
+          "study": "HK",
+          "eps": 0.18,
+          "n_clusters": 2,
+          "eps_grid": [
+            0.05,
+            0.07500000000000001,
+            0.1,
+            0.125,
+            0.15000000000000002,
+            0.175,
+            0.2,
+            0.22500000000000003,
+            0.25,
+            0.275,
+            0.3,
+            0.325,
+            0.35000000000000003,
+            0.375,
+            0.4,
+            0.425,
+            0.45
+          ],
+          "cluster_counts": [
+            9,
+            6,
+            4,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "file": "02_Bounded_Confidence_Opinion_Dynamics/07_HK_Full_Consensus_eps0.40.png",
+        "category": "Baseline Dashboard",
+        "focus": "Hegselmann-Krause Global Consensus (eps=0.40): 1 unified cluster",
+        "parameters": {
+          "study": "2. Bounded Confidence (HK vs DeGroot)",
+          "eps": 0.4
+        },
+        "metrics": {
+          "study": "HK",
+          "eps": 0.4,
+          "n_clusters": 1,
+          "eps_grid": [
+            0.05,
+            0.07500000000000001,
+            0.1,
+            0.125,
+            0.15000000000000002,
+            0.175,
+            0.2,
+            0.22500000000000003,
+            0.25,
+            0.275,
+            0.3,
+            0.325,
+            0.35000000000000003,
+            0.375,
+            0.4,
+            0.425,
+            0.45
+          ],
+          "cluster_counts": [
+            9,
+            6,
+            4,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "file": "03_El_Farol_and_Minority_Game/08_El_Farol_and_MG_Independent_M3.png",
+        "category": "Baseline Dashboard",
+        "focus": "El Farol Bar & Minority Game Independent Agents (below coin-flip)",
+        "parameters": {
+          "study": "3. El Farol Bar & Minority Game",
+          "memory_m": 3,
+          "herding_ext": false
+        },
+        "metrics": {
+          "study": "ElFarol_MG",
+          "el_farol_mean": 57.86666666666667,
+          "el_farol_std": 11.103896070141683,
+          "alpha_c": 0.6336633663366337,
+          "min_volatility_indep": 0.6910581683168316,
+          "herding_volatility_at_M": 4.548593653310643
+        }
+      },
+      {
+        "file": "03_El_Farol_and_Minority_Game/09_El_Farol_and_MG_Herding_Extension_M3.png",
+        "category": "Baseline Dashboard",
+        "focus": "El Farol & Minority Game with Networked Herding (q=0.35 spike)",
+        "parameters": {
+          "study": "3. El Farol Bar & Minority Game",
+          "memory_m": 3,
+          "herding_q": 0.35,
+          "herding_ext": true
+        },
+        "metrics": {
+          "study": "ElFarol_MG",
+          "el_farol_mean": 57.86666666666667,
+          "el_farol_std": 11.103896070141683,
+          "alpha_c": 0.6336633663366337,
+          "min_volatility_indep": 0.6910581683168316,
+          "herding_volatility_at_M": 4.548593653310643
+        }
+      },
+      {
+        "file": "03_3Tier_Protocol/Tier1_DPT_Identity_and_Rho_Sweep.png",
+        "category": "3-Tier Protocol",
+        "focus": "Tier 1: Page single-trial identity & rho correlation sweep",
+        "parameters": {},
+        "metrics": {
+          "study": "DPT",
+          "e_coll": 22.97669827542825,
+          "e_indiv": 97.39769770028911,
+          "div_pred": 74.42099942486085,
+          "theory_coll": 26.5,
+          "exact_single_trial": [
+            0.1812365310469297,
+            67.8445409262374,
+            67.66330439519047
+          ],
+          "identity_residual": 4.912736883966318e-15
+        }
+      },
+      {
+        "file": "03_3Tier_Protocol/Tier2_HK_Bifurcation_vs_DeGroot.png",
+        "category": "3-Tier Protocol",
+        "focus": "Tier 2: HK presets (0.05, 0.18, 0.40) vs DeGroot linear consensus",
+        "parameters": {},
+        "metrics": {
+          "eps=0.05": 9,
+          "eps=0.18": 2,
+          "eps=0.40": 1
+        }
+      },
+      {
+        "file": "03_3Tier_Protocol/Tier3_ElFarol_MinorityGame_Herding.png",
+        "category": "3-Tier Protocol",
+        "focus": "Tier 3: El Farol L=60, MG cusp alpha_c & networked herding volatility",
+        "parameters": {},
+        "metrics": {
+          "study": "ElFarol_MG",
+          "el_farol_mean": 57.86666666666667,
+          "el_farol_std": 11.103896070141683,
+          "alpha_c": 0.6336633663366337,
+          "min_volatility_indep": 0.6910581683168316,
+          "herding_volatility_at_M": 3.6936857015779703
+        }
+      },
+      {
+        "file": "04_Real_World_Applications/App1_Financial_Limit_Order_Book.png",
+        "category": "Real-World Demo",
+        "focus": "App 7.1: Chartist vs fundamentalist order book & flash-crash liquidity drought",
+        "parameters": {},
+        "metrics": {
+          "calm_std": 0.8529986977911148,
+          "crash_std": 2.453169974460249,
+          "min_crash_price": 70.13862555141135,
+          "min_liquidity": 0.5800000000000001
+        }
+      },
+      {
+        "file": "04_Real_World_Applications/App2_Forecasting_Delphi_Ensemble.png",
+        "category": "Real-World Demo",
+        "focus": "App 7.2: Delphi decorrelation & diversity-weighted forecasting pipeline",
+        "parameters": {},
+        "metrics": {
+          "mse_naive": 13.402544822444305,
+          "mse_delphi": 12.559554141075022,
+          "error_reduction_pct": 0.06289780728489604
+        }
+      },
+      {
+        "file": "04_Real_World_Applications/App3_LLM_Multi_Agent_Debate.png",
+        "category": "Real-World Demo",
+        "focus": "App 7.3: Multi-agent AI/LLM debate accuracy vs sycophantic convergence",
+        "parameters": {},
+        "metrics": {
+          "final_acc_diverse": 1.0,
+          "final_acc_sycophantic": 0.9833333333333333,
+          "final_div_diverse": 0.02400404269936489,
+          "final_div_sycophantic": 0.0009262697014804425
+        }
+      }
+    ],
+    "module_08": [
+      {
+        "file": "01_Track_A_Observational_FDR_and_Power/01_TrackA_LowSNR0.55_T100.png",
+        "category": "Baseline Dashboard",
+        "focus": "Track A Underpowered (SNR=0.55, T=100): uncorrected false positives",
+        "parameters": {
+          "paper_choice": "1. Schreiber (2000) - Transfer Entropy",
+          "track": "Track A: Observational FDR & Power",
+          "sample_size": 100,
+          "signal_snr": 0.55
+        },
+        "metrics": {
+          "track": "Track A",
+          "current": {
+            "sample_size": 100,
+            "raw_tpr": 0.125,
+            "raw_fdp": 0.6297222222222222,
+            "fdr_tpr": 0.0020833333333333333,
+            "fdr_fdp": 0.016666666666666666
+          },
+          "T_80": null,
+          "calibration": {
+            "t_grid": [
+              100,
+              200,
+              300,
+              400,
+              500,
+              650,
+              800,
+              1000,
+              1200
+            ],
+            "raw_tpr": [
+              0.11458333333333333,
+              0.19166666666666668,
+              0.29375,
+              0.2604166666666667,
+              0.32708333333333334,
+              0.40625,
+              0.47291666666666665,
+              0.5541666666666667,
+              0.5583333333333333
+            ],
+            "raw_fdp": [
+              0.6869444444444444,
+              0.518611111111111,
+              0.4248148148148148,
+              0.4805555555555555,
+              0.4064417989417989,
+              0.3850757575757575,
+              0.3196886446886447,
+              0.29037037037037033,
+              0.3401515151515151
+            ],
+            "fdr_tpr": [
+              0.0,
+              0.0125,
+              0.010416666666666666,
+              0.029166666666666667,
+              0.035416666666666666,
+              0.07916666666666666,
+              0.08125,
+              0.14375,
+              0.16458333333333333
+            ],
+            "fdr_fdp": [
+              0.05,
+              0.016666666666666666,
+              0.06666666666666667,
+              0.10833333333333334,
+              0.08333333333333333,
+              0.03194444444444444,
+              0.043611111111111114,
+              0.015277777777777777,
+              0.031111111111111107
+            ],
+            "T_80": null
+          }
+        }
+      },
+      {
+        "file": "01_Track_A_Observational_FDR_and_Power/02_TrackA_LowSNR0.55_T300.png",
+        "category": "Baseline Dashboard",
+        "focus": "Track A Underpowered (SNR=0.55, T=300): BH-FDR prevents false discoveries",
+        "parameters": {
+          "paper_choice": "1. Schreiber (2000) - Transfer Entropy",
+          "track": "Track A: Observational FDR & Power",
+          "sample_size": 300,
+          "signal_snr": 0.55
+        },
+        "metrics": {
+          "track": "Track A",
+          "current": {
+            "sample_size": 300,
+            "raw_tpr": 0.21875,
+            "raw_fdp": 0.48527777777777775,
+            "fdr_tpr": 0.016666666666666666,
+            "fdr_fdp": 0.016666666666666666
+          },
+          "T_80": null,
+          "calibration": {
+            "t_grid": [
+              100,
+              200,
+              300,
+              400,
+              500,
+              650,
+              800,
+              1000,
+              1200
+            ],
+            "raw_tpr": [
+              0.11458333333333333,
+              0.19166666666666668,
+              0.29375,
+              0.2604166666666667,
+              0.32708333333333334,
+              0.40625,
+              0.47291666666666665,
+              0.5541666666666667,
+              0.5583333333333333
+            ],
+            "raw_fdp": [
+              0.6869444444444444,
+              0.518611111111111,
+              0.4248148148148148,
+              0.4805555555555555,
+              0.4064417989417989,
+              0.3850757575757575,
+              0.3196886446886447,
+              0.29037037037037033,
+              0.3401515151515151
+            ],
+            "fdr_tpr": [
+              0.0,
+              0.0125,
+              0.010416666666666666,
+              0.029166666666666667,
+              0.035416666666666666,
+              0.07916666666666666,
+              0.08125,
+              0.14375,
+              0.16458333333333333
+            ],
+            "fdr_fdp": [
+              0.05,
+              0.016666666666666666,
+              0.06666666666666667,
+              0.10833333333333334,
+              0.08333333333333333,
+              0.03194444444444444,
+              0.043611111111111114,
+              0.015277777777777777,
+              0.031111111111111107
+            ],
+            "T_80": null
+          }
+        }
+      },
+      {
+        "file": "01_Track_A_Observational_FDR_and_Power/03_TrackA_LowSNR0.55_T800.png",
+        "category": "Baseline Dashboard",
+        "focus": "Track A Low SNR (SNR=0.55, T=800): power shortfall under multiple testing",
+        "parameters": {
+          "paper_choice": "1. Schreiber (2000) - Transfer Entropy",
+          "track": "Track A: Observational FDR & Power",
+          "sample_size": 800,
+          "signal_snr": 0.55
+        },
+        "metrics": {
+          "track": "Track A",
+          "current": {
+            "sample_size": 800,
+            "raw_tpr": 0.475,
+            "raw_fdp": 0.31804894179894183,
+            "fdr_tpr": 0.07291666666666667,
+            "fdr_fdp": 0.04305555555555555
+          },
+          "T_80": null,
+          "calibration": {
+            "t_grid": [
+              100,
+              200,
+              300,
+              400,
+              500,
+              650,
+              800,
+              1000,
+              1200
+            ],
+            "raw_tpr": [
+              0.11458333333333333,
+              0.19166666666666668,
+              0.29375,
+              0.2604166666666667,
+              0.32708333333333334,
+              0.40625,
+              0.47291666666666665,
+              0.5541666666666667,
+              0.5583333333333333
+            ],
+            "raw_fdp": [
+              0.6869444444444444,
+              0.518611111111111,
+              0.4248148148148148,
+              0.4805555555555555,
+              0.4064417989417989,
+              0.3850757575757575,
+              0.3196886446886447,
+              0.29037037037037033,
+              0.3401515151515151
+            ],
+            "fdr_tpr": [
+              0.0,
+              0.0125,
+              0.010416666666666666,
+              0.029166666666666667,
+              0.035416666666666666,
+              0.07916666666666666,
+              0.08125,
+              0.14375,
+              0.16458333333333333
+            ],
+            "fdr_fdp": [
+              0.05,
+              0.016666666666666666,
+              0.06666666666666667,
+              0.10833333333333334,
+              0.08333333333333333,
+              0.03194444444444444,
+              0.043611111111111114,
+              0.015277777777777777,
+              0.031111111111111107
+            ],
+            "T_80": null
+          }
+        }
+      },
+      {
+        "file": "01_Track_A_Observational_FDR_and_Power/04_TrackA_Calibrated_SNR1.25_T1200.png",
+        "category": "Baseline Dashboard",
+        "focus": "Track A Calibrated (SNR=1.25, T=1200): crosses 80% BH-FDR power target",
+        "parameters": {
+          "paper_choice": "1. Schreiber (2000) - Transfer Entropy",
+          "track": "Track A: Observational FDR & Power",
+          "sample_size": 1200,
+          "signal_snr": 1.25
+        },
+        "metrics": {
+          "track": "Track A",
+          "current": {
+            "sample_size": 1200,
+            "raw_tpr": 0.99375,
+            "raw_fdp": 0.18580031080031081,
+            "fdr_tpr": 0.96875,
+            "fdr_fdp": 0.048862433862433864
+          },
+          "T_80": 707.0000000000001,
+          "calibration": {
+            "t_grid": [
+              100,
+              200,
+              300,
+              400,
+              500,
+              650,
+              800,
+              1000,
+              1200
+            ],
+            "raw_tpr": [
+              0.33125,
+              0.5291666666666667,
+              0.7375,
+              0.8208333333333333,
+              0.8895833333333333,
+              0.9416666666666667,
+              0.9625,
+              0.99375,
+              0.9958333333333333
+            ],
+            "raw_fdp": [
+              0.45859126984126986,
+              0.3052549302549303,
+              0.2322186147186147,
+              0.22983428608428605,
+              0.21097643097643098,
+              0.20974539349539348,
+              0.18754782254782257,
+              0.17970571095571095,
+              0.22122655122655122
+            ],
+            "fdr_tpr": [
+              0.016666666666666666,
+              0.15,
+              0.33541666666666664,
+              0.43333333333333335,
+              0.6333333333333333,
+              0.7604166666666666,
+              0.8645833333333334,
+              0.9354166666666667,
+              0.9729166666666667
+            ],
+            "fdr_fdp": [
+              0.04444444444444444,
+              0.03333333333333333,
+              0.032777777777777774,
+              0.06807539682539682,
+              0.04722462722462722,
+              0.03068121693121693,
+              0.04734307359307359,
+              0.042462121212121215,
+              0.05324074074074074
+            ],
+            "T_80": 707.0000000000001
+          }
+        }
+      },
+      {
+        "file": "02_Track_B_Generative_ABM_vs_Null_Model/05_TrackB_ABM_vs_Null_Baseline.png",
+        "category": "Baseline Dashboard",
+        "focus": "Track B Mechanistic Transition vs Null Baseline & Cohen's d separation",
+        "parameters": {
+          "paper_choice": "5. Tero et al. (2010) - Physarum Tokyo Rail",
+          "track": "Track B: Generative ABM vs Null Model",
+          "coupling_strength": 0.7
+        },
+        "metrics": {
+          "track": "Track B",
+          "focused_cohen_d": 13.908996829265444,
+          "max_cohen_d": 18.841963813964647
+        }
+      },
+      {
+        "file": "03_3Tier_Protocol/Tier1_Paper_Audit_Q7_to_Q8_Matrix.png",
+        "category": "3-Tier Protocol",
+        "focus": "Tier 1: 8-Question Paper Audit Inspector mapping Q7 -> Q8 across 6 classics",
+        "parameters": {},
+        "metrics": {
+          "n_papers": 6,
+          "papers": [
+            "Schreiber (2000) TE",
+            "Hanson & Crutchfield (1997)",
+            "Mitchell et al. (1994)",
+            "Kauffman / Greil & Drossel",
+            "Tero et al. (2010) Physarum",
+            "Arthur (1994) & Minority Game"
+          ]
+        }
+      },
+      {
+        "file": "03_3Tier_Protocol/Tier2_TrackA_Power_Calibration_T80.png",
+        "category": "3-Tier Protocol",
+        "focus": "Tier 2: Track A BH-FDR power curve solving minimum sample size T_80",
+        "parameters": {},
+        "metrics": {
+          "track": "Track A",
+          "current": {
+            "sample_size": 650,
+            "raw_tpr": 0.8604166666666667,
+            "raw_fdp": 0.21024651274651276,
+            "fdr_tpr": 0.5395833333333333,
+            "fdr_fdp": 0.054980158730158726
+          },
+          "T_80": 1016.0000000000003,
+          "calibration": {
+            "t_grid": [
+              100,
+              200,
+              300,
+              400,
+              500,
+              650,
+              800,
+              1000,
+              1200
+            ],
+            "raw_tpr": [
+              0.27291666666666664,
+              0.4270833333333333,
+              0.6104166666666667,
+              0.6645833333333333,
+              0.8125,
+              0.8520833333333333,
+              0.90625,
+              0.95,
+              0.975
+            ],
+            "raw_fdp": [
+              0.5040079365079365,
+              0.3480952380952381,
+              0.2675365837865838,
+              0.2661429773929774,
+              0.22813371813371813,
+              0.226252405002405,
+              0.19544002294002294,
+              0.18623196248196247,
+              0.22573033448033447
+            ],
+            "fdr_tpr": [
+              0.00625,
+              0.08958333333333333,
+              0.175,
+              0.21041666666666667,
+              0.3645833333333333,
+              0.5416666666666666,
+              0.6708333333333333,
+              0.7958333333333333,
+              0.8479166666666667
+            ],
+            "fdr_fdp": [
+              0.05,
+              0.01944444444444444,
+              0.03805555555555555,
+              0.06166666666666666,
+              0.05686507936507936,
+              0.029219576719576715,
+              0.045965608465608467,
+              0.041866883116883115,
+              0.048326719576719586
+            ],
+            "T_80": 1016.0000000000003
+          }
+        }
+      },
+      {
+        "file": "03_3Tier_Protocol/Tier3_TrackB_Null_CohensD.png",
+        "category": "3-Tier Protocol",
+        "focus": "Tier 3: Track B Null separation Cohen's d & 5-Part Research Brief export",
+        "parameters": {},
+        "metrics": {
+          "track": "Track B",
+          "focused_cohen_d": 13.908996829265444,
+          "max_cohen_d": 18.841963813964647,
+          "sample_brief": {
+            "markdown": "# 5-Part Research Brief: Greedy Conditional Transfer Entropy Under Non-Stationary Regime Shifts\n\n**Anchored Classic:** 1. Schreiber (2000) - Transfer Entropy (Module 02)\n\n## 1. Gap Analysis (Derived from Q7 Limitation)\nBivariate TE fails under hidden confounders, and static conditional TE assumes time-invariant transition densities.\n\n## 2. Falsifiable Hypothesis (Q8 Extension)\nWindowed adaptive KSG Conditional TE combined with BH-FDR (T >= T_80) suppresses confounder false positives across regime shifts.\n\n## 3. Minimal Model Architecture\n3-tier sliding-window KSG estimator with circular time-shift surrogates and Benjamini-Hochberg step-up thresholding.\n\n## 4. Null Baseline & Sensitivity Validation Plan\nTrack A Monte Carlo calibration solving T_80 for 80% power alongside Track B shuffled-phase null model comparison (Cohen's d > 1.5).\n\n## 5. Expected Defensible Claim\nConditioned multi-lag inference eliminates >90% of indirect cascade/common-driver artifacts while controlling FDP <= 0.05.\n",
+            "json": "{\n  \"title\": \"Greedy Conditional Transfer Entropy Under Non-Stationary Regime Shifts\",\n  \"anchored_paper\": \"1. Schreiber (2000) - Transfer Entropy\",\n  \"gap_analysis\": \"Bivariate TE fails under hidden confounders, and static conditional TE assumes time-invariant transition densities.\",\n  \"hypothesis\": \"Windowed adaptive KSG Conditional TE combined with BH-FDR (T >= T_80) suppresses confounder false positives across regime shifts.\",\n  \"model_architecture\": \"3-tier sliding-window KSG estimator with circular time-shift surrogates and Benjamini-Hochberg step-up thresholding.\",\n  \"validation_plan\": \"Track A Monte Carlo calibration solving T_80 for 80% power alongside Track B shuffled-phase null model comparison (Cohen's d > 1.5).\",\n  \"expected_claim\": \"Conditioned multi-lag inference eliminates >90% of indirect cascade/common-driver artifacts while controlling FDP <= 0.05.\"\n}"
+          }
+        }
+      },
+      {
+        "file": "04_Real_World_Applications/App1_Q1_Peer_Review_Stress_Suite.png",
+        "category": "Real-World Demo",
+        "focus": "App 8.1: Automated Q7 failure-mode stress-test across workshop models",
+        "parameters": {},
+        "metrics": {
+          "m02_te_biv_vs_cond": [
+            0.15422908041344918,
+            0.001640314730326081
+          ],
+          "m03_damage_r30": 0.40594059405940597,
+          "m05_async_fixed": 0.7222222222222222,
+          "m06_ft_phy_vs_mst": [
+            0.0,
+            0.0
+          ],
+          "m07_mg_vol_herd_vs_ind": [
+            4.919383040344851,
+            5.810161424305695
+          ]
+        }
+      },
+      {
+        "file": "04_Real_World_Applications/App2_Industrial_RD_Power_Pipeline.png",
+        "category": "Real-World Demo",
+        "focus": "App 8.2: Pre-experiment multi-SNR T_80 power & null Cohen's d pipeline",
+        "parameters": {},
+        "metrics": {
+          "T_80_by_SNR": {
+            "SNR=0.65": null,
+            "SNR=0.9": null,
+            "SNR=1.15": 823.809523809524,
+            "SNR=1.4": 500.0
+          },
+          "cohen_d": 16.693752188351894
+        }
+      },
+      {
+        "file": "04_Real_World_Applications/App3_Cross_Module_Grand_Synthesis.png",
+        "category": "Real-World Demo",
+        "focus": "App 8.3: Cross-module reproducibility scorecard & grand synthesis report",
+        "parameters": {},
+        "metrics": {
+          "pillar_scores": {
+            "M01–02\nInfo Theory": 0.96,
+            "M03–04\nCA & GA": 0.92,
+            "M05–06\nLiving Nets": 0.94,
+            "M07\nMarkets": 0.9111893455255967,
+            "M08\nValidation": 0.925
+          },
+          "brief": {
+            "markdown": "# 5-Part Research Brief: Grand Synthesis: Decentralized Computation & Statistical Falsifiability Across Complex Systems\n\n**Anchored Classic:** 5. Tero et al. (2010) - Physarum Tokyo Rail (Module 06)\n\n## 1. Gap Analysis (Derived from Q7 Limitation)\nObservational metrics fail under confounders while generative ABMs lack standardized null baselines and power guarantees.\n\n## 2. Falsifiable Hypothesis (Q8 Extension)\nPairing Conditional TE + BH-FDR (T >= T_80) with distribution-preserving null models cleanly separates genuine emergence from noise.\n\n## 3. Minimal Model Architecture\nUnified 8-module toolkit linking PID/TE inference, ECA/GA computation, RBN/Physarum/Vicsek networks, and strategic market dynamics.\n\n## 4. Null Baseline & Sensitivity Validation Plan\nExecute Track A BH-FDR power calibration (target 80%) and Track B Cohen's d > 1.5 across all workshop architectures.\n\n## 5. Expected Defensible Claim\nVerified reproducible separations across all 4 complex-systems pillars with controlled false discovery below 5%.\n",
+            "json": "{\n  \"title\": \"Grand Synthesis: Decentralized Computation & Statistical Falsifiability Across Complex Systems\",\n  \"anchored_paper\": \"5. Tero et al. (2010) - Physarum Tokyo Rail\",\n  \"gap_analysis\": \"Observational metrics fail under confounders while generative ABMs lack standardized null baselines and power guarantees.\",\n  \"hypothesis\": \"Pairing Conditional TE + BH-FDR (T >= T_80) with distribution-preserving null models cleanly separates genuine emergence from noise.\",\n  \"model_architecture\": \"Unified 8-module toolkit linking PID/TE inference, ECA/GA computation, RBN/Physarum/Vicsek networks, and strategic market dynamics.\",\n  \"validation_plan\": \"Execute Track A BH-FDR power calibration (target 80%) and Track B Cohen's d > 1.5 across all workshop architectures.\",\n  \"expected_claim\": \"Verified reproducible separations across all 4 complex-systems pillars with controlled false discovery below 5%.\"\n}"
+          }
+        }
+      }
+    ]
+  }
+}

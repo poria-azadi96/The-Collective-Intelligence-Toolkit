@@ -1,0 +1,9 @@
+{
+  "title": "Greedy Conditional Transfer Entropy Under Non-Stationary Regime Shifts",
+  "anchored_paper": "1. Schreiber (2000) - Transfer Entropy",
+  "gap_analysis": "Bivariate TE fails under hidden confounders, and static conditional TE assumes time-invariant transition densities.",
+  "hypothesis": "Windowed adaptive KSG Conditional TE combined with BH-FDR (T >= T_80) suppresses confounder false positives across regime shifts.",
+  "model_architecture": "3-tier sliding-window KSG estimator with circular time-shift surrogates and Benjamini-Hochberg step-up thresholding.",
+  "validation_plan": "Track A Monte Carlo calibration solving T_80 for 80% power alongside Track B shuffled-phase null model comparison (Cohen's d > 1.5).",
+  "expected_claim": "Conditioned multi-lag inference eliminates >90% of indirect cascade/common-driver artifacts while controlling FDP <= 0.05."
+}

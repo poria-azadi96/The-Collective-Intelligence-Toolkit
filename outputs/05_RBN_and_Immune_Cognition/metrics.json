@@ -1,0 +1,389 @@
+{
+  "module": "05_RBN_and_Immune_Cognition",
+  "title": "Module 05: Random Boolean Networks & Distributed Immune Selection",
+  "records": [
+    {
+      "file": "01_RBN_Phase_Transitions_and_Derrida_Curves/01_Ordered_Phase_K1_p0.50.png",
+      "category": "Baseline Dashboard",
+      "focus": "Ordered Regime (K=1, p=0.50, s=0.50 < 1): perturbations die out",
+      "parameters": {
+        "mode": "1. RBN Dynamics & Derrida Curve",
+        "k_inputs": 1,
+        "bias_p": 0.5,
+        "knockout_gene": false
+      },
+      "metrics": {
+        "mode": "RBN",
+        "sensitivity_s": 0.5,
+        "regime": "ORDERED (s < 1)",
+        "n_attractors_wt": 1,
+        "n_attractors": 1,
+        "basin_sizes": [
+          1024
+        ],
+        "cycle_lengths": [
+          1
+        ],
+        "async_fixed_fraction": 1.0
+      }
+    },
+    {
+      "file": "01_RBN_Phase_Transitions_and_Derrida_Curves/02_Ordered_Canalizing_Bias_K3_p0.15.png",
+      "category": "Baseline Dashboard",
+      "focus": "Ordered via Canalizing Bias (K=3, p=0.15, s=0.765 < 1)",
+      "parameters": {
+        "mode": "1. RBN Dynamics & Derrida Curve",
+        "k_inputs": 3,
+        "bias_p": 0.15,
+        "knockout_gene": false
+      },
+      "metrics": {
+        "mode": "RBN",
+        "sensitivity_s": 0.7649999999999999,
+        "regime": "ORDERED (s < 1)",
+        "n_attractors_wt": 1,
+        "n_attractors": 1,
+        "basin_sizes": [
+          1024
+        ],
+        "cycle_lengths": [
+          1
+        ],
+        "async_fixed_fraction": 1.0
+      }
+    },
+    {
+      "file": "01_RBN_Phase_Transitions_and_Derrida_Curves/03_Critical_Edge_K2_p0.50.png",
+      "category": "Baseline Dashboard",
+      "focus": "Critical Edge of Chaos (K=2, p=0.50, s=1.00): tangent to 45-deg line",
+      "parameters": {
+        "mode": "1. RBN Dynamics & Derrida Curve",
+        "k_inputs": 2,
+        "bias_p": 0.5,
+        "knockout_gene": false,
+        "seed": 6
+      },
+      "metrics": {
+        "mode": "RBN",
+        "sensitivity_s": 1.0,
+        "regime": "CRITICAL EDGE (s ~ 1)",
+        "n_attractors_wt": 6,
+        "n_attractors": 6,
+        "basin_sizes": [
+          493,
+          398,
+          80,
+          25,
+          14,
+          14
+        ],
+        "cycle_lengths": [
+          3,
+          1,
+          3,
+          2,
+          2,
+          1
+        ],
+        "async_fixed_fraction": 0.9333333333333333
+      }
+    },
+    {
+      "file": "01_RBN_Phase_Transitions_and_Derrida_Curves/04_Critical_Edge_Tuned_Bias_K3_p0.20.png",
+      "category": "Baseline Dashboard",
+      "focus": "Near-Critical Tuned Bias (K=3, p=0.20, s=0.96)",
+      "parameters": {
+        "mode": "1. RBN Dynamics & Derrida Curve",
+        "k_inputs": 3,
+        "bias_p": 0.2,
+        "knockout_gene": false
+      },
+      "metrics": {
+        "mode": "RBN",
+        "sensitivity_s": 0.9600000000000002,
+        "regime": "CRITICAL EDGE (s ~ 1)",
+        "n_attractors_wt": 1,
+        "n_attractors": 1,
+        "basin_sizes": [
+          1024
+        ],
+        "cycle_lengths": [
+          1
+        ],
+        "async_fixed_fraction": 1.0
+      }
+    },
+    {
+      "file": "01_RBN_Phase_Transitions_and_Derrida_Curves/05_Chaotic_Phase_K3_p0.50.png",
+      "category": "Baseline Dashboard",
+      "focus": "Chaotic Regime (K=3, p=0.50, s=1.50 > 1): damage amplification",
+      "parameters": {
+        "mode": "1. RBN Dynamics & Derrida Curve",
+        "k_inputs": 3,
+        "bias_p": 0.5,
+        "knockout_gene": false
+      },
+      "metrics": {
+        "mode": "RBN",
+        "sensitivity_s": 1.5,
+        "regime": "CHAOTIC (s > 1)",
+        "n_attractors_wt": 2,
+        "n_attractors": 2,
+        "basin_sizes": [
+          932,
+          92
+        ],
+        "cycle_lengths": [
+          16,
+          1
+        ],
+        "async_fixed_fraction": 0.7583333333333333
+      }
+    },
+    {
+      "file": "01_RBN_Phase_Transitions_and_Derrida_Curves/06_Deep_Chaos_K4_p0.50.png",
+      "category": "Baseline Dashboard",
+      "focus": "Deep Chaos Regime (K=4, p=0.50, s=2.00): steep Derrida curve",
+      "parameters": {
+        "mode": "1. RBN Dynamics & Derrida Curve",
+        "k_inputs": 4,
+        "bias_p": 0.5,
+        "knockout_gene": false
+      },
+      "metrics": {
+        "mode": "RBN",
+        "sensitivity_s": 2.0,
+        "regime": "CHAOTIC (s > 1)",
+        "n_attractors_wt": 2,
+        "n_attractors": 2,
+        "basin_sizes": [
+          1017,
+          7
+        ],
+        "cycle_lengths": [
+          26,
+          1
+        ],
+        "async_fixed_fraction": 0.55
+      }
+    },
+    {
+      "file": "02_Gene_Knockout_Attractor_Shifts/08_Knockout_Node0_Critical_K2_p0.50.png",
+      "category": "Baseline Dashboard",
+      "focus": "Knockout Node 0 in Critical K=2 RBN: basin merging & robustness",
+      "parameters": {
+        "mode": "1. RBN Dynamics & Derrida Curve",
+        "k_inputs": 2,
+        "bias_p": 0.5,
+        "knockout_gene": true,
+        "seed": 6
+      },
+      "metrics": {
+        "mode": "RBN",
+        "sensitivity_s": 1.0,
+        "regime": "CRITICAL EDGE (s ~ 1)",
+        "n_attractors_wt": 6,
+        "n_attractors": 3,
+        "basin_sizes": [
+          480,
+          448,
+          96
+        ],
+        "cycle_lengths": [
+          1,
+          2,
+          1
+        ],
+        "async_fixed_fraction": 1.0
+      }
+    },
+    {
+      "file": "02_Gene_Knockout_Attractor_Shifts/09_Knockout_Node0_Chaotic_K3_p0.50.png",
+      "category": "Baseline Dashboard",
+      "focus": "Knockout Node 0 in Chaotic K=3 RBN: structural cycle collapse",
+      "parameters": {
+        "mode": "1. RBN Dynamics & Derrida Curve",
+        "k_inputs": 3,
+        "bias_p": 0.5,
+        "knockout_gene": true
+      },
+      "metrics": {
+        "mode": "RBN",
+        "sensitivity_s": 1.5,
+        "regime": "CHAOTIC (s > 1)",
+        "n_attractors_wt": 2,
+        "n_attractors": 2,
+        "basin_sizes": [
+          960,
+          64
+        ],
+        "cycle_lengths": [
+          5,
+          1
+        ],
+        "async_fixed_fraction": 0.8833333333333333
+      }
+    },
+    {
+      "file": "02_Gene_Knockout_Attractor_Shifts/10_Knockout_Node0_DeepChaos_K4_p0.50.png",
+      "category": "Baseline Dashboard",
+      "focus": "Knockout Node 0 in Deep Chaos K=4 RBN: dramatic basin split",
+      "parameters": {
+        "mode": "1. RBN Dynamics & Derrida Curve",
+        "k_inputs": 4,
+        "bias_p": 0.5,
+        "knockout_gene": true
+      },
+      "metrics": {
+        "mode": "RBN",
+        "sensitivity_s": 2.0,
+        "regime": "CHAOTIC (s > 1)",
+        "n_attractors_wt": 2,
+        "n_attractors": 2,
+        "basin_sizes": [
+          538,
+          486
+        ],
+        "cycle_lengths": [
+          4,
+          1
+        ],
+        "async_fixed_fraction": 0.7666666666666667
+      }
+    },
+    {
+      "file": "03_Immune_Clonal_Selection_and_Proofreading/12_Immune_Clonal_Selection_and_Kinetic_Proofreading.png",
+      "category": "Baseline Dashboard",
+      "focus": "Immune Clonal Selection (45 Gens) & McKeithan Kinetic Proofreading",
+      "parameters": {
+        "mode": "2. Immune Clonal Selection & Proofreading",
+        "proofreading_steps": 8
+      },
+      "metrics": {
+        "mode": "Immune",
+        "initial_mean_affinity": 0.6872527792049362,
+        "final_mean_affinity": 0.8704147456370929,
+        "final_max_affinity": 0.9269714706932847,
+        "purged_self_clones": 10,
+        "selected_proofreading_gain": 110.19960576000011
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier1_Observation_Derrida_K1_to_K4.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 1: Sweep K=1..4 at p=0.50 showing Derrida crossing s=1",
+      "parameters": {},
+      "metrics": {
+        "sensitivities": {
+          "1": 0.5,
+          "2": 1.0,
+          "3": 1.5,
+          "4": 2.0
+        }
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier2_Analysis_Knockout_Sync_vs_Async.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 2: Knockout Node 0 basin merging & Sync vs Async convergence",
+      "parameters": {},
+      "metrics": {
+        "wt_attractors": 6,
+        "ko_attractors": 3,
+        "wt_basins": [
+          493,
+          398,
+          80,
+          25,
+          14,
+          14
+        ],
+        "ko_basins": [
+          480,
+          448,
+          96
+        ],
+        "wt_async_fixed": 0.9333333333333333,
+        "ko_async_fixed": 1.0,
+        "sync_counts_k1_4": [
+          1,
+          6,
+          5,
+          4
+        ],
+        "async_fixed_k1_4": [
+          1.0,
+          0.97,
+          0.98,
+          0.27
+        ]
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier3_Advanced_Immune_Proofreading.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 3: 45-gen Clonal Maturation & N=1..10 exponential specificity",
+      "parameters": {},
+      "metrics": {
+        "final_mean_affinity": 0.8704147456370929,
+        "final_max_affinity": 0.9269714706932847,
+        "gain_step_1": 1.8000000000000003,
+        "gain_step_10": 357.0467226624004
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App1_Cancer_Attractor_Landscape.png",
+      "category": "Real-World Demo",
+      "focus": "App 5.1: Oncogenic mutations distorting epigenetic cell-fate basins",
+      "parameters": {},
+      "metrics": {
+        "wt_n_attractors": 6,
+        "mut_n_attractors": 1,
+        "wt_dominant_basin": 440,
+        "mut_dominant_basin": 1024
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App2_Immunotherapy_Specificity.png",
+      "category": "Real-World Demo",
+      "focus": "App 5.2: T-cell tolerance & kinetic proofreading therapeutic window",
+      "parameters": {},
+      "metrics": {
+        "optimal_tumor_affinity": 0.8919777355854708,
+        "proofreading_gain_N10": 288.9257786777773
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App3_Canalizing_Async_GRNs.png",
+      "category": "Real-World Demo",
+      "focus": "App 5.3: Canalizing truth tables stabilizing asynchronous GRNs",
+      "parameters": {},
+      "metrics": {
+        "rand_async": [
+          0.76,
+          0.5025000000000001,
+          0.4625
+        ],
+        "canalizing_async": [
+          0.8,
+          0.8,
+          0.5974999999999999
+        ],
+        "rand_dmg": [
+          0.10685714285714284,
+          0.1454285714285714,
+          0.19942857142857143
+        ],
+        "can_dmg": [
+          0.08457142857142858,
+          0.10314285714285713,
+          0.12685714285714286
+        ]
+      }
+    }
+  ],
+  "gifs": [
+    "animations/01_rbn_derrida_phase_transition.gif",
+    "animations/02_immune_clonal_selection_maturation.gif"
+  ]
+}
