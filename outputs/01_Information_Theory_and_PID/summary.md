@@ -1,0 +1,32 @@
+# Module 01: Information Theory, Nonlinearity & Partial Information Decomposition (PID)
+
+**Source Notebook:** `notebooks/01_information_theory_and_pid.ipynb`
+
+Shannon metrics, Circular Nonlinearity proof, Landauer's thermodynamic bound, Williams & Beer 4-atom PID, 3-Tier protocols, and 3 domain applications.
+
+## Generated Classroom Figures (Baselines, 3-Tier Protocol & Real-World Applications)
+
+| # | Category | File | Pedagogical Focus | Parameters |
+| :--- | :--- | :--- | :--- | :--- |
+| 01 | Baseline Dashboard | [`01_Logic_Gates_Baseline/01_XOR_pure_synergy.png`](./01_Logic_Gates_Baseline/01_XOR_pure_synergy.png) | XOR Gate: zero pairwise MI yet 1.0 bit Pure Synergy | `gate_type=XOR`, `input_corr=0.0`, `sigma=0.0`, `coupling=1.0` |
+| 02 | Baseline Dashboard | [`01_Logic_Gates_Baseline/02_AND_redundancy_and_synergy.png`](./01_Logic_Gates_Baseline/02_AND_redundancy_and_synergy.png) | AND Gate: coexistence of Redundancy (0.311 b) & Synergy (0.500 b) | `gate_type=AND`, `input_corr=0.0`, `sigma=0.0`, `coupling=1.0` |
+| 03 | Baseline Dashboard | [`01_Logic_Gates_Baseline/03_OR_redundancy_and_synergy.png`](./01_Logic_Gates_Baseline/03_OR_redundancy_and_synergy.png) | OR Gate: symmetric coexistence of Redundancy & Synergy | `gate_type=OR`, `input_corr=0.0`, `sigma=0.0`, `coupling=1.0` |
+| 04 | Baseline Dashboard | [`01_Logic_Gates_Baseline/04_COPY_X1_unique_information.png`](./01_Logic_Gates_Baseline/04_COPY_X1_unique_information.png) | COPY Gate: 1.0 bit Unique Information in X1 | `gate_type=COPY`, `input_corr=0.0`, `sigma=0.0`, `coupling=1.0` |
+| 05 | Baseline Dashboard | [`01_Logic_Gates_Baseline/05_IDENTICAL_pure_redundancy.png`](./01_Logic_Gates_Baseline/05_IDENTICAL_pure_redundancy.png) | IDENTICAL Gate (X1=X2=Y): 1.0 bit Pure Redundancy | `gate_type=IDENTICAL`, `input_corr=0.0`, `sigma=0.0`, `coupling=1.0` |
+| 06 | Baseline Dashboard | [`01_Logic_Gates_Baseline/06_Continuous_Gaussian_MMI_PID.png`](./01_Logic_Gates_Baseline/06_Continuous_Gaussian_MMI_PID.png) | Continuous Gaussian MMI-PID (rho=0.25, sigma=0.30, c=1.0) | `gate_type=Continuous_Gaussian`, `input_corr=0.25`, `sigma=0.3`, `coupling=1.0` |
+| 07 | Baseline Dashboard | [`02_Correlation_and_Noise_Effects/05_COPY_X1_correlated_inputs_corr0.70.png`](./02_Correlation_and_Noise_Effects/05_COPY_X1_correlated_inputs_corr0.70.png) | Correlated COPY (rho=0.70): correlation converts Unique info into Redundancy | `gate_type=COPY`, `input_corr=0.7`, `sigma=0.0`, `coupling=1.0` |
+| 08 | Baseline Dashboard | [`02_Correlation_and_Noise_Effects/06_XOR_correlated_inputs_corr0.70.png`](./02_Correlation_and_Noise_Effects/06_XOR_correlated_inputs_corr0.70.png) | Correlated XOR (rho=0.70): reduced output entropy H(Y) | `gate_type=XOR`, `input_corr=0.7`, `sigma=0.0`, `coupling=1.0` |
+| 09 | Baseline Dashboard | [`02_Correlation_and_Noise_Effects/07_XOR_anticorrelated_inputs_corr-0.70.png`](./02_Correlation_and_Noise_Effects/07_XOR_anticorrelated_inputs_corr-0.70.png) | Anti-correlated XOR (rho=-0.70): symmetric synergy shift | `gate_type=XOR`, `input_corr=-0.7`, `sigma=0.0`, `coupling=1.0` |
+| 10 | Baseline Dashboard | [`02_Correlation_and_Noise_Effects/08_XOR_noisy_channel_noise0.20.png`](./02_Correlation_and_Noise_Effects/08_XOR_noisy_channel_noise0.20.png) | Noisy XOR (noise_prob=0.20): channel noise degrades Synergy | `gate_type=XOR`, `input_corr=0.0`, `noise_prob=0.2` |
+| 11 | Baseline Dashboard | [`02_Correlation_and_Noise_Effects/09_AND_noisy_channel_noise0.15.png`](./02_Correlation_and_Noise_Effects/09_AND_noisy_channel_noise0.15.png) | Noisy AND (noise_prob=0.15): noise attenuates Redundancy & Synergy | `gate_type=AND`, `input_corr=0.0`, `noise_prob=0.15` |
+| 12 | 3-Tier Protocol | [`03_3Tier_Protocol/Tier1_Observation_XOR_Calibration.png`](./03_3Tier_Protocol/Tier1_Observation_XOR_Calibration.png) | Tier 1: XOR 100% Synergy (sigma=0.1, c=1.0), 4-gate calibration & circular nonlinearity | `sigma=0.1`, `coupling=1.0` |
+| 13 | 3-Tier Protocol | [`03_3Tier_Protocol/Tier2_Analysis_AND_Crossover.png`](./03_3Tier_Protocol/Tier2_Analysis_AND_Crossover.png) | Tier 2: Correlation sweep (0->0.95) on AND showing R vs S & II=R-S zero-crossing | `gate_type=AND` |
+| 14 | 3-Tier Protocol | [`03_3Tier_Protocol/Tier3_StressTest_Landauer_Noise.png`](./03_3Tier_Protocol/Tier3_StressTest_Landauer_Noise.png) | Tier 3: Channel noise sweep (0->1.0) across all 4 gates & Landauer heat dissipation | `temperature_k=300.0` |
+| 15 | Real-World Demo | [`04_Real_World_Applications/App1_Computational_Neuroscience.png`](./04_Real_World_Applications/App1_Computational_Neuroscience.png) | App 1.1: Cortical coincidence detection (Synergy) vs redundant population firing | `default` |
+| 16 | Real-World Demo | [`04_Real_World_Applications/App2_Genomics_Epistasis.png`](./04_Real_World_Applications/App2_Genomics_Epistasis.png) | App 1.2: Pure epistatic SNP interaction (Y=X1^X2+noise) hidden from linear GWAS | `default` |
+| 17 | Real-World Demo | [`04_Real_World_Applications/App3_Thermodynamic_Reversible_Computing.png`](./04_Real_World_Applications/App3_Thermodynamic_Reversible_Computing.png) | App 1.3: Irreversible CMOS reset vs reversible Fredkin/Toffoli dissipation | `default` |
+
+## Classroom Animated GIFs
+
+- [`animations/01_pid_correlation_crossover_AND.gif`](./animations/01_pid_correlation_crossover_AND.gif)
+- [`animations/02_landauer_noise_stress_gates.gif`](./animations/02_landauer_noise_stress_gates.gif)

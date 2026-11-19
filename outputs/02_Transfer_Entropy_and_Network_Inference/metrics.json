@@ -1,0 +1,5398 @@
+{
+  "module": "02_Transfer_Entropy_and_Network_Inference",
+  "title": "Module 02: Transfer Entropy, Delay Reconstruction & Network Inference",
+  "records": [
+    {
+      "file": "01_Causal_Motifs/01_Direct_Coupling_c0.70_n450.png",
+      "category": "Baseline Dashboard",
+      "focus": "Direct Coupling (X->Y lag u=2): peak at u=2 survives conditioning",
+      "parameters": {
+        "motif_type": "Direct_Coupling",
+        "coupling": 0.7,
+        "n_samples": 450,
+        "n_surrogates": 60
+      },
+      "metrics": {
+        "motif": "Direct_Coupling",
+        "best_lag": 2,
+        "te_bivariate": 0.4365064449631939,
+        "thr_bivariate": 0.055963081016217865,
+        "p_bivariate": 0.01639344262295082,
+        "te_conditional": 0.34912858365981564,
+        "thr_conditional": 0.025532167101568727,
+        "p_conditional": 0.01639344262295082,
+        "info_dynamics": {
+          "AIS": 0.40795340564124466,
+          "TE": 0.4365064449631939,
+          "AIS_plus_TE": 0.8444598506044385,
+          "Total_Predictive_MI": 0.8135042980741605,
+          "Chain_Rule_Residual": 0.03095555253027804
+        },
+        "network": {
+          "nodes": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "bivariate_te": [
+            [
+              0.0,
+              0.4365064449631939,
+              0.03329693108806653
+            ],
+            [
+              0.021642803073481234,
+              0.0,
+              0.07265788305753726
+            ],
+            [
+              0.0418017717272069,
+              0.05515819059246271,
+              0.0
+            ]
+          ],
+          "conditional_te": [
+            [
+              0.0,
+              0.34912858365981564,
+              0.018789578215018962
+            ],
+            [
+              0.0013990090694982978,
+              0.0,
+              0.03428007033184547
+            ],
+            [
+              0.018344275637096088,
+              0.006045643153759743,
+              0.0
+            ]
+          ],
+          "best_lags": [
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              2,
+              5,
+              0
+            ]
+          ],
+          "bivariate_p": [
+            [
+              1.0,
+              0.00684931506849315,
+              0.10273972602739725
+            ],
+            [
+              0.22950819672131148,
+              1.0,
+              0.00684931506849315
+            ],
+            [
+              0.0547945205479452,
+              0.0821917808219178,
+              1.0
+            ]
+          ],
+          "conditional_p": [
+            [
+              1.0,
+              0.00684931506849315,
+              0.16393442622950818
+            ],
+            [
+              0.5081967213114754,
+              1.0,
+              0.0273972602739726
+            ],
+            [
+              0.2459016393442623,
+              0.3114754098360656,
+              1.0
+            ]
+          ],
+          "biv_fdr_mask": [
+            [
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              true
+            ],
+            [
+              false,
+              false,
+              false
+            ]
+          ],
+          "cond_fdr_mask": [
+            [
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ]
+          ],
+          "biv_fdr": {
+            "rejected": [
+              true,
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "q_values": [
+              0.02054794520547945,
+              0.12328767123287672,
+              0.22950819672131148,
+              0.02054794520547945,
+              0.1095890410958904,
+              0.1232876712328767
+            ],
+            "order": [
+              0,
+              3,
+              4,
+              5,
+              1,
+              2
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.00684931506849315,
+              0.0547945205479452,
+              0.0821917808219178,
+              0.10273972602739725,
+              0.22950819672131148
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "cond_fdr": {
+            "rejected": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "q_values": [
+              0.0410958904109589,
+              0.32786885245901637,
+              0.5081967213114754,
+              0.0821917808219178,
+              0.3688524590163934,
+              0.3737704918032787
+            ],
+            "order": [
+              0,
+              3,
+              1,
+              4,
+              5,
+              2
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.0273972602739726,
+              0.16393442622950818,
+              0.2459016393442623,
+              0.3114754098360656,
+              0.5081967213114754
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "edges": [
+            {
+              "source": "X",
+              "target": "Y",
+              "i": 0,
+              "j": 1,
+              "best_lag": 2,
+              "te_bivariate": 0.4365064449631939,
+              "thr_bivariate": 0.05301209469632728,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.34912858365981564,
+              "thr_conditional": 0.034908102261500894,
+              "p_conditional": 0.00684931506849315,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.02054794520547945,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.0410958904109589
+            },
+            {
+              "source": "X",
+              "target": "Z",
+              "i": 0,
+              "j": 2,
+              "best_lag": 2,
+              "te_bivariate": 0.03329693108806653,
+              "thr_bivariate": 0.052764468948754036,
+              "p_bivariate": 0.10273972602739725,
+              "te_conditional": 0.018789578215018962,
+              "thr_conditional": 0.03854756045546782,
+              "p_conditional": 0.16393442622950818,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.12328767123287672,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.32786885245901637
+            },
+            {
+              "source": "Y",
+              "target": "X",
+              "i": 1,
+              "j": 0,
+              "best_lag": 1,
+              "te_bivariate": 0.021642803073481234,
+              "thr_bivariate": 0.04922774364336995,
+              "p_bivariate": 0.22950819672131148,
+              "te_conditional": 0.0013990090694982978,
+              "thr_conditional": 0.03888587334070683,
+              "p_conditional": 0.5081967213114754,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.22950819672131148,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.5081967213114754
+            },
+            {
+              "source": "Y",
+              "target": "Z",
+              "i": 1,
+              "j": 2,
+              "best_lag": 2,
+              "te_bivariate": 0.07265788305753726,
+              "thr_bivariate": 0.05052437292053139,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.03428007033184547,
+              "thr_conditional": 0.030073602992894154,
+              "p_conditional": 0.0273972602739726,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.02054794520547945,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.0821917808219178
+            },
+            {
+              "source": "Z",
+              "target": "X",
+              "i": 2,
+              "j": 0,
+              "best_lag": 2,
+              "te_bivariate": 0.0418017717272069,
+              "thr_bivariate": 0.03976240925322046,
+              "p_bivariate": 0.0547945205479452,
+              "te_conditional": 0.018344275637096088,
+              "thr_conditional": 0.031915563384670186,
+              "p_conditional": 0.2459016393442623,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.1095890410958904,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.3688524590163934
+            },
+            {
+              "source": "Z",
+              "target": "Y",
+              "i": 2,
+              "j": 1,
+              "best_lag": 5,
+              "te_bivariate": 0.05515819059246271,
+              "thr_bivariate": 0.05598689856278796,
+              "p_bivariate": 0.0821917808219178,
+              "te_conditional": 0.006045643153759743,
+              "thr_conditional": 0.015076599739837292,
+              "p_conditional": 0.3114754098360656,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.1232876712328767,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.3737704918032787
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "01_Causal_Motifs/02_Indirect_Cascade_c0.70_n450.png",
+      "category": "Baseline Dashboard",
+      "focus": "Indirect Cascade (X->Z->Y): Conditional TE | Z filters indirect link",
+      "parameters": {
+        "motif_type": "Indirect_Cascade",
+        "coupling": 0.7,
+        "n_samples": 450,
+        "n_surrogates": 60
+      },
+      "metrics": {
+        "motif": "Indirect_Cascade",
+        "best_lag": 2,
+        "te_bivariate": 0.2346258453896817,
+        "thr_bivariate": 0.0341943303167679,
+        "p_bivariate": 0.01639344262295082,
+        "te_conditional": 0.0,
+        "thr_conditional": 0.038164957801246416,
+        "p_conditional": 1.0,
+        "info_dynamics": {
+          "AIS": 0.4766585382219428,
+          "TE": 0.2346258453896817,
+          "AIS_plus_TE": 0.7112843836116245,
+          "Total_Predictive_MI": 0.6899974649966504,
+          "Chain_Rule_Residual": 0.021286918614974115
+        },
+        "network": {
+          "nodes": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "bivariate_te": [
+            [
+              0.0,
+              0.2346258453896817,
+              0.4603323614478138
+            ],
+            [
+              0.07592582073669892,
+              0.0,
+              0.003622214846377426
+            ],
+            [
+              0.022136981678109017,
+              0.5551555581648085,
+              0.0
+            ]
+          ],
+          "conditional_te": [
+            [
+              0.0,
+              0.0,
+              0.3753354790496353
+            ],
+            [
+              0.012503484004998101,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.222444723836371,
+              0.0
+            ]
+          ],
+          "best_lags": [
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              3,
+              1,
+              0
+            ]
+          ],
+          "bivariate_p": [
+            [
+              1.0,
+              0.00684931506849315,
+              0.00684931506849315
+            ],
+            [
+              0.0136986301369863,
+              1.0,
+              0.39344262295081966
+            ],
+            [
+              0.22950819672131148,
+              0.00684931506849315,
+              1.0
+            ]
+          ],
+          "conditional_p": [
+            [
+              1.0,
+              1.0,
+              0.00684931506849315
+            ],
+            [
+              0.3114754098360656,
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              0.00684931506849315,
+              1.0
+            ]
+          ],
+          "biv_fdr_mask": [
+            [
+              false,
+              true,
+              true
+            ],
+            [
+              true,
+              false,
+              false
+            ],
+            [
+              false,
+              true,
+              false
+            ]
+          ],
+          "cond_fdr_mask": [
+            [
+              false,
+              false,
+              true
+            ],
+            [
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              true,
+              false
+            ]
+          ],
+          "biv_fdr": {
+            "rejected": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              true
+            ],
+            "q_values": [
+              0.0136986301369863,
+              0.0136986301369863,
+              0.02054794520547945,
+              0.39344262295081966,
+              0.2754098360655738,
+              0.0136986301369863
+            ],
+            "order": [
+              0,
+              1,
+              5,
+              2,
+              4,
+              3
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.00684931506849315,
+              0.00684931506849315,
+              0.0136986301369863,
+              0.22950819672131148,
+              0.39344262295081966
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "cond_fdr": {
+            "rejected": [
+              false,
+              true,
+              false,
+              false,
+              false,
+              true
+            ],
+            "q_values": [
+              1.0,
+              0.02054794520547945,
+              0.6229508196721312,
+              1.0,
+              1.0,
+              0.02054794520547945
+            ],
+            "order": [
+              1,
+              5,
+              2,
+              0,
+              3,
+              4
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.00684931506849315,
+              0.3114754098360656,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "edges": [
+            {
+              "source": "X",
+              "target": "Y",
+              "i": 0,
+              "j": 1,
+              "best_lag": 2,
+              "te_bivariate": 0.2346258453896817,
+              "thr_bivariate": 0.05880567061882989,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.031377121542929313,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.0136986301369863,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "X",
+              "target": "Z",
+              "i": 0,
+              "j": 2,
+              "best_lag": 1,
+              "te_bivariate": 0.4603323614478138,
+              "thr_bivariate": 0.04153555485223081,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.3753354790496353,
+              "thr_conditional": 0.03752829376448477,
+              "p_conditional": 0.00684931506849315,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.0136986301369863,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.02054794520547945
+            },
+            {
+              "source": "Y",
+              "target": "X",
+              "i": 1,
+              "j": 0,
+              "best_lag": 2,
+              "te_bivariate": 0.07592582073669892,
+              "thr_bivariate": 0.0546389016658952,
+              "p_bivariate": 0.0136986301369863,
+              "te_conditional": 0.012503484004998101,
+              "thr_conditional": 0.03419502153017978,
+              "p_conditional": 0.3114754098360656,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.02054794520547945,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.6229508196721312
+            },
+            {
+              "source": "Y",
+              "target": "Z",
+              "i": 1,
+              "j": 2,
+              "best_lag": 3,
+              "te_bivariate": 0.003622214846377426,
+              "thr_bivariate": 0.029867668493292795,
+              "p_bivariate": 0.39344262295081966,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.025025298080514638,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.39344262295081966,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Z",
+              "target": "X",
+              "i": 2,
+              "j": 0,
+              "best_lag": 3,
+              "te_bivariate": 0.022136981678109017,
+              "thr_bivariate": 0.04631298584606116,
+              "p_bivariate": 0.22950819672131148,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.025997821516910373,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.2754098360655738,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Z",
+              "target": "Y",
+              "i": 2,
+              "j": 1,
+              "best_lag": 1,
+              "te_bivariate": 0.5551555581648085,
+              "thr_bivariate": 0.04178295657298191,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.222444723836371,
+              "thr_conditional": 0.0327449608681627,
+              "p_conditional": 0.00684931506849315,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.0136986301369863,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.02054794520547945
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "01_Causal_Motifs/03_Common_Driver_c0.70_n450.png",
+      "category": "Baseline Dashboard",
+      "focus": "Common Driver (Z->X,Y): Conditional TE | Z removes spurious bivariate link",
+      "parameters": {
+        "motif_type": "Common_Driver",
+        "coupling": 0.7,
+        "n_samples": 450,
+        "n_surrogates": 60
+      },
+      "metrics": {
+        "motif": "Common_Driver",
+        "best_lag": 1,
+        "te_bivariate": 0.1292973504343367,
+        "thr_bivariate": 0.046555969095710754,
+        "p_bivariate": 0.01639344262295082,
+        "te_conditional": 0.0,
+        "thr_conditional": 0.020864777770033958,
+        "p_conditional": 1.0,
+        "info_dynamics": {
+          "AIS": 0.3700605501468958,
+          "TE": 0.1292973504343367,
+          "AIS_plus_TE": 0.49935790058123253,
+          "Total_Predictive_MI": 0.457077392436205,
+          "Chain_Rule_Residual": 0.04228050814502754
+        },
+        "network": {
+          "nodes": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "bivariate_te": [
+            [
+              0.0,
+              0.1292973504343367,
+              0.0
+            ],
+            [
+              0.04657990096645943,
+              0.0,
+              0.052075566806585656
+            ],
+            [
+              0.35024513950486946,
+              0.41969441579156364,
+              0.0
+            ]
+          ],
+          "conditional_te": [
+            [
+              0.0,
+              0.0,
+              0.006250367683001698
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.30367509082918476,
+              0.18056740659687903,
+              0.0
+            ]
+          ],
+          "best_lags": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              1,
+              2,
+              0
+            ]
+          ],
+          "bivariate_p": [
+            [
+              1.0,
+              0.00684931506849315,
+              1.0
+            ],
+            [
+              0.03424657534246575,
+              1.0,
+              0.0410958904109589
+            ],
+            [
+              0.00684931506849315,
+              0.00684931506849315,
+              1.0
+            ]
+          ],
+          "conditional_p": [
+            [
+              1.0,
+              1.0,
+              0.47540983606557374
+            ],
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.00684931506849315,
+              0.00684931506849315,
+              1.0
+            ]
+          ],
+          "biv_fdr_mask": [
+            [
+              false,
+              true,
+              false
+            ],
+            [
+              true,
+              false,
+              true
+            ],
+            [
+              true,
+              true,
+              false
+            ]
+          ],
+          "cond_fdr_mask": [
+            [
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ],
+            [
+              true,
+              true,
+              false
+            ]
+          ],
+          "biv_fdr": {
+            "rejected": [
+              true,
+              false,
+              true,
+              true,
+              true,
+              true
+            ],
+            "q_values": [
+              0.0136986301369863,
+              1.0,
+              0.049315068493150684,
+              0.049315068493150684,
+              0.0136986301369863,
+              0.0136986301369863
+            ],
+            "order": [
+              0,
+              4,
+              5,
+              2,
+              3,
+              1
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.00684931506849315,
+              0.00684931506849315,
+              0.03424657534246575,
+              0.0410958904109589,
+              1.0
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "cond_fdr": {
+            "rejected": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "q_values": [
+              1.0,
+              0.9508196721311476,
+              1.0,
+              1.0,
+              0.02054794520547945,
+              0.02054794520547945
+            ],
+            "order": [
+              5,
+              4,
+              1,
+              0,
+              3,
+              2
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.00684931506849315,
+              0.47540983606557374,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "edges": [
+            {
+              "source": "X",
+              "target": "Y",
+              "i": 0,
+              "j": 1,
+              "best_lag": 1,
+              "te_bivariate": 0.1292973504343367,
+              "thr_bivariate": 0.04486359218743888,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.03528223967548255,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.0136986301369863,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "X",
+              "target": "Z",
+              "i": 0,
+              "j": 2,
+              "best_lag": 1,
+              "te_bivariate": 0.0,
+              "thr_bivariate": 0.04270185812366318,
+              "p_bivariate": 1.0,
+              "te_conditional": 0.006250367683001698,
+              "thr_conditional": 0.028782573564827062,
+              "p_conditional": 0.47540983606557374,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 1.0,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.9508196721311476
+            },
+            {
+              "source": "Y",
+              "target": "X",
+              "i": 1,
+              "j": 0,
+              "best_lag": 5,
+              "te_bivariate": 0.04657990096645943,
+              "thr_bivariate": 0.03724935709715368,
+              "p_bivariate": 0.03424657534246575,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.021601553079577163,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.049315068493150684,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Y",
+              "target": "Z",
+              "i": 1,
+              "j": 2,
+              "best_lag": 1,
+              "te_bivariate": 0.052075566806585656,
+              "thr_bivariate": 0.05060323654839141,
+              "p_bivariate": 0.0410958904109589,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.033554874468745284,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.049315068493150684,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Z",
+              "target": "X",
+              "i": 2,
+              "j": 0,
+              "best_lag": 1,
+              "te_bivariate": 0.35024513950486946,
+              "thr_bivariate": 0.05173803597538019,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.30367509082918476,
+              "thr_conditional": 0.033366703778079654,
+              "p_conditional": 0.00684931506849315,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.0136986301369863,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.02054794520547945
+            },
+            {
+              "source": "Z",
+              "target": "Y",
+              "i": 2,
+              "j": 1,
+              "best_lag": 2,
+              "te_bivariate": 0.41969441579156364,
+              "thr_bivariate": 0.06132293393695778,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.18056740659687903,
+              "thr_conditional": 0.03687299091308514,
+              "p_conditional": 0.00684931506849315,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.0136986301369863,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.02054794520547945
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "01_Causal_Motifs/04_Unobserved_Confounder_c0.70_n450.png",
+      "category": "Baseline Dashboard",
+      "focus": "Unobserved Confounder (hidden U->X,Y): irreducible observational false positive",
+      "parameters": {
+        "motif_type": "Unobserved_Confounder",
+        "coupling": 0.7,
+        "n_samples": 450,
+        "n_surrogates": 60
+      },
+      "metrics": {
+        "motif": "Unobserved_Confounder",
+        "best_lag": 1,
+        "te_bivariate": 0.19899267815037686,
+        "thr_bivariate": 0.07134460153894381,
+        "p_bivariate": 0.01639344262295082,
+        "te_conditional": 0.17545534065789278,
+        "thr_conditional": 0.026838019271228513,
+        "p_conditional": 0.01639344262295082,
+        "info_dynamics": {
+          "AIS": 0.39468843433342504,
+          "TE": 0.19899267815037686,
+          "AIS_plus_TE": 0.593681112483802,
+          "Total_Predictive_MI": 0.5703965292135634,
+          "Chain_Rule_Residual": 0.023284583270238524
+        },
+        "network": {
+          "nodes": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "bivariate_te": [
+            [
+              0.0,
+              0.19899267815037686,
+              0.013617346163543655
+            ],
+            [
+              0.02600032684936519,
+              0.0,
+              0.01815428171420077
+            ],
+            [
+              0.0068949079978166275,
+              0.0,
+              0.0
+            ]
+          ],
+          "conditional_te": [
+            [
+              0.0,
+              0.17545534065789278,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "best_lags": [
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              5,
+              1,
+              0
+            ]
+          ],
+          "bivariate_p": [
+            [
+              1.0,
+              0.00684931506849315,
+              0.39344262295081966
+            ],
+            [
+              0.26229508196721313,
+              1.0,
+              0.36065573770491804
+            ],
+            [
+              0.3770491803278688,
+              1.0,
+              1.0
+            ]
+          ],
+          "conditional_p": [
+            [
+              1.0,
+              0.00684931506849315,
+              1.0
+            ],
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0,
+              1.0
+            ]
+          ],
+          "biv_fdr_mask": [
+            [
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ]
+          ],
+          "cond_fdr_mask": [
+            [
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ]
+          ],
+          "biv_fdr": {
+            "rejected": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "q_values": [
+              0.0410958904109589,
+              0.4721311475409836,
+              0.4721311475409836,
+              0.4721311475409836,
+              0.4721311475409836,
+              1.0
+            ],
+            "order": [
+              0,
+              2,
+              3,
+              4,
+              1,
+              5
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.26229508196721313,
+              0.36065573770491804,
+              0.3770491803278688,
+              0.39344262295081966,
+              1.0
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "cond_fdr": {
+            "rejected": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "q_values": [
+              0.0410958904109589,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "order": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "edges": [
+            {
+              "source": "X",
+              "target": "Y",
+              "i": 0,
+              "j": 1,
+              "best_lag": 1,
+              "te_bivariate": 0.19899267815037686,
+              "thr_bivariate": 0.0451540454245808,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.17545534065789278,
+              "thr_conditional": 0.0376207326833796,
+              "p_conditional": 0.00684931506849315,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.0410958904109589,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.0410958904109589
+            },
+            {
+              "source": "X",
+              "target": "Z",
+              "i": 0,
+              "j": 2,
+              "best_lag": 4,
+              "te_bivariate": 0.013617346163543655,
+              "thr_bivariate": 0.05459760930527339,
+              "p_bivariate": 0.39344262295081966,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.034252823143353955,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.4721311475409836,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Y",
+              "target": "X",
+              "i": 1,
+              "j": 0,
+              "best_lag": 1,
+              "te_bivariate": 0.02600032684936519,
+              "thr_bivariate": 0.049989546711009705,
+              "p_bivariate": 0.26229508196721313,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.028471904953426802,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.4721311475409836,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Y",
+              "target": "Z",
+              "i": 1,
+              "j": 2,
+              "best_lag": 3,
+              "te_bivariate": 0.01815428171420077,
+              "thr_bivariate": 0.05633476189728668,
+              "p_bivariate": 0.36065573770491804,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.03052311132389983,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.4721311475409836,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Z",
+              "target": "X",
+              "i": 2,
+              "j": 0,
+              "best_lag": 5,
+              "te_bivariate": 0.0068949079978166275,
+              "thr_bivariate": 0.04644431803085759,
+              "p_bivariate": 0.3770491803278688,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.02538640288429781,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.4721311475409836,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Z",
+              "target": "Y",
+              "i": 2,
+              "j": 1,
+              "best_lag": 1,
+              "te_bivariate": 0.0,
+              "thr_bivariate": 0.03184254950426921,
+              "p_bivariate": 1.0,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.037696770033237535,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 1.0,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "02_Sensitivity_Coupling_and_SampleSize/05_Direct_Coupling_weak_c0.30_n450.png",
+      "category": "Baseline Dashboard",
+      "focus": "Weak Direct Coupling (c=0.30): reduced TE near surrogate null",
+      "parameters": {
+        "motif_type": "Direct_Coupling",
+        "coupling": 0.3,
+        "n_samples": 450,
+        "n_surrogates": 60
+      },
+      "metrics": {
+        "motif": "Direct_Coupling",
+        "best_lag": 2,
+        "te_bivariate": 0.11783262201647517,
+        "thr_bivariate": 0.05512052821498019,
+        "p_bivariate": 0.01639344262295082,
+        "te_conditional": 0.09257446215697161,
+        "thr_conditional": 0.033854097224474626,
+        "p_conditional": 0.01639344262295082,
+        "info_dynamics": {
+          "AIS": 0.2758428294534739,
+          "TE": 0.11783262201647517,
+          "AIS_plus_TE": 0.39367545146994903,
+          "Total_Predictive_MI": 0.3594105265005636,
+          "Chain_Rule_Residual": 0.034264924969385435
+        },
+        "network": {
+          "nodes": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "bivariate_te": [
+            [
+              0.0,
+              0.11783262201647517,
+              0.03329693108806653
+            ],
+            [
+              0.0011724427537673247,
+              0.0,
+              0.07778421723866441
+            ],
+            [
+              0.0418017717272069,
+              0.02765705800458124,
+              0.0
+            ]
+          ],
+          "conditional_te": [
+            [
+              0.0,
+              0.09257446215697161,
+              0.024398985975767704
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0003923311357857081,
+              0.015077709700654767,
+              0.0
+            ]
+          ],
+          "best_lags": [
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              4,
+              0,
+              4
+            ],
+            [
+              2,
+              5,
+              0
+            ]
+          ],
+          "bivariate_p": [
+            [
+              1.0,
+              0.00684931506849315,
+              0.10273972602739725
+            ],
+            [
+              0.4918032786885246,
+              1.0,
+              0.0136986301369863
+            ],
+            [
+              0.0547945205479452,
+              0.2459016393442623,
+              1.0
+            ]
+          ],
+          "conditional_p": [
+            [
+              1.0,
+              0.00684931506849315,
+              0.11475409836065574
+            ],
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.4098360655737705,
+              0.21311475409836064,
+              1.0
+            ]
+          ],
+          "biv_fdr_mask": [
+            [
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              true
+            ],
+            [
+              false,
+              false,
+              false
+            ]
+          ],
+          "cond_fdr_mask": [
+            [
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ]
+          ],
+          "biv_fdr": {
+            "rejected": [
+              true,
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "q_values": [
+              0.0410958904109589,
+              0.1541095890410959,
+              0.4918032786885245,
+              0.0410958904109589,
+              0.1095890410958904,
+              0.29508196721311475
+            ],
+            "order": [
+              0,
+              3,
+              4,
+              1,
+              5,
+              2
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.0136986301369863,
+              0.0547945205479452,
+              0.10273972602739725,
+              0.2459016393442623,
+              0.4918032786885246
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "cond_fdr": {
+            "rejected": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "q_values": [
+              0.0410958904109589,
+              0.3442622950819672,
+              1.0,
+              1.0,
+              0.6147540983606558,
+              0.4262295081967213
+            ],
+            "order": [
+              0,
+              1,
+              5,
+              4,
+              3,
+              2
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.11475409836065574,
+              0.21311475409836064,
+              0.4098360655737705,
+              1.0,
+              1.0
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "edges": [
+            {
+              "source": "X",
+              "target": "Y",
+              "i": 0,
+              "j": 1,
+              "best_lag": 2,
+              "te_bivariate": 0.11783262201647517,
+              "thr_bivariate": 0.04213252746130344,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.09257446215697161,
+              "thr_conditional": 0.02851964726358528,
+              "p_conditional": 0.00684931506849315,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.0410958904109589,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.0410958904109589
+            },
+            {
+              "source": "X",
+              "target": "Z",
+              "i": 0,
+              "j": 2,
+              "best_lag": 2,
+              "te_bivariate": 0.03329693108806653,
+              "thr_bivariate": 0.052764468948754036,
+              "p_bivariate": 0.10273972602739725,
+              "te_conditional": 0.024398985975767704,
+              "thr_conditional": 0.054086212298522215,
+              "p_conditional": 0.11475409836065574,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.1541095890410959,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.3442622950819672
+            },
+            {
+              "source": "Y",
+              "target": "X",
+              "i": 1,
+              "j": 0,
+              "best_lag": 4,
+              "te_bivariate": 0.0011724427537673247,
+              "thr_bivariate": 0.049932496192576926,
+              "p_bivariate": 0.4918032786885246,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.02676002724492959,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.4918032786885245,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Y",
+              "target": "Z",
+              "i": 1,
+              "j": 2,
+              "best_lag": 4,
+              "te_bivariate": 0.07778421723866441,
+              "thr_bivariate": 0.046751868646878574,
+              "p_bivariate": 0.0136986301369863,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.022967662839926566,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.0410958904109589,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Z",
+              "target": "X",
+              "i": 2,
+              "j": 0,
+              "best_lag": 2,
+              "te_bivariate": 0.0418017717272069,
+              "thr_bivariate": 0.03976240925322046,
+              "p_bivariate": 0.0547945205479452,
+              "te_conditional": 0.0003923311357857081,
+              "thr_conditional": 0.03216913330934576,
+              "p_conditional": 0.4098360655737705,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.1095890410958904,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.6147540983606558
+            },
+            {
+              "source": "Z",
+              "target": "Y",
+              "i": 2,
+              "j": 1,
+              "best_lag": 5,
+              "te_bivariate": 0.02765705800458124,
+              "thr_bivariate": 0.04190396866373657,
+              "p_bivariate": 0.2459016393442623,
+              "te_conditional": 0.015077709700654767,
+              "thr_conditional": 0.029696645159369834,
+              "p_conditional": 0.21311475409836064,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.29508196721311475,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.4262295081967213
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "02_Sensitivity_Coupling_and_SampleSize/06_Direct_Coupling_strong_c0.85_n450.png",
+      "category": "Baseline Dashboard",
+      "focus": "Strong Direct Coupling (c=0.85): sharp lag-2 peak well above null",
+      "parameters": {
+        "motif_type": "Direct_Coupling",
+        "coupling": 0.85,
+        "n_samples": 450,
+        "n_surrogates": 60
+      },
+      "metrics": {
+        "motif": "Direct_Coupling",
+        "best_lag": 2,
+        "te_bivariate": 0.5627492060160046,
+        "thr_bivariate": 0.0679347332112824,
+        "p_bivariate": 0.01639344262295082,
+        "te_conditional": 0.4558081286217588,
+        "thr_conditional": 0.02958744541651345,
+        "p_conditional": 0.01639344262295082,
+        "info_dynamics": {
+          "AIS": 0.44741677077980696,
+          "TE": 0.5627492060160046,
+          "AIS_plus_TE": 1.0101659767958115,
+          "Total_Predictive_MI": 0.9764754464484554,
+          "Chain_Rule_Residual": 0.03369053034735614
+        },
+        "network": {
+          "nodes": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "bivariate_te": [
+            [
+              0.0,
+              0.5627492060160046,
+              0.03329693108806653
+            ],
+            [
+              0.012938272958082343,
+              0.0,
+              0.09444007167002051
+            ],
+            [
+              0.0418017717272069,
+              0.051334918194287864,
+              0.0
+            ]
+          ],
+          "conditional_te": [
+            [
+              0.0,
+              0.4558081286217588,
+              0.013808191365932216
+            ],
+            [
+              0.0,
+              0.0,
+              0.030805718678898746
+            ],
+            [
+              0.0,
+              0.013063979447776219,
+              0.0
+            ]
+          ],
+          "best_lags": [
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              4,
+              0,
+              2
+            ],
+            [
+              2,
+              3,
+              0
+            ]
+          ],
+          "bivariate_p": [
+            [
+              1.0,
+              0.00684931506849315,
+              0.10273972602739725
+            ],
+            [
+              0.29508196721311475,
+              1.0,
+              0.00684931506849315
+            ],
+            [
+              0.0547945205479452,
+              0.0273972602739726,
+              1.0
+            ]
+          ],
+          "conditional_p": [
+            [
+              1.0,
+              0.00684931506849315,
+              0.26229508196721313
+            ],
+            [
+              1.0,
+              1.0,
+              0.06164383561643835
+            ],
+            [
+              1.0,
+              0.14754098360655737,
+              1.0
+            ]
+          ],
+          "biv_fdr_mask": [
+            [
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              true
+            ],
+            [
+              false,
+              false,
+              false
+            ]
+          ],
+          "cond_fdr_mask": [
+            [
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ]
+          ],
+          "biv_fdr": {
+            "rejected": [
+              true,
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "q_values": [
+              0.02054794520547945,
+              0.12328767123287672,
+              0.29508196721311475,
+              0.02054794520547945,
+              0.0821917808219178,
+              0.0547945205479452
+            ],
+            "order": [
+              0,
+              3,
+              5,
+              4,
+              1,
+              2
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.00684931506849315,
+              0.0273972602739726,
+              0.0547945205479452,
+              0.10273972602739725,
+              0.29508196721311475
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "cond_fdr": {
+            "rejected": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "q_values": [
+              0.0410958904109589,
+              0.39344262295081966,
+              1.0,
+              0.18493150684931506,
+              1.0,
+              0.29508196721311475
+            ],
+            "order": [
+              0,
+              3,
+              5,
+              1,
+              2,
+              4
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.06164383561643835,
+              0.14754098360655737,
+              0.26229508196721313,
+              1.0,
+              1.0
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "edges": [
+            {
+              "source": "X",
+              "target": "Y",
+              "i": 0,
+              "j": 1,
+              "best_lag": 2,
+              "te_bivariate": 0.5627492060160046,
+              "thr_bivariate": 0.04783736209418418,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.4558081286217588,
+              "thr_conditional": 0.034844453217149164,
+              "p_conditional": 0.00684931506849315,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.02054794520547945,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.0410958904109589
+            },
+            {
+              "source": "X",
+              "target": "Z",
+              "i": 0,
+              "j": 2,
+              "best_lag": 2,
+              "te_bivariate": 0.03329693108806653,
+              "thr_bivariate": 0.052764468948754036,
+              "p_bivariate": 0.10273972602739725,
+              "te_conditional": 0.013808191365932216,
+              "thr_conditional": 0.03642477362571264,
+              "p_conditional": 0.26229508196721313,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.12328767123287672,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.39344262295081966
+            },
+            {
+              "source": "Y",
+              "target": "X",
+              "i": 1,
+              "j": 0,
+              "best_lag": 4,
+              "te_bivariate": 0.012938272958082343,
+              "thr_bivariate": 0.04909900910743417,
+              "p_bivariate": 0.29508196721311475,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.026800040706328056,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.29508196721311475,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Y",
+              "target": "Z",
+              "i": 1,
+              "j": 2,
+              "best_lag": 2,
+              "te_bivariate": 0.09444007167002051,
+              "thr_bivariate": 0.058929895844390574,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.030805718678898746,
+              "thr_conditional": 0.03192309094260395,
+              "p_conditional": 0.06164383561643835,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.02054794520547945,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.18493150684931506
+            },
+            {
+              "source": "Z",
+              "target": "X",
+              "i": 2,
+              "j": 0,
+              "best_lag": 2,
+              "te_bivariate": 0.0418017717272069,
+              "thr_bivariate": 0.03976240925322046,
+              "p_bivariate": 0.0547945205479452,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.034978757279054855,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.0821917808219178,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Z",
+              "target": "Y",
+              "i": 2,
+              "j": 1,
+              "best_lag": 3,
+              "te_bivariate": 0.051334918194287864,
+              "thr_bivariate": 0.04195677500430426,
+              "p_bivariate": 0.0273972602739726,
+              "te_conditional": 0.013063979447776219,
+              "thr_conditional": 0.025622845807908284,
+              "p_conditional": 0.14754098360655737,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.0547945205479452,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.29508196721311475
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "02_Sensitivity_Coupling_and_SampleSize/07_Common_Driver_small_sample_n250.png",
+      "category": "Baseline Dashboard",
+      "focus": "Small Sample Regime (n=250): higher surrogate threshold variance",
+      "parameters": {
+        "motif_type": "Common_Driver",
+        "coupling": 0.7,
+        "n_samples": 250,
+        "n_surrogates": 60
+      },
+      "metrics": {
+        "motif": "Common_Driver",
+        "best_lag": 1,
+        "te_bivariate": 0.14002737351161393,
+        "thr_bivariate": 0.06275868885498047,
+        "p_bivariate": 0.01639344262295082,
+        "te_conditional": 0.0,
+        "thr_conditional": 0.041975058418979,
+        "p_conditional": 1.0,
+        "info_dynamics": {
+          "AIS": 0.1947159378997362,
+          "TE": 0.14002737351161393,
+          "AIS_plus_TE": 0.33474331141135016,
+          "Total_Predictive_MI": 0.4247156110963831,
+          "Chain_Rule_Residual": 0.08997229968503295
+        },
+        "network": {
+          "nodes": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "bivariate_te": [
+            [
+              0.0,
+              0.14002737351161393,
+              0.06827771114775767
+            ],
+            [
+              0.08328497498767694,
+              0.0,
+              0.06600408288577508
+            ],
+            [
+              0.35163869182926055,
+              0.31070879891037645,
+              0.0
+            ]
+          ],
+          "conditional_te": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.01650152295411214,
+              0.0,
+              0.018740455696125025
+            ],
+            [
+              0.3436869089379801,
+              0.13125732207180804,
+              0.0
+            ]
+          ],
+          "best_lags": [
+            [
+              0,
+              1,
+              5
+            ],
+            [
+              1,
+              0,
+              5
+            ],
+            [
+              1,
+              2,
+              0
+            ]
+          ],
+          "bivariate_p": [
+            [
+              1.0,
+              0.00684931506849315,
+              0.04794520547945205
+            ],
+            [
+              0.0136986301369863,
+              1.0,
+              0.07534246575342465
+            ],
+            [
+              0.00684931506849315,
+              0.00684931506849315,
+              1.0
+            ]
+          ],
+          "conditional_p": [
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.2786885245901639,
+              1.0,
+              0.29508196721311475
+            ],
+            [
+              0.00684931506849315,
+              0.00684931506849315,
+              1.0
+            ]
+          ],
+          "biv_fdr_mask": [
+            [
+              false,
+              true,
+              false
+            ],
+            [
+              true,
+              false,
+              false
+            ],
+            [
+              true,
+              true,
+              false
+            ]
+          ],
+          "cond_fdr_mask": [
+            [
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ],
+            [
+              true,
+              true,
+              false
+            ]
+          ],
+          "biv_fdr": {
+            "rejected": [
+              true,
+              false,
+              true,
+              false,
+              true,
+              true
+            ],
+            "q_values": [
+              0.0136986301369863,
+              0.057534246575342465,
+              0.02054794520547945,
+              0.07534246575342465,
+              0.0136986301369863,
+              0.0136986301369863
+            ],
+            "order": [
+              0,
+              4,
+              5,
+              2,
+              1,
+              3
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.00684931506849315,
+              0.00684931506849315,
+              0.0136986301369863,
+              0.04794520547945205,
+              0.07534246575342465
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "cond_fdr": {
+            "rejected": [
+              false,
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "q_values": [
+              1.0,
+              1.0,
+              0.4426229508196721,
+              0.4426229508196721,
+              0.02054794520547945,
+              0.02054794520547945
+            ],
+            "order": [
+              5,
+              4,
+              2,
+              3,
+              0,
+              1
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.00684931506849315,
+              0.2786885245901639,
+              0.29508196721311475,
+              1.0,
+              1.0
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "edges": [
+            {
+              "source": "X",
+              "target": "Y",
+              "i": 0,
+              "j": 1,
+              "best_lag": 1,
+              "te_bivariate": 0.14002737351161393,
+              "thr_bivariate": 0.060935735860581805,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.041975058418979,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.0136986301369863,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "X",
+              "target": "Z",
+              "i": 0,
+              "j": 2,
+              "best_lag": 5,
+              "te_bivariate": 0.06827771114775767,
+              "thr_bivariate": 0.06426002331025357,
+              "p_bivariate": 0.04794520547945205,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.0345971362142886,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.057534246575342465,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Y",
+              "target": "X",
+              "i": 1,
+              "j": 0,
+              "best_lag": 1,
+              "te_bivariate": 0.08328497498767694,
+              "thr_bivariate": 0.06806955237955234,
+              "p_bivariate": 0.0136986301369863,
+              "te_conditional": 0.01650152295411214,
+              "thr_conditional": 0.048550801855032896,
+              "p_conditional": 0.2786885245901639,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.02054794520547945,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.4426229508196721
+            },
+            {
+              "source": "Y",
+              "target": "Z",
+              "i": 1,
+              "j": 2,
+              "best_lag": 5,
+              "te_bivariate": 0.06600408288577508,
+              "thr_bivariate": 0.07080918538322054,
+              "p_bivariate": 0.07534246575342465,
+              "te_conditional": 0.018740455696125025,
+              "thr_conditional": 0.04235171510581745,
+              "p_conditional": 0.29508196721311475,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.07534246575342465,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.4426229508196721
+            },
+            {
+              "source": "Z",
+              "target": "X",
+              "i": 2,
+              "j": 0,
+              "best_lag": 1,
+              "te_bivariate": 0.35163869182926055,
+              "thr_bivariate": 0.057887802851562156,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.3436869089379801,
+              "thr_conditional": 0.04709730656930824,
+              "p_conditional": 0.00684931506849315,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.0136986301369863,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.02054794520547945
+            },
+            {
+              "source": "Z",
+              "target": "Y",
+              "i": 2,
+              "j": 1,
+              "best_lag": 2,
+              "te_bivariate": 0.31070879891037645,
+              "thr_bivariate": 0.05956509728562037,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.13125732207180804,
+              "thr_conditional": 0.043448266932302936,
+              "p_conditional": 0.00684931506849315,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.0136986301369863,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.02054794520547945
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "02_Sensitivity_Coupling_and_SampleSize/08_Direct_Coupling_large_sample_n800.png",
+      "category": "Baseline Dashboard",
+      "focus": "Large Sample Regime (n=800): tight surrogate cutoff & clean lag-2 peak",
+      "parameters": {
+        "motif_type": "Direct_Coupling",
+        "coupling": 0.7,
+        "n_samples": 800,
+        "n_surrogates": 60
+      },
+      "metrics": {
+        "motif": "Direct_Coupling",
+        "best_lag": 2,
+        "te_bivariate": 0.4716523954266661,
+        "thr_bivariate": 0.029677697603488148,
+        "p_bivariate": 0.01639344262295082,
+        "te_conditional": 0.38009653409443084,
+        "thr_conditional": 0.023031479266012678,
+        "p_conditional": 0.01639344262295082,
+        "info_dynamics": {
+          "AIS": 0.2628084592298663,
+          "TE": 0.4716523954266661,
+          "AIS_plus_TE": 0.7344608546565323,
+          "Total_Predictive_MI": 0.7582207662808068,
+          "Chain_Rule_Residual": 0.023759911624274488
+        },
+        "network": {
+          "nodes": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "bivariate_te": [
+            [
+              0.0,
+              0.4716734173862292,
+              0.04855540255377445
+            ],
+            [
+              0.013003811959937,
+              0.0,
+              0.011406318253403793
+            ],
+            [
+              0.03395789818402742,
+              0.047223496490667594,
+              0.0
+            ]
+          ],
+          "conditional_te": [
+            [
+              0.0,
+              0.38009653409443084,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0057247743078273315,
+              0.0,
+              0.0
+            ]
+          ],
+          "best_lags": [
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              2,
+              0,
+              4
+            ],
+            [
+              2,
+              5,
+              0
+            ]
+          ],
+          "bivariate_p": [
+            [
+              1.0,
+              0.00684931506849315,
+              0.0136986301369863
+            ],
+            [
+              0.29508196721311475,
+              1.0,
+              0.39344262295081966
+            ],
+            [
+              0.04794520547945205,
+              0.03424657534246575,
+              1.0
+            ]
+          ],
+          "conditional_p": [
+            [
+              1.0,
+              0.00684931506849315,
+              1.0
+            ],
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.36065573770491804,
+              1.0,
+              1.0
+            ]
+          ],
+          "biv_fdr_mask": [
+            [
+              false,
+              true,
+              true
+            ],
+            [
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ]
+          ],
+          "cond_fdr_mask": [
+            [
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false
+            ]
+          ],
+          "biv_fdr": {
+            "rejected": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "q_values": [
+              0.0410958904109589,
+              0.0410958904109589,
+              0.3540983606557377,
+              0.39344262295081966,
+              0.07191780821917808,
+              0.0684931506849315
+            ],
+            "order": [
+              0,
+              1,
+              5,
+              4,
+              2,
+              3
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.0136986301369863,
+              0.03424657534246575,
+              0.04794520547945205,
+              0.29508196721311475,
+              0.39344262295081966
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "cond_fdr": {
+            "rejected": [
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "q_values": [
+              0.0410958904109589,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "order": [
+              0,
+              4,
+              2,
+              1,
+              3,
+              5
+            ],
+            "sorted_p": [
+              0.00684931506849315,
+              0.36065573770491804,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "crit_line": [
+              0.008333333333333333,
+              0.016666666666666666,
+              0.025,
+              0.03333333333333333,
+              0.04166666666666667,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0
+            ]
+          },
+          "edges": [
+            {
+              "source": "X",
+              "target": "Y",
+              "i": 0,
+              "j": 1,
+              "best_lag": 2,
+              "te_bivariate": 0.4716734173862292,
+              "thr_bivariate": 0.037092900626430614,
+              "p_bivariate": 0.00684931506849315,
+              "te_conditional": 0.38009653409443084,
+              "thr_conditional": 0.02278221248529572,
+              "p_conditional": 0.00684931506849315,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.0410958904109589,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.0410958904109589
+            },
+            {
+              "source": "X",
+              "target": "Z",
+              "i": 0,
+              "j": 2,
+              "best_lag": 2,
+              "te_bivariate": 0.04855540255377445,
+              "thr_bivariate": 0.03848047779302247,
+              "p_bivariate": 0.0136986301369863,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.029606647382213042,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.0410958904109589,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Y",
+              "target": "X",
+              "i": 1,
+              "j": 0,
+              "best_lag": 2,
+              "te_bivariate": 0.013003811959937,
+              "thr_bivariate": 0.051709311945295496,
+              "p_bivariate": 0.29508196721311475,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.018287785752313206,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.3540983606557377,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Y",
+              "target": "Z",
+              "i": 1,
+              "j": 2,
+              "best_lag": 4,
+              "te_bivariate": 0.011406318253403793,
+              "thr_bivariate": 0.03605687058582425,
+              "p_bivariate": 0.39344262295081966,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.027786823110881775,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.39344262295081966,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Z",
+              "target": "X",
+              "i": 2,
+              "j": 0,
+              "best_lag": 2,
+              "te_bivariate": 0.03395789818402742,
+              "thr_bivariate": 0.03339558224898092,
+              "p_bivariate": 0.04794520547945205,
+              "te_conditional": 0.0057247743078273315,
+              "thr_conditional": 0.023627236482854364,
+              "p_conditional": 0.36065573770491804,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.07191780821917808,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "Z",
+              "target": "Y",
+              "i": 2,
+              "j": 1,
+              "best_lag": 5,
+              "te_bivariate": 0.047223496490667594,
+              "thr_bivariate": 0.04480224391342671,
+              "p_bivariate": 0.03424657534246575,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.019250480212033363,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.0684931506849315,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier1_Observation_Confounder_Cascade.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 1: Common_Driver & Indirect_Cascade filtered by Conditional TE | Z",
+      "parameters": {
+        "n_surrogates": 70
+      },
+      "metrics": {
+        "Common_Driver": {
+          "best_lag": 1,
+          "te_biv": 0.15311505298814226,
+          "thr_biv": 0.058822175463764545,
+          "p_biv": 0.014084507042253521,
+          "te_cond": 0.0,
+          "thr_cond": 0.033173611178372295,
+          "p_cond": 1.0
+        },
+        "Indirect_Cascade": {
+          "best_lag": 2,
+          "te_biv": 0.24517866653845563,
+          "thr_biv": 0.035413511833689924,
+          "p_biv": 0.014084507042253521,
+          "te_cond": 0.0,
+          "thr_cond": 0.024734949327819576,
+          "p_cond": 1.0
+        }
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier2_Analysis_Wibral_Delay_Tau2.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 2: Wibral scan u=1..5 recovers tau=2 + AIS+TE chain rule",
+      "parameters": {
+        "n_surrogates": 70
+      },
+      "metrics": {
+        "lags": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "biv_scan": [
+          0.0314353209301306,
+          0.4370944752562584,
+          0.026163923572207044,
+          0.0,
+          0.0
+        ],
+        "cond_scan": [
+          0.04241736556637279,
+          0.3386904912558707,
+          0.05041508835580359,
+          0.003000571111846243,
+          0.011322538987653315
+        ],
+        "peak_lag": 2,
+        "info_dynamics": {
+          "AIS": 0.3407755033151059,
+          "TE": 0.4370944752562584,
+          "AIS_plus_TE": 0.7778699785713643,
+          "Total_Predictive_MI": 0.807147117067027,
+          "Chain_Rule_Residual": 0.029277138495662713
+        }
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier3_StressTest_Unobserved_Confounder.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 3: Unobserved Confounder sample sweep (250->800) shows irreducible false positives",
+      "parameters": {
+        "n_surrogates": 70
+      },
+      "metrics": {
+        "sample_sizes": [
+          250,
+          350,
+          450,
+          600,
+          800
+        ],
+        "te_conditional": [
+          0.20669048680973567,
+          0.21592717789367089,
+          0.17545534065789278,
+          0.20206547239627415,
+          0.1951739735266646
+        ],
+        "surrogate_95": [
+          0.03949537017659096,
+          0.02912392906303585,
+          0.032582256796214425,
+          0.02775876854712413,
+          0.024399094312231126
+        ],
+        "p_values": [
+          0.014084507042253521,
+          0.014084507042253521,
+          0.014084507042253521,
+          0.014084507042253521,
+          0.014084507042253521
+        ]
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App1_Effective_Brain_Connectivity.png",
+      "category": "Real-World Demo",
+      "focus": "App 2.1: 4-region effective brain connectivity (THAL, PFC, PAR, MOT) via Cond TE + BH-FDR",
+      "parameters": {},
+      "metrics": {
+        "true_edges": [
+          [
+            "THAL",
+            "PFC"
+          ],
+          [
+            "THAL",
+            "PAR"
+          ],
+          [
+            "PFC",
+            "PAR"
+          ],
+          [
+            "PAR",
+            "MOT"
+          ]
+        ],
+        "recovered_edges": [
+          [
+            "THAL",
+            "PFC"
+          ],
+          [
+            "THAL",
+            "PAR"
+          ],
+          [
+            "PFC",
+            "PAR"
+          ],
+          [
+            "PAR",
+            "MOT"
+          ]
+        ],
+        "network": {
+          "nodes": [
+            "THAL",
+            "PFC",
+            "PAR",
+            "MOT"
+          ],
+          "bivariate_te": [
+            [
+              0.0,
+              0.393226983041376,
+              0.3780072759073042,
+              0.07536041915315465
+            ],
+            [
+              0.0526983212001487,
+              0.0,
+              0.35980689933928134,
+              0.11357943568044791
+            ],
+            [
+              0.02248982456252366,
+              0.033937557268126854,
+              0.0,
+              0.6989860208375117
+            ],
+            [
+              0.0,
+              0.0034242612791522426,
+              0.023301585657137074,
+              0.0
+            ]
+          ],
+          "conditional_te": [
+            [
+              0.0,
+              0.2955433167602879,
+              0.11661788777216336,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.16554312275444544,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.2920379349948923
+            ],
+            [
+              0.0,
+              0.0,
+              0.012894490273537298,
+              0.0
+            ]
+          ],
+          "best_lags": [
+            [
+              0,
+              1,
+              2,
+              4
+            ],
+            [
+              4,
+              0,
+              2,
+              4
+            ],
+            [
+              2,
+              1,
+              0,
+              3
+            ],
+            [
+              1,
+              2,
+              4,
+              0
+            ]
+          ],
+          "bivariate_p": [
+            [
+              1.0,
+              0.0037593984962406013,
+              0.0037593984962406013,
+              0.0037593984962406013
+            ],
+            [
+              0.041353383458646614,
+              1.0,
+              0.0037593984962406013,
+              0.0037593984962406013
+            ],
+            [
+              0.19607843137254902,
+              0.11654135338345864,
+              1.0,
+              0.0037593984962406013
+            ],
+            [
+              1.0,
+              0.37254901960784315,
+              0.21568627450980393,
+              1.0
+            ]
+          ],
+          "conditional_p": [
+            [
+              1.0,
+              0.0037593984962406013,
+              0.0037593984962406013,
+              1.0
+            ],
+            [
+              1.0,
+              1.0,
+              0.0037593984962406013,
+              1.0
+            ],
+            [
+              1.0,
+              1.0,
+              1.0,
+              0.0037593984962406013
+            ],
+            [
+              1.0,
+              1.0,
+              0.058823529411764705,
+              1.0
+            ]
+          ],
+          "biv_fdr_mask": [
+            [
+              false,
+              true,
+              true,
+              true
+            ],
+            [
+              false,
+              false,
+              true,
+              true
+            ],
+            [
+              false,
+              false,
+              false,
+              true
+            ],
+            [
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "cond_fdr_mask": [
+            [
+              false,
+              true,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              true
+            ],
+            [
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "biv_fdr": {
+            "rejected": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false
+            ],
+            "q_values": [
+              0.007518796992481203,
+              0.007518796992481203,
+              0.007518796992481203,
+              0.07089151450053706,
+              0.007518796992481203,
+              0.007518796992481203,
+              0.25882352941176473,
+              0.17481203007518797,
+              0.007518796992481203,
+              1.0,
+              0.40641711229946526,
+              0.25882352941176473
+            ],
+            "order": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              8,
+              3,
+              7,
+              6,
+              11,
+              10,
+              9
+            ],
+            "sorted_p": [
+              0.0037593984962406013,
+              0.0037593984962406013,
+              0.0037593984962406013,
+              0.0037593984962406013,
+              0.0037593984962406013,
+              0.0037593984962406013,
+              0.041353383458646614,
+              0.11654135338345864,
+              0.19607843137254902,
+              0.21568627450980393,
+              0.37254901960784315,
+              1.0
+            ],
+            "crit_line": [
+              0.004166666666666667,
+              0.008333333333333333,
+              0.0125,
+              0.016666666666666666,
+              0.020833333333333336,
+              0.025,
+              0.02916666666666667,
+              0.03333333333333333,
+              0.037500000000000006,
+              0.04166666666666667,
+              0.04583333333333334,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0,
+              7.0,
+              8.0,
+              9.0,
+              10.0,
+              11.0,
+              12.0
+            ]
+          },
+          "cond_fdr": {
+            "rejected": [
+              true,
+              true,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false
+            ],
+            "q_values": [
+              0.011278195488721804,
+              0.011278195488721804,
+              1.0,
+              1.0,
+              0.011278195488721804,
+              1.0,
+              1.0,
+              1.0,
+              0.011278195488721804,
+              1.0,
+              1.0,
+              0.1411764705882353
+            ],
+            "order": [
+              0,
+              1,
+              4,
+              8,
+              11,
+              5,
+              3,
+              2,
+              7,
+              6,
+              9,
+              10
+            ],
+            "sorted_p": [
+              0.0037593984962406013,
+              0.0037593984962406013,
+              0.0037593984962406013,
+              0.0037593984962406013,
+              0.058823529411764705,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "crit_line": [
+              0.004166666666666667,
+              0.008333333333333333,
+              0.0125,
+              0.016666666666666666,
+              0.020833333333333336,
+              0.025,
+              0.02916666666666667,
+              0.03333333333333333,
+              0.037500000000000006,
+              0.04166666666666667,
+              0.04583333333333334,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0,
+              7.0,
+              8.0,
+              9.0,
+              10.0,
+              11.0,
+              12.0
+            ]
+          },
+          "edges": [
+            {
+              "source": "THAL",
+              "target": "PFC",
+              "i": 0,
+              "j": 1,
+              "best_lag": 1,
+              "te_bivariate": 0.393226983041376,
+              "thr_bivariate": 0.047574141903828734,
+              "p_bivariate": 0.0037593984962406013,
+              "te_conditional": 0.2955433167602879,
+              "thr_conditional": 0.026807678532797932,
+              "p_conditional": 0.0037593984962406013,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.007518796992481203,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.011278195488721804
+            },
+            {
+              "source": "THAL",
+              "target": "PAR",
+              "i": 0,
+              "j": 2,
+              "best_lag": 2,
+              "te_bivariate": 0.3780072759073042,
+              "thr_bivariate": 0.03974718686532068,
+              "p_bivariate": 0.0037593984962406013,
+              "te_conditional": 0.11661788777216336,
+              "thr_conditional": 0.018743826805002323,
+              "p_conditional": 0.0037593984962406013,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.007518796992481203,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.011278195488721804
+            },
+            {
+              "source": "THAL",
+              "target": "MOT",
+              "i": 0,
+              "j": 3,
+              "best_lag": 4,
+              "te_bivariate": 0.07536041915315465,
+              "thr_bivariate": 0.040404864678050254,
+              "p_bivariate": 0.0037593984962406013,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.02159255573700307,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.007518796992481203,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "PFC",
+              "target": "THAL",
+              "i": 1,
+              "j": 0,
+              "best_lag": 4,
+              "te_bivariate": 0.0526983212001487,
+              "thr_bivariate": 0.04767610969551748,
+              "p_bivariate": 0.041353383458646614,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.030782471351707287,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.07089151450053706,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "PFC",
+              "target": "PAR",
+              "i": 1,
+              "j": 2,
+              "best_lag": 2,
+              "te_bivariate": 0.35980689933928134,
+              "thr_bivariate": 0.043132728860872015,
+              "p_bivariate": 0.0037593984962406013,
+              "te_conditional": 0.16554312275444544,
+              "thr_conditional": 0.019638507193020724,
+              "p_conditional": 0.0037593984962406013,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.007518796992481203,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.011278195488721804
+            },
+            {
+              "source": "PFC",
+              "target": "MOT",
+              "i": 1,
+              "j": 3,
+              "best_lag": 4,
+              "te_bivariate": 0.11357943568044791,
+              "thr_bivariate": 0.04548436999188678,
+              "p_bivariate": 0.0037593984962406013,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.015756677782809855,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.007518796992481203,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "PAR",
+              "target": "THAL",
+              "i": 2,
+              "j": 0,
+              "best_lag": 2,
+              "te_bivariate": 0.02248982456252366,
+              "thr_bivariate": 0.028780767268286926,
+              "p_bivariate": 0.19607843137254902,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.011009277534025289,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.25882352941176473,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "PAR",
+              "target": "PFC",
+              "i": 2,
+              "j": 1,
+              "best_lag": 1,
+              "te_bivariate": 0.033937557268126854,
+              "thr_bivariate": 0.04617965836898225,
+              "p_bivariate": 0.11654135338345864,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.033738598774032444,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.17481203007518797,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "PAR",
+              "target": "MOT",
+              "i": 2,
+              "j": 3,
+              "best_lag": 3,
+              "te_bivariate": 0.6989860208375117,
+              "thr_bivariate": 0.038485599258976856,
+              "p_bivariate": 0.0037593984962406013,
+              "te_conditional": 0.2920379349948923,
+              "thr_conditional": 0.019742525826424228,
+              "p_conditional": 0.0037593984962406013,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.007518796992481203,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.011278195488721804
+            },
+            {
+              "source": "MOT",
+              "target": "THAL",
+              "i": 3,
+              "j": 0,
+              "best_lag": 1,
+              "te_bivariate": 0.0,
+              "thr_bivariate": 0.033697737158782264,
+              "p_bivariate": 1.0,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.021974306486174357,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 1.0,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "MOT",
+              "target": "PFC",
+              "i": 3,
+              "j": 1,
+              "best_lag": 2,
+              "te_bivariate": 0.0034242612791522426,
+              "thr_bivariate": 0.053571138652644894,
+              "p_bivariate": 0.37254901960784315,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.02267607280812006,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.40641711229946526,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "MOT",
+              "target": "PAR",
+              "i": 3,
+              "j": 2,
+              "best_lag": 4,
+              "te_bivariate": 0.023301585657137074,
+              "thr_bivariate": 0.040552538319623105,
+              "p_bivariate": 0.21568627450980393,
+              "te_conditional": 0.012894490273537298,
+              "thr_conditional": 0.008538394239428246,
+              "p_conditional": 0.058823529411764705,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.25882352941176473,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.1411764705882353
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App2_Finance_Volatility_Contagion.png",
+      "category": "Real-World Demo",
+      "focus": "App 2.2: Multi-asset nonlinear volatility spillover & systemic risk hub discovery",
+      "parameters": {},
+      "metrics": {
+        "out_strength": {
+          "BANK": 0.33412510451851934,
+          "TECH": 0.15762645844646433,
+          "ENERGY": 0.0,
+          "CRYPTO": 0.0,
+          "BOND": 0.0
+        },
+        "network": {
+          "nodes": [
+            "BANK",
+            "TECH",
+            "ENERGY",
+            "CRYPTO",
+            "BOND"
+          ],
+          "bivariate_te": [
+            [
+              0.0,
+              0.4455824905469227,
+              0.452557524977166,
+              0.17353953260579438,
+              0.030558219855484136
+            ],
+            [
+              0.017730926003466246,
+              0.0,
+              0.09959725230522458,
+              0.41674518066981775,
+              0.007616166921256948
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.023053304825438832,
+              0.024485505262130506
+            ],
+            [
+              0.005046166544150377,
+              0.010828563624233626,
+              0.010984671677681074,
+              0.0,
+              0.0
+            ],
+            [
+              0.012583981764354497,
+              0.0015774481675819864,
+              0.019284268245373395,
+              0.033812732616612606,
+              0.0
+            ]
+          ],
+          "conditional_te": [
+            [
+              0.0,
+              0.19201405565309193,
+              0.14211104886542741,
+              0.0,
+              0.0
+            ],
+            [
+              0.013683496378719713,
+              0.0,
+              0.015160698829009136,
+              0.15762645844646433,
+              0.0
+            ],
+            [
+              0.01573443320721935,
+              0.0,
+              0.0,
+              0.010235982012979837,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.007521150315951891,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0020060765258261086,
+              0.0,
+              0.0
+            ]
+          ],
+          "best_lags": [
+            [
+              0,
+              1,
+              2,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              2
+            ],
+            [
+              3,
+              1,
+              2,
+              0,
+              1
+            ],
+            [
+              3,
+              2,
+              2,
+              2,
+              0
+            ]
+          ],
+          "bivariate_p": [
+            [
+              1.0,
+              0.002347417840375587,
+              0.002347417840375587,
+              0.002347417840375587,
+              0.12206572769953052
+            ],
+            [
+              0.23529411764705882,
+              1.0,
+              0.002347417840375587,
+              0.002347417840375587,
+              0.3333333333333333
+            ],
+            [
+              1.0,
+              1.0,
+              1.0,
+              0.1568627450980392,
+              0.17647058823529413
+            ],
+            [
+              0.47058823529411764,
+              0.4117647058823529,
+              0.3333333333333333,
+              1.0,
+              1.0
+            ],
+            [
+              0.35294117647058826,
+              0.39215686274509803,
+              0.21568627450980393,
+              0.11032863849765258,
+              1.0
+            ]
+          ],
+          "conditional_p": [
+            [
+              1.0,
+              0.002347417840375587,
+              0.002347417840375587,
+              1.0,
+              1.0
+            ],
+            [
+              0.1568627450980392,
+              1.0,
+              0.0784313725490196,
+              0.002347417840375587,
+              1.0
+            ],
+            [
+              0.13725490196078433,
+              1.0,
+              1.0,
+              0.29411764705882354,
+              1.0
+            ],
+            [
+              1.0,
+              1.0,
+              0.27450980392156865,
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0,
+              0.37254901960784315,
+              1.0,
+              1.0
+            ]
+          ],
+          "biv_fdr_mask": [
+            [
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              true,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "cond_fdr_mask": [
+            [
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "biv_fdr": {
+            "rejected": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "q_values": [
+              0.009389671361502348,
+              0.009389671361502348,
+              0.009389671361502348,
+              0.34875922199865866,
+              0.42780748663101603,
+              0.009389671361502348,
+              0.009389671361502348,
+              0.504201680672269,
+              1.0,
+              1.0,
+              0.39215686274509803,
+              0.3921568627450981,
+              0.5536332179930796,
+              0.5147058823529411,
+              0.504201680672269,
+              1.0,
+              0.504201680672269,
+              0.5147058823529411,
+              0.42780748663101603,
+              0.34875922199865866
+            ],
+            "order": [
+              0,
+              1,
+              2,
+              5,
+              6,
+              19,
+              3,
+              10,
+              11,
+              18,
+              4,
+              7,
+              14,
+              16,
+              17,
+              13,
+              12,
+              15,
+              9,
+              8
+            ],
+            "sorted_p": [
+              0.002347417840375587,
+              0.002347417840375587,
+              0.002347417840375587,
+              0.002347417840375587,
+              0.002347417840375587,
+              0.11032863849765258,
+              0.12206572769953052,
+              0.1568627450980392,
+              0.17647058823529413,
+              0.21568627450980393,
+              0.23529411764705882,
+              0.3333333333333333,
+              0.3333333333333333,
+              0.35294117647058826,
+              0.39215686274509803,
+              0.4117647058823529,
+              0.47058823529411764,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "crit_line": [
+              0.0025000000000000005,
+              0.005000000000000001,
+              0.0075,
+              0.010000000000000002,
+              0.0125,
+              0.015,
+              0.017499999999999998,
+              0.020000000000000004,
+              0.022500000000000003,
+              0.025,
+              0.027500000000000004,
+              0.03,
+              0.0325,
+              0.034999999999999996,
+              0.037500000000000006,
+              0.04000000000000001,
+              0.0425,
+              0.045000000000000005,
+              0.0475,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0,
+              7.0,
+              8.0,
+              9.0,
+              10.0,
+              11.0,
+              12.0,
+              13.0,
+              14.0,
+              15.0,
+              16.0,
+              17.0,
+              18.0,
+              19.0,
+              20.0
+            ]
+          },
+          "cond_fdr": {
+            "rejected": [
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "q_values": [
+              0.01564945226917058,
+              0.01564945226917058,
+              1.0,
+              1.0,
+              0.5228758169934641,
+              0.39215686274509803,
+              0.01564945226917058,
+              1.0,
+              0.5228758169934641,
+              1.0,
+              0.7352941176470589,
+              1.0,
+              1.0,
+              1.0,
+              0.7352941176470589,
+              1.0,
+              1.0,
+              1.0,
+              0.8278867102396514,
+              1.0
+            ],
+            "order": [
+              0,
+              1,
+              6,
+              5,
+              8,
+              4,
+              14,
+              10,
+              18,
+              7,
+              2,
+              3,
+              11,
+              12,
+              13,
+              9,
+              15,
+              16,
+              17,
+              19
+            ],
+            "sorted_p": [
+              0.002347417840375587,
+              0.002347417840375587,
+              0.002347417840375587,
+              0.0784313725490196,
+              0.13725490196078433,
+              0.1568627450980392,
+              0.27450980392156865,
+              0.29411764705882354,
+              0.37254901960784315,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "crit_line": [
+              0.0025000000000000005,
+              0.005000000000000001,
+              0.0075,
+              0.010000000000000002,
+              0.0125,
+              0.015,
+              0.017499999999999998,
+              0.020000000000000004,
+              0.022500000000000003,
+              0.025,
+              0.027500000000000004,
+              0.03,
+              0.0325,
+              0.034999999999999996,
+              0.037500000000000006,
+              0.04000000000000001,
+              0.0425,
+              0.045000000000000005,
+              0.0475,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0,
+              7.0,
+              8.0,
+              9.0,
+              10.0,
+              11.0,
+              12.0,
+              13.0,
+              14.0,
+              15.0,
+              16.0,
+              17.0,
+              18.0,
+              19.0,
+              20.0
+            ]
+          },
+          "edges": [
+            {
+              "source": "BANK",
+              "target": "TECH",
+              "i": 0,
+              "j": 1,
+              "best_lag": 1,
+              "te_bivariate": 0.4455824905469227,
+              "thr_bivariate": 0.04568122471735024,
+              "p_bivariate": 0.002347417840375587,
+              "te_conditional": 0.19201405565309193,
+              "thr_conditional": 0.019885570506348326,
+              "p_conditional": 0.002347417840375587,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.009389671361502348,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.01564945226917058
+            },
+            {
+              "source": "BANK",
+              "target": "ENERGY",
+              "i": 0,
+              "j": 2,
+              "best_lag": 2,
+              "te_bivariate": 0.452557524977166,
+              "thr_bivariate": 0.05112889959420988,
+              "p_bivariate": 0.002347417840375587,
+              "te_conditional": 0.14211104886542741,
+              "thr_conditional": 0.019356461534997645,
+              "p_conditional": 0.002347417840375587,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.009389671361502348,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.01564945226917058
+            },
+            {
+              "source": "BANK",
+              "target": "CRYPTO",
+              "i": 0,
+              "j": 3,
+              "best_lag": 2,
+              "te_bivariate": 0.17353953260579438,
+              "thr_bivariate": 0.043720412111029165,
+              "p_bivariate": 0.002347417840375587,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.017428945776603484,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.009389671361502348,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "BANK",
+              "target": "BOND",
+              "i": 0,
+              "j": 4,
+              "best_lag": 3,
+              "te_bivariate": 0.030558219855484136,
+              "thr_bivariate": 0.04556951646911016,
+              "p_bivariate": 0.12206572769953052,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.018355962787630294,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.34875922199865866,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "TECH",
+              "target": "BANK",
+              "i": 1,
+              "j": 0,
+              "best_lag": 1,
+              "te_bivariate": 0.017730926003466246,
+              "thr_bivariate": 0.033193400349424654,
+              "p_bivariate": 0.23529411764705882,
+              "te_conditional": 0.013683496378719713,
+              "thr_conditional": 0.02028210402997821,
+              "p_conditional": 0.1568627450980392,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.42780748663101603,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.5228758169934641
+            },
+            {
+              "source": "TECH",
+              "target": "ENERGY",
+              "i": 1,
+              "j": 2,
+              "best_lag": 1,
+              "te_bivariate": 0.09959725230522458,
+              "thr_bivariate": 0.04384133144378145,
+              "p_bivariate": 0.002347417840375587,
+              "te_conditional": 0.015160698829009136,
+              "thr_conditional": 0.014516383974672514,
+              "p_conditional": 0.0784313725490196,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.009389671361502348,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.39215686274509803
+            },
+            {
+              "source": "TECH",
+              "target": "CRYPTO",
+              "i": 1,
+              "j": 3,
+              "best_lag": 1,
+              "te_bivariate": 0.41674518066981775,
+              "thr_bivariate": 0.04253435320698708,
+              "p_bivariate": 0.002347417840375587,
+              "te_conditional": 0.15762645844646433,
+              "thr_conditional": 0.02062528077419329,
+              "p_conditional": 0.002347417840375587,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.009389671361502348,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.01564945226917058
+            },
+            {
+              "source": "TECH",
+              "target": "BOND",
+              "i": 1,
+              "j": 4,
+              "best_lag": 2,
+              "te_bivariate": 0.007616166921256948,
+              "thr_bivariate": 0.03943713803323855,
+              "p_bivariate": 0.3333333333333333,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.02080601630401927,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.504201680672269,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "ENERGY",
+              "target": "BANK",
+              "i": 2,
+              "j": 0,
+              "best_lag": 1,
+              "te_bivariate": 0.0,
+              "thr_bivariate": 0.03679460911005462,
+              "p_bivariate": 1.0,
+              "te_conditional": 0.01573443320721935,
+              "thr_conditional": 0.020565657296879265,
+              "p_conditional": 0.13725490196078433,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 1.0,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.5228758169934641
+            },
+            {
+              "source": "ENERGY",
+              "target": "TECH",
+              "i": 2,
+              "j": 1,
+              "best_lag": 1,
+              "te_bivariate": 0.0,
+              "thr_bivariate": 0.03164372282558205,
+              "p_bivariate": 1.0,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.0233398925971194,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 1.0,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "ENERGY",
+              "target": "CRYPTO",
+              "i": 2,
+              "j": 3,
+              "best_lag": 1,
+              "te_bivariate": 0.023053304825438832,
+              "thr_bivariate": 0.02878365457608793,
+              "p_bivariate": 0.1568627450980392,
+              "te_conditional": 0.010235982012979837,
+              "thr_conditional": 0.024326483078991143,
+              "p_conditional": 0.29411764705882354,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.39215686274509803,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.7352941176470589
+            },
+            {
+              "source": "ENERGY",
+              "target": "BOND",
+              "i": 2,
+              "j": 4,
+              "best_lag": 2,
+              "te_bivariate": 0.024485505262130506,
+              "thr_bivariate": 0.0375483760138638,
+              "p_bivariate": 0.17647058823529413,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.020708596371146398,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.3921568627450981,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "CRYPTO",
+              "target": "BANK",
+              "i": 3,
+              "j": 0,
+              "best_lag": 3,
+              "te_bivariate": 0.005046166544150377,
+              "thr_bivariate": 0.03878032442619667,
+              "p_bivariate": 0.47058823529411764,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.0224131240576137,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.5536332179930796,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "CRYPTO",
+              "target": "TECH",
+              "i": 3,
+              "j": 1,
+              "best_lag": 1,
+              "te_bivariate": 0.010828563624233626,
+              "thr_bivariate": 0.03644072487619637,
+              "p_bivariate": 0.4117647058823529,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.019869688219641975,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.5147058823529411,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "CRYPTO",
+              "target": "ENERGY",
+              "i": 3,
+              "j": 2,
+              "best_lag": 2,
+              "te_bivariate": 0.010984671677681074,
+              "thr_bivariate": 0.05238566906644714,
+              "p_bivariate": 0.3333333333333333,
+              "te_conditional": 0.007521150315951891,
+              "thr_conditional": 0.015457595118356659,
+              "p_conditional": 0.27450980392156865,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.504201680672269,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.7352941176470589
+            },
+            {
+              "source": "CRYPTO",
+              "target": "BOND",
+              "i": 3,
+              "j": 4,
+              "best_lag": 1,
+              "te_bivariate": 0.0,
+              "thr_bivariate": 0.03787890182394084,
+              "p_bivariate": 1.0,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.020908332061024593,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 1.0,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "BOND",
+              "target": "BANK",
+              "i": 4,
+              "j": 0,
+              "best_lag": 3,
+              "te_bivariate": 0.012583981764354497,
+              "thr_bivariate": 0.03740064980363998,
+              "p_bivariate": 0.35294117647058826,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.013597309484491433,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.504201680672269,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "BOND",
+              "target": "TECH",
+              "i": 4,
+              "j": 1,
+              "best_lag": 2,
+              "te_bivariate": 0.0015774481675819864,
+              "thr_bivariate": 0.034912534487153396,
+              "p_bivariate": 0.39215686274509803,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.011646601322536525,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.5147058823529411,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "BOND",
+              "target": "ENERGY",
+              "i": 4,
+              "j": 2,
+              "best_lag": 2,
+              "te_bivariate": 0.019284268245373395,
+              "thr_bivariate": 0.03768397832394482,
+              "p_bivariate": 0.21568627450980393,
+              "te_conditional": 0.0020060765258261086,
+              "thr_conditional": 0.01933506657943446,
+              "p_conditional": 0.37254901960784315,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.42780748663101603,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.8278867102396514
+            },
+            {
+              "source": "BOND",
+              "target": "CRYPTO",
+              "i": 4,
+              "j": 3,
+              "best_lag": 2,
+              "te_bivariate": 0.033812732616612606,
+              "thr_bivariate": 0.05139299890400171,
+              "p_bivariate": 0.11032863849765258,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.02205516998022212,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.34875922199865866,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App3_Systems_Biology_Gene_Network.png",
+      "category": "Real-World Demo",
+      "focus": "App 2.3: Hill-function transcriptional cascade reconstruction (G1->G2->G3, G1-|G4)",
+      "parameters": {},
+      "metrics": {
+        "true_edges": [
+          [
+            "G1",
+            "G2"
+          ],
+          [
+            "G1",
+            "G4"
+          ],
+          [
+            "G2",
+            "G3"
+          ]
+        ],
+        "recovered_edges": [
+          [
+            "G1",
+            "G2"
+          ],
+          [
+            "G1",
+            "G4"
+          ],
+          [
+            "G2",
+            "G3"
+          ]
+        ],
+        "network": {
+          "nodes": [
+            "G1",
+            "G2",
+            "G3",
+            "G4",
+            "G5"
+          ],
+          "bivariate_te": [
+            [
+              0.0,
+              1.1617056930003864,
+              0.7218233600554679,
+              1.1536436070150968,
+              0.005857455070654771
+            ],
+            [
+              0.051817461602669514,
+              0.0,
+              1.0472720525576191,
+              0.049604241150174776,
+              0.028737114222862785
+            ],
+            [
+              0.0622943804281279,
+              0.019653960128183632,
+              0.0,
+              0.05602694980973021,
+              0.03571397593502022
+            ],
+            [
+              0.03385739541551485,
+              0.06360416724968855,
+              0.5876511327506982,
+              0.0,
+              0.042534753577160106
+            ],
+            [
+              0.03986081980993893,
+              0.01574786605412267,
+              0.034446870996709913,
+              0.02023324144540589,
+              0.0
+            ]
+          ],
+          "conditional_te": [
+            [
+              0.0,
+              0.5139146213726198,
+              0.006378187003797613,
+              0.5053713837725755,
+              0.0
+            ],
+            [
+              0.010416495599704726,
+              0.0,
+              0.10138542875795926,
+              0.0033665958788626793,
+              0.0
+            ],
+            [
+              0.00039965301885319166,
+              0.002240645418958234,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.00530870119379862,
+              0.0009430189761007519,
+              0.014973811990389774,
+              0.0,
+              0.0
+            ],
+            [
+              0.01818511636256987,
+              0.0011511297155956002,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "best_lags": [
+            [
+              0,
+              2,
+              4,
+              2,
+              3
+            ],
+            [
+              2,
+              0,
+              2,
+              1,
+              4
+            ],
+            [
+              4,
+              2,
+              0,
+              1,
+              2
+            ],
+            [
+              4,
+              2,
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              3,
+              2,
+              4,
+              0
+            ]
+          ],
+          "bivariate_p": [
+            [
+              1.0,
+              0.002347417840375587,
+              0.002347417840375587,
+              0.002347417840375587,
+              0.4117647058823529
+            ],
+            [
+              0.06103286384976526,
+              1.0,
+              0.002347417840375587,
+              0.01643192488262911,
+              0.3137254901960784
+            ],
+            [
+              0.007042253521126761,
+              0.23529411764705882,
+              1.0,
+              0.011737089201877934,
+              0.08685446009389672
+            ],
+            [
+              0.1056338028169014,
+              0.011737089201877934,
+              0.002347417840375587,
+              1.0,
+              0.0539906103286385
+            ],
+            [
+              0.04225352112676056,
+              0.2549019607843137,
+              0.1056338028169014,
+              0.19607843137254902,
+              1.0
+            ]
+          ],
+          "conditional_p": [
+            [
+              1.0,
+              0.002347417840375587,
+              0.0196078431372549,
+              0.002347417840375587,
+              1.0
+            ],
+            [
+              0.37254901960784315,
+              1.0,
+              0.002347417840375587,
+              0.09803921568627451,
+              1.0
+            ],
+            [
+              0.6470588235294118,
+              0.21568627450980393,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.49019607843137253,
+              0.23529411764705882,
+              0.0196078431372549,
+              1.0,
+              1.0
+            ],
+            [
+              0.17647058823529413,
+              0.17647058823529413,
+              1.0,
+              1.0,
+              1.0
+            ]
+          ],
+          "biv_fdr_mask": [
+            [
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              true,
+              true,
+              false
+            ],
+            [
+              true,
+              false,
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "cond_fdr_mask": [
+            [
+              false,
+              true,
+              false,
+              true,
+              false
+            ],
+            [
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "biv_fdr": {
+            "rejected": [
+              true,
+              true,
+              true,
+              false,
+              false,
+              true,
+              true,
+              false,
+              true,
+              false,
+              true,
+              false,
+              false,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "q_values": [
+              0.009389671361502348,
+              0.009389671361502348,
+              0.009389671361502348,
+              0.4117647058823529,
+              0.10172143974960877,
+              0.009389671361502348,
+              0.036515388628064686,
+              0.3302373581011352,
+              0.02347417840375587,
+              0.2768166089965398,
+              0.029342723004694836,
+              0.13362224629830266,
+              0.1408450704225352,
+              0.029342723004694836,
+              0.009389671361502348,
+              0.09816474605207,
+              0.08450704225352113,
+              0.28322440087145967,
+              0.1408450704225352,
+              0.24509803921568626
+            ],
+            "order": [
+              0,
+              1,
+              2,
+              5,
+              14,
+              8,
+              10,
+              13,
+              6,
+              16,
+              15,
+              4,
+              11,
+              12,
+              18,
+              19,
+              9,
+              17,
+              7,
+              3
+            ],
+            "sorted_p": [
+              0.002347417840375587,
+              0.002347417840375587,
+              0.002347417840375587,
+              0.002347417840375587,
+              0.002347417840375587,
+              0.007042253521126761,
+              0.011737089201877934,
+              0.011737089201877934,
+              0.01643192488262911,
+              0.04225352112676056,
+              0.0539906103286385,
+              0.06103286384976526,
+              0.08685446009389672,
+              0.1056338028169014,
+              0.1056338028169014,
+              0.19607843137254902,
+              0.23529411764705882,
+              0.2549019607843137,
+              0.3137254901960784,
+              0.4117647058823529
+            ],
+            "crit_line": [
+              0.0025000000000000005,
+              0.005000000000000001,
+              0.0075,
+              0.010000000000000002,
+              0.0125,
+              0.015,
+              0.017499999999999998,
+              0.020000000000000004,
+              0.022500000000000003,
+              0.025,
+              0.027500000000000004,
+              0.03,
+              0.0325,
+              0.034999999999999996,
+              0.037500000000000006,
+              0.04000000000000001,
+              0.0425,
+              0.045000000000000005,
+              0.0475,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0,
+              7.0,
+              8.0,
+              9.0,
+              10.0,
+              11.0,
+              12.0,
+              13.0,
+              14.0,
+              15.0,
+              16.0,
+              17.0,
+              18.0,
+              19.0,
+              20.0
+            ]
+          },
+          "cond_fdr": {
+            "rejected": [
+              true,
+              false,
+              true,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "q_values": [
+              0.01564945226917058,
+              0.0784313725490196,
+              0.01564945226917058,
+              1.0,
+              0.6773618538324421,
+              0.01564945226917058,
+              0.32679738562091504,
+              1.0,
+              0.995475113122172,
+              0.47058823529411764,
+              1.0,
+              1.0,
+              0.8169934640522875,
+              0.47058823529411764,
+              0.0784313725490196,
+              1.0,
+              0.44117647058823534,
+              0.44117647058823534,
+              1.0,
+              1.0
+            ],
+            "order": [
+              0,
+              2,
+              5,
+              1,
+              14,
+              6,
+              17,
+              16,
+              9,
+              13,
+              4,
+              12,
+              8,
+              10,
+              7,
+              3,
+              15,
+              11,
+              18,
+              19
+            ],
+            "sorted_p": [
+              0.002347417840375587,
+              0.002347417840375587,
+              0.002347417840375587,
+              0.0196078431372549,
+              0.0196078431372549,
+              0.09803921568627451,
+              0.17647058823529413,
+              0.17647058823529413,
+              0.21568627450980393,
+              0.23529411764705882,
+              0.37254901960784315,
+              0.49019607843137253,
+              0.6470588235294118,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "crit_line": [
+              0.0025000000000000005,
+              0.005000000000000001,
+              0.0075,
+              0.010000000000000002,
+              0.0125,
+              0.015,
+              0.017499999999999998,
+              0.020000000000000004,
+              0.022500000000000003,
+              0.025,
+              0.027500000000000004,
+              0.03,
+              0.0325,
+              0.034999999999999996,
+              0.037500000000000006,
+              0.04000000000000001,
+              0.0425,
+              0.045000000000000005,
+              0.0475,
+              0.05
+            ],
+            "ranks": [
+              1.0,
+              2.0,
+              3.0,
+              4.0,
+              5.0,
+              6.0,
+              7.0,
+              8.0,
+              9.0,
+              10.0,
+              11.0,
+              12.0,
+              13.0,
+              14.0,
+              15.0,
+              16.0,
+              17.0,
+              18.0,
+              19.0,
+              20.0
+            ]
+          },
+          "edges": [
+            {
+              "source": "G1",
+              "target": "G2",
+              "i": 0,
+              "j": 1,
+              "best_lag": 2,
+              "te_bivariate": 1.1617056930003864,
+              "thr_bivariate": 0.040651932152147206,
+              "p_bivariate": 0.002347417840375587,
+              "te_conditional": 0.5139146213726198,
+              "thr_conditional": 0.026515715088431913,
+              "p_conditional": 0.002347417840375587,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.009389671361502348,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.01564945226917058
+            },
+            {
+              "source": "G1",
+              "target": "G3",
+              "i": 0,
+              "j": 2,
+              "best_lag": 4,
+              "te_bivariate": 0.7218233600554679,
+              "thr_bivariate": 0.040752464020856624,
+              "p_bivariate": 0.002347417840375587,
+              "te_conditional": 0.006378187003797613,
+              "thr_conditional": 0.004986191098777144,
+              "p_conditional": 0.0196078431372549,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.009389671361502348,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.0784313725490196
+            },
+            {
+              "source": "G1",
+              "target": "G4",
+              "i": 0,
+              "j": 3,
+              "best_lag": 2,
+              "te_bivariate": 1.1536436070150968,
+              "thr_bivariate": 0.03785986026384023,
+              "p_bivariate": 0.002347417840375587,
+              "te_conditional": 0.5053713837725755,
+              "thr_conditional": 0.02073363994828105,
+              "p_conditional": 0.002347417840375587,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.009389671361502348,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.01564945226917058
+            },
+            {
+              "source": "G1",
+              "target": "G5",
+              "i": 0,
+              "j": 4,
+              "best_lag": 3,
+              "te_bivariate": 0.005857455070654771,
+              "thr_bivariate": 0.04190992016257772,
+              "p_bivariate": 0.4117647058823529,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.024165195046283887,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.4117647058823529,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "G2",
+              "target": "G1",
+              "i": 1,
+              "j": 0,
+              "best_lag": 2,
+              "te_bivariate": 0.051817461602669514,
+              "thr_bivariate": 0.053494346971144455,
+              "p_bivariate": 0.06103286384976526,
+              "te_conditional": 0.010416495599704726,
+              "thr_conditional": 0.030487216199995705,
+              "p_conditional": 0.37254901960784315,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.10172143974960877,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.6773618538324421
+            },
+            {
+              "source": "G2",
+              "target": "G3",
+              "i": 1,
+              "j": 2,
+              "best_lag": 2,
+              "te_bivariate": 1.0472720525576191,
+              "thr_bivariate": 0.046175894365878,
+              "p_bivariate": 0.002347417840375587,
+              "te_conditional": 0.10138542875795926,
+              "thr_conditional": 0.013293719313717112,
+              "p_conditional": 0.002347417840375587,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.009389671361502348,
+              "cond_significant_fdr": 1,
+              "cond_q_value": 0.01564945226917058
+            },
+            {
+              "source": "G2",
+              "target": "G4",
+              "i": 1,
+              "j": 3,
+              "best_lag": 1,
+              "te_bivariate": 0.049604241150174776,
+              "thr_bivariate": 0.04053490510838027,
+              "p_bivariate": 0.01643192488262911,
+              "te_conditional": 0.0033665958788626793,
+              "thr_conditional": 0.005692835280943137,
+              "p_conditional": 0.09803921568627451,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.036515388628064686,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.32679738562091504
+            },
+            {
+              "source": "G2",
+              "target": "G5",
+              "i": 1,
+              "j": 4,
+              "best_lag": 4,
+              "te_bivariate": 0.028737114222862785,
+              "thr_bivariate": 0.04876682091008296,
+              "p_bivariate": 0.3137254901960784,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.019759077662841597,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.3302373581011352,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "G3",
+              "target": "G1",
+              "i": 2,
+              "j": 0,
+              "best_lag": 4,
+              "te_bivariate": 0.0622943804281279,
+              "thr_bivariate": 0.04590284721312325,
+              "p_bivariate": 0.007042253521126761,
+              "te_conditional": 0.00039965301885319166,
+              "thr_conditional": 0.022583590738549417,
+              "p_conditional": 0.6470588235294118,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.02347417840375587,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.995475113122172
+            },
+            {
+              "source": "G3",
+              "target": "G2",
+              "i": 2,
+              "j": 1,
+              "best_lag": 2,
+              "te_bivariate": 0.019653960128183632,
+              "thr_bivariate": 0.03949600204922058,
+              "p_bivariate": 0.23529411764705882,
+              "te_conditional": 0.002240645418958234,
+              "thr_conditional": 0.00548107714802121,
+              "p_conditional": 0.21568627450980393,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.2768166089965398,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.47058823529411764
+            },
+            {
+              "source": "G3",
+              "target": "G4",
+              "i": 2,
+              "j": 3,
+              "best_lag": 1,
+              "te_bivariate": 0.05602694980973021,
+              "thr_bivariate": 0.03953697242301319,
+              "p_bivariate": 0.011737089201877934,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.01240606150154846,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.029342723004694836,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "G3",
+              "target": "G5",
+              "i": 2,
+              "j": 4,
+              "best_lag": 2,
+              "te_bivariate": 0.03571397593502022,
+              "thr_bivariate": 0.04297744260509489,
+              "p_bivariate": 0.08685446009389672,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.015651593393409494,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.13362224629830266,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "G4",
+              "target": "G1",
+              "i": 3,
+              "j": 0,
+              "best_lag": 4,
+              "te_bivariate": 0.03385739541551485,
+              "thr_bivariate": 0.04264047583778608,
+              "p_bivariate": 0.1056338028169014,
+              "te_conditional": 0.00530870119379862,
+              "thr_conditional": 0.024877704053816535,
+              "p_conditional": 0.49019607843137253,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.1408450704225352,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.8169934640522875
+            },
+            {
+              "source": "G4",
+              "target": "G2",
+              "i": 3,
+              "j": 1,
+              "best_lag": 2,
+              "te_bivariate": 0.06360416724968855,
+              "thr_bivariate": 0.03723729535325336,
+              "p_bivariate": 0.011737089201877934,
+              "te_conditional": 0.0009430189761007519,
+              "thr_conditional": 0.00725921562578621,
+              "p_conditional": 0.23529411764705882,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.029342723004694836,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.47058823529411764
+            },
+            {
+              "source": "G4",
+              "target": "G3",
+              "i": 3,
+              "j": 2,
+              "best_lag": 2,
+              "te_bivariate": 0.5876511327506982,
+              "thr_bivariate": 0.04256276216652577,
+              "p_bivariate": 0.002347417840375587,
+              "te_conditional": 0.014973811990389774,
+              "thr_conditional": 0.00447816894827501,
+              "p_conditional": 0.0196078431372549,
+              "biv_significant_fdr": 1,
+              "biv_q_value": 0.009389671361502348,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.0784313725490196
+            },
+            {
+              "source": "G4",
+              "target": "G5",
+              "i": 3,
+              "j": 4,
+              "best_lag": 2,
+              "te_bivariate": 0.042534753577160106,
+              "thr_bivariate": 0.04317423328542771,
+              "p_bivariate": 0.0539906103286385,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.024962652918338,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.09816474605207,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "G5",
+              "target": "G1",
+              "i": 4,
+              "j": 0,
+              "best_lag": 1,
+              "te_bivariate": 0.03986081980993893,
+              "thr_bivariate": 0.03765400268398827,
+              "p_bivariate": 0.04225352112676056,
+              "te_conditional": 0.01818511636256987,
+              "thr_conditional": 0.02943671293409498,
+              "p_conditional": 0.17647058823529413,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.08450704225352113,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.44117647058823534
+            },
+            {
+              "source": "G5",
+              "target": "G2",
+              "i": 4,
+              "j": 1,
+              "best_lag": 3,
+              "te_bivariate": 0.01574786605412267,
+              "thr_bivariate": 0.042622093314811246,
+              "p_bivariate": 0.2549019607843137,
+              "te_conditional": 0.0011511297155956002,
+              "thr_conditional": 0.004300069869326865,
+              "p_conditional": 0.17647058823529413,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.28322440087145967,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 0.44117647058823534
+            },
+            {
+              "source": "G5",
+              "target": "G3",
+              "i": 4,
+              "j": 2,
+              "best_lag": 2,
+              "te_bivariate": 0.034446870996709913,
+              "thr_bivariate": 0.04352301675509223,
+              "p_bivariate": 0.1056338028169014,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.0075984723784932855,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.1408450704225352,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            },
+            {
+              "source": "G5",
+              "target": "G4",
+              "i": 4,
+              "j": 3,
+              "best_lag": 4,
+              "te_bivariate": 0.02023324144540589,
+              "thr_bivariate": 0.03443341841831143,
+              "p_bivariate": 0.19607843137254902,
+              "te_conditional": 0.0,
+              "thr_conditional": 0.011324165580041748,
+              "p_conditional": 1.0,
+              "biv_significant_fdr": 0,
+              "biv_q_value": 0.24509803921568626,
+              "cond_significant_fdr": 0,
+              "cond_q_value": 1.0
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "gifs": [
+    "animations/01_wibral_delay_scan_and_filtering.gif",
+    "animations/02_brain_connectome_neural_dynamics.gif"
+  ]
+}

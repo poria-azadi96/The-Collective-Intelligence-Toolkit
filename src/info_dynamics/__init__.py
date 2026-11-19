@@ -1,1 +1,55 @@
-# Package initialization
+"""Information Dynamics package (Modules 01 & 02): Shannon, PID, Landauer & Transfer Entropy."""
+
+from core.info_theory_pid import (
+    K_BOLTZMANN,
+    binary_entropy,
+    build_joint_distribution,
+    circular_nonlinearity_benchmark,
+    compute_gaussian_pid,
+    compute_pid_williams_beer,
+    compute_specific_information,
+    conditional_entropy,
+    evaluate_mechanism_pid,
+    joint_entropy,
+    kl_divergence,
+    landauer_erasure_energy,
+    mutual_information,
+    self_information,
+    shannon_entropy,
+)
+from core.transfer_entropy import (
+    benjamini_hochberg_fdr,
+    compute_information_dynamics,
+    compute_transfer_entropy,
+    generate_synthetic_motif,
+    infer_directed_network,
+    ksg_conditional_mi,
+    ksg_mi,
+    surrogate_significance_test,
+)
+
+__all__ = [
+    "K_BOLTZMANN",
+    "benjamini_hochberg_fdr",
+    "binary_entropy",
+    "build_joint_distribution",
+    "circular_nonlinearity_benchmark",
+    "compute_gaussian_pid",
+    "compute_information_dynamics",
+    "compute_pid_williams_beer",
+    "compute_specific_information",
+    "compute_transfer_entropy",
+    "conditional_entropy",
+    "evaluate_mechanism_pid",
+    "generate_synthetic_motif",
+    "infer_directed_network",
+    "joint_entropy",
+    "kl_divergence",
+    "ksg_conditional_mi",
+    "ksg_mi",
+    "landauer_erasure_energy",
+    "mutual_information",
+    "self_information",
+    "shannon_entropy",
+    "surrogate_significance_test",
+]

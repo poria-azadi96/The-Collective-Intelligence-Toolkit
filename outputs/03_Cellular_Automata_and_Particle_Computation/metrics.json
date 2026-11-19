@@ -1,0 +1,386 @@
+{
+  "module": "03_Cellular_Automata_and_Particle_Computation",
+  "title": "Module 03: Cellular Automata & Emergent Particle Computation",
+  "records": [
+    {
+      "file": "01_Rule54_Domain_Filter_and_Collisions/01_Rule54_collision_setup_filtered.png",
+      "category": "Baseline Dashboard",
+      "focus": "Rule 54 Collision Setup + 5-State Hanson-Crutchfield FST Domain Filter",
+      "parameters": {
+        "rule_number": 54,
+        "init_type": "collision_setup",
+        "show_filter": true
+      },
+      "metrics": {
+        "rule": 54,
+        "lambda": 0.5,
+        "class": "Class IV",
+        "final_hamming": 0.05,
+        "mean_hamming": 0.04619791666666668,
+        "defect_fraction": 0.014114583333333333,
+        "n_collisions": 2
+      }
+    },
+    {
+      "file": "01_Rule54_Domain_Filter_and_Collisions/02_Rule54_random_init_filtered.png",
+      "category": "Baseline Dashboard",
+      "focus": "Rule 54 Random Init + FST Domain Filter (spontaneous ether & collisions)",
+      "parameters": {
+        "rule_number": 54,
+        "init_type": "random",
+        "show_filter": true
+      },
+      "metrics": {
+        "rule": 54,
+        "lambda": 0.5,
+        "class": "Class IV",
+        "final_hamming": 0.3875,
+        "mean_hamming": 0.19171875000000002,
+        "defect_fraction": 0.32104166666666667,
+        "n_collisions": 135
+      }
+    },
+    {
+      "file": "01_Rule54_Domain_Filter_and_Collisions/03_Rule54_collision_setup_perturbation.png",
+      "category": "Baseline Dashboard",
+      "focus": "Rule 54 Collision Setup + Single-Bit Perturbation Damage Cone",
+      "parameters": {
+        "rule_number": 54,
+        "init_type": "collision_setup",
+        "show_filter": false
+      },
+      "metrics": {
+        "rule": 54,
+        "lambda": 0.5,
+        "class": "Class IV",
+        "final_hamming": 0.05,
+        "mean_hamming": 0.04619791666666668
+      }
+    },
+    {
+      "file": "01_Rule54_Domain_Filter_and_Collisions/04_Rule54_single_seed_perturbation.png",
+      "category": "Baseline Dashboard",
+      "focus": "Rule 54 Single Seed + Perturbation Cone",
+      "parameters": {
+        "rule_number": 54,
+        "init_type": "single_seed",
+        "show_filter": false
+      },
+      "metrics": {
+        "rule": 54,
+        "lambda": 0.5,
+        "class": "Class IV",
+        "final_hamming": 0.75,
+        "mean_hamming": 0.3375
+      }
+    },
+    {
+      "file": "02_Wolfram_Classes_Comparison/05_Rule110_Turing_Universal_random.png",
+      "category": "Baseline Dashboard",
+      "focus": "Rule 110 (Class IV Universal) Random Init + Period-14 Ether Filter",
+      "parameters": {
+        "rule_number": 110,
+        "init_type": "random",
+        "show_filter": true
+      },
+      "metrics": {
+        "rule": 110,
+        "lambda": 0.625,
+        "class": "Class IV",
+        "final_hamming": 0.2375,
+        "mean_hamming": 0.14010416666666667,
+        "defect_fraction": 0.5175,
+        "n_collisions": 325
+      }
+    },
+    {
+      "file": "02_Wolfram_Classes_Comparison/06_Rule110_Turing_Universal_single_seed.png",
+      "category": "Baseline Dashboard",
+      "focus": "Rule 110 (Class IV) Asymmetric Evolution from Single Seed",
+      "parameters": {
+        "rule_number": 110,
+        "init_type": "single_seed",
+        "show_filter": false
+      },
+      "metrics": {
+        "rule": 110,
+        "lambda": 0.625,
+        "class": "Class IV",
+        "final_hamming": 0.4625,
+        "mean_hamming": 0.21588541666666666
+      }
+    },
+    {
+      "file": "02_Wolfram_Classes_Comparison/07_Rule30_Chaotic_single_seed.png",
+      "category": "Baseline Dashboard",
+      "focus": "Rule 30 (Class III Chaotic) Single Seed + Light-Cone Damage",
+      "parameters": {
+        "rule_number": 30,
+        "init_type": "single_seed",
+        "show_filter": false
+      },
+      "metrics": {
+        "rule": 30,
+        "lambda": 0.5,
+        "class": "Class III",
+        "final_hamming": 0.4875,
+        "mean_hamming": 0.34171875
+      }
+    },
+    {
+      "file": "02_Wolfram_Classes_Comparison/08_Rule30_Chaotic_random.png",
+      "category": "Baseline Dashboard",
+      "focus": "Rule 30 (Class III Chaotic) Random Init + Rapid Butterfly Effect",
+      "parameters": {
+        "rule_number": 30,
+        "init_type": "random",
+        "show_filter": false
+      },
+      "metrics": {
+        "rule": 30,
+        "lambda": 0.5,
+        "class": "Class III",
+        "final_hamming": 0.45,
+        "mean_hamming": 0.21869791666666666
+      }
+    },
+    {
+      "file": "02_Wolfram_Classes_Comparison/09_Rule90_Fractal_Linear_single_seed.png",
+      "category": "Baseline Dashboard",
+      "focus": "Rule 90 (Additive Sierpinski Fractal) Single Seed + XOR Cone",
+      "parameters": {
+        "rule_number": 90,
+        "init_type": "single_seed",
+        "show_filter": false
+      },
+      "metrics": {
+        "rule": 90,
+        "lambda": 0.5,
+        "class": "Class II/Fractal",
+        "final_hamming": 0.1,
+        "mean_hamming": 0.07453125000000001
+      }
+    },
+    {
+      "file": "02_Wolfram_Classes_Comparison/10_Rule90_Fractal_Linear_random.png",
+      "category": "Baseline Dashboard",
+      "focus": "Rule 90 (Additive Linear) Random Init + Deterministic XOR Cone",
+      "parameters": {
+        "rule_number": 90,
+        "init_type": "random",
+        "show_filter": false
+      },
+      "metrics": {
+        "rule": 90,
+        "lambda": 0.5,
+        "class": "Class II/Fractal",
+        "final_hamming": 0.1,
+        "mean_hamming": 0.07453125000000001
+      }
+    },
+    {
+      "file": "02_Wolfram_Classes_Comparison/11_Rule108_ClassII_Periodic.png",
+      "category": "Baseline Dashboard",
+      "focus": "Rule 108 (Class II Periodic / Localized Structures)",
+      "parameters": {
+        "rule_number": 108,
+        "init_type": "random",
+        "show_filter": false
+      },
+      "metrics": {
+        "rule": 108,
+        "lambda": 0.5,
+        "class": "Class II",
+        "final_hamming": 0.00625,
+        "mean_hamming": 0.006250000000000001
+      }
+    },
+    {
+      "file": "02_Wolfram_Classes_Comparison/12_Rule254_ClassI_Homogeneous.png",
+      "category": "Baseline Dashboard",
+      "focus": "Rule 254 (Class I Homogeneous Fixed Point)",
+      "parameters": {
+        "rule_number": 254,
+        "init_type": "random",
+        "show_filter": false
+      },
+      "metrics": {
+        "rule": 254,
+        "lambda": 0.875,
+        "class": "Class I",
+        "final_hamming": 0.0,
+        "mean_hamming": 0.0004166666666666667
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier1_Observation_Rule54_FST_Toggle.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 1: Rule 54 FST Filter OFF vs ON exposing gamma+/gamma- gliders & collision vertices",
+      "parameters": {},
+      "metrics": {
+        "defect_fraction": 0.018055555555555554,
+        "n_collisions": 2,
+        "collision_vertices": [
+          [
+            35.0,
+            70.0
+          ],
+          [
+            41.0,
+            62.0
+          ]
+        ],
+        "fst_defect_state_pct": 0.018055555555555554
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier2_Analysis_Rule54_Density_Slopes.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 2: Rule 54 random-init particle density decay & velocity slope verification",
+      "parameters": {},
+      "metrics": {
+        "initial_density": 0.40555555555555556,
+        "final_density": 0.21666666666666667,
+        "n_collisions": 207
+      }
+    },
+    {
+      "file": "03_3Tier_Protocol/Tier3_DamageSpreading_90_30_110.png",
+      "category": "3-Tier Protocol",
+      "focus": "Tier 3: XOR damage spreading cones & H(t) across Rule 90, Rule 30, and Rule 110",
+      "parameters": {},
+      "metrics": {
+        "90": {
+          "final_hamming": 0.22695035460992907,
+          "mean_hamming": 0.093036750483559
+        },
+        "30": {
+          "final_hamming": 0.4397163120567376,
+          "mean_hamming": 0.2696969696969697
+        },
+        "110": {
+          "final_hamming": 0.028368794326241134,
+          "mean_hamming": 0.01908446163765312
+        }
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App1_Excitable_BZ_Spiral_Waves.png",
+      "category": "Real-World Demo",
+      "focus": "App 3.1: 2D Belousov-Zhabotinsky chemical spiral waves & cardiac reentry",
+      "parameters": {},
+      "metrics": {
+        "peak_excited_fraction": 0.012471655328798186,
+        "final_excited_fraction": 0.011621315192743764
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App2_Traffic_Rule184_Nagel_Schreckenberg.png",
+      "category": "Real-World Demo",
+      "focus": "App 3.2: Rule 184 & Nagel-Schreckenberg fundamental diagram & phantom jams",
+      "parameters": {},
+      "metrics": {
+        "densities": [
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.39999999999999997,
+          0.44999999999999996,
+          0.49999999999999994,
+          0.5499999999999999,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.7999999999999999,
+          0.85,
+          0.9,
+          0.95
+        ],
+        "flux_rule184": [
+          0.049999999999999954,
+          0.09999999999999991,
+          0.1500000000000002,
+          0.19999999999999982,
+          0.25,
+          0.3000000000000004,
+          0.3500000000000002,
+          0.39999999999999963,
+          0.4499999999999995,
+          0.49347222222222237,
+          0.4454166666666662,
+          0.3990277777777775,
+          0.3500000000000002,
+          0.3000000000000004,
+          0.25,
+          0.19999999999999982,
+          0.1500000000000002,
+          0.09999999999999991,
+          0.049999999999999954
+        ],
+        "flux_nagel_schreckenberg": [
+          0.23637387387387382,
+          0.4681306306306306,
+          0.4317567567567568,
+          0.38885135135135124,
+          0.4540540540540542,
+          0.3984234234234235,
+          0.3675675675675674,
+          0.3516891891891892,
+          0.32961711711711716,
+          0.2915540540540541,
+          0.2769144144144144,
+          0.25281531531531537,
+          0.22274774774774772,
+          0.19887387387387384,
+          0.15912162162162166,
+          0.13243243243243247,
+          0.09842342342342342,
+          0.06903153153153156,
+          0.033783783783783765
+        ],
+        "max_flux_r184": 0.49347222222222237,
+        "max_flux_ns": 0.4681306306306306
+      }
+    },
+    {
+      "file": "04_Real_World_Applications/App3_Neuromorphic_Glider_Parity_Circuit.png",
+      "category": "Real-World Demo",
+      "focus": "App 3.3: Decentralized clock-driven glider-collision XOR parity circuit",
+      "parameters": {},
+      "metrics": {
+        "(0,0)": {
+          "output": 0,
+          "expected": 0,
+          "correct": 1
+        },
+        "(0,1)": {
+          "output": 1,
+          "expected": 1,
+          "correct": 1
+        },
+        "(1,0)": {
+          "output": 1,
+          "expected": 1,
+          "correct": 1
+        },
+        "(1,1)": {
+          "output": 0,
+          "expected": 0,
+          "correct": 1
+        }
+      }
+    }
+  ],
+  "gifs": [
+    "animations/01_rule54_domain_filter_and_collisions.gif",
+    "animations/02_wolfram_classes_damage_cone.gif",
+    "animations/03_belousov_zhabotinsky_spiral_waves.gif",
+    "animations/04_traffic_rule184_nagel_schreckenberg_jams.gif",
+    "animations/05_neuromorphic_glider_parity_circuit.gif"
+  ]
+}

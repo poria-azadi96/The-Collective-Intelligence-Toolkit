@@ -1,0 +1,906 @@
+[
+  {
+    "module": "00_Pre_Workshop_Primer",
+    "rel_png": "01_fixed_point_r2.80_tau1_p0.10.png",
+    "focus": "Fixed-point convergence (r=2.80) & skewed low-entropy binary source (p=0.10)",
+    "kwargs": {
+      "r_growth": 2.8,
+      "lag_tau": 1,
+      "p_coin": 0.1
+    },
+    "stdout": "Lagged Covariance Cov(X_{t-1}, X_t) = 0.0005 | Shannon Entropy = 0.4690 bits"
+  },
+  {
+    "module": "00_Pre_Workshop_Primer",
+    "rel_png": "02_period2_oscillation_r3.20_tau1_p0.50.png",
+    "focus": "Period-2 limit cycle (r=3.20) & maximum binary Shannon entropy (p=0.50)",
+    "kwargs": {
+      "r_growth": 3.2,
+      "lag_tau": 1,
+      "p_coin": 0.5
+    },
+    "stdout": "Lagged Covariance Cov(X_{t-1}, X_t) = -0.0200 | Shannon Entropy = 1.0000 bits"
+  },
+  {
+    "module": "00_Pre_Workshop_Primer",
+    "rel_png": "03_period4_bifurcation_r3.52_tau2_p0.80.png",
+    "focus": "Period-4 oscillation (r=3.52), lag tau=2 embedding & symmetric entropy (p=0.80)",
+    "kwargs": {
+      "r_growth": 3.52,
+      "lag_tau": 2,
+      "p_coin": 0.8
+    },
+    "stdout": "Lagged Covariance Cov(X_{t-2}, X_t) = 0.0387 | Shannon Entropy = 0.7219 bits"
+  },
+  {
+    "module": "00_Pre_Workshop_Primer",
+    "rel_png": "04_chaos_default_r3.75_tau1_p0.50.png",
+    "focus": "Chaotic trajectory (r=3.75) & lag-1 parabolic attractor reconstruction",
+    "kwargs": {
+      "r_growth": 3.75,
+      "lag_tau": 1,
+      "p_coin": 0.5
+    },
+    "stdout": "Lagged Covariance Cov(X_{t-1}, X_t) = -0.0410 | Shannon Entropy = 1.0000 bits"
+  },
+  {
+    "module": "00_Pre_Workshop_Primer",
+    "rel_png": "05_deep_chaos_folded_attractor_r3.95_tau2_p0.50.png",
+    "focus": "Deep chaos (r=3.95) & lag-2 folded portrait showing nonlinear structure with near-zero linear correlation",
+    "kwargs": {
+      "r_growth": 3.95,
+      "lag_tau": 2,
+      "p_coin": 0.5
+    },
+    "stdout": "Lagged Covariance Cov(X_{t-2}, X_t) = -0.0094 | Shannon Entropy = 1.0000 bits"
+  },
+  {
+    "module": "01_Information_Theory_and_PID",
+    "rel_png": "01_Logic_Gates_Baseline/01_XOR_pure_synergy.png",
+    "focus": "XOR Gate: zero pairwise MI yet 1.0 bit Pure Synergy",
+    "kwargs": {
+      "gate_type": "XOR",
+      "input_corr": 0.0,
+      "noise_prob": 0.0
+    },
+    "stdout": "H(Y)=1.0000 b | Joint MI=1.0000 b | Synergy=1.0000 b"
+  },
+  {
+    "module": "01_Information_Theory_and_PID",
+    "rel_png": "01_Logic_Gates_Baseline/02_AND_redundancy_and_synergy.png",
+    "focus": "AND Gate: coexistence of Redundancy and Synergy",
+    "kwargs": {
+      "gate_type": "AND",
+      "input_corr": 0.0,
+      "noise_prob": 0.0
+    },
+    "stdout": "H(Y)=0.8113 b | Joint MI=0.8113 b | Synergy=0.5000 b"
+  },
+  {
+    "module": "01_Information_Theory_and_PID",
+    "rel_png": "01_Logic_Gates_Baseline/03_OR_redundancy_and_synergy.png",
+    "focus": "OR Gate: coexistence of Redundancy and Synergy",
+    "kwargs": {
+      "gate_type": "OR",
+      "input_corr": 0.0,
+      "noise_prob": 0.0
+    },
+    "stdout": "H(Y)=0.8113 b | Joint MI=0.8113 b | Synergy=0.5000 b"
+  },
+  {
+    "module": "01_Information_Theory_and_PID",
+    "rel_png": "01_Logic_Gates_Baseline/04_COPY_X1_unique_information.png",
+    "focus": "COPY_X1 Gate: 1.0 bit Unique Information in X1 when inputs are independent",
+    "kwargs": {
+      "gate_type": "COPY_X1",
+      "input_corr": 0.0,
+      "noise_prob": 0.0
+    },
+    "stdout": "H(Y)=1.0000 b | Joint MI=1.0000 b | Synergy=0.0000 b"
+  },
+  {
+    "module": "01_Information_Theory_and_PID",
+    "rel_png": "02_Correlation_and_Noise_Effects/05_COPY_X1_correlated_inputs_corr0.70.png",
+    "focus": "Correlated COPY_X1 (corr=0.70): input correlation converts Unique info into Redundancy",
+    "kwargs": {
+      "gate_type": "COPY_X1",
+      "input_corr": 0.7,
+      "noise_prob": 0.0
+    },
+    "stdout": "H(Y)=1.0000 b | Joint MI=1.0000 b | Synergy=0.0000 b"
+  },
+  {
+    "module": "01_Information_Theory_and_PID",
+    "rel_png": "02_Correlation_and_Noise_Effects/06_XOR_correlated_inputs_corr0.70.png",
+    "focus": "Correlated XOR (corr=0.70): reduced output entropy H(Y) and altered synergy",
+    "kwargs": {
+      "gate_type": "XOR",
+      "input_corr": 0.7,
+      "noise_prob": 0.0
+    },
+    "stdout": "H(Y)=0.6098 b | Joint MI=0.6098 b | Synergy=0.6098 b"
+  },
+  {
+    "module": "01_Information_Theory_and_PID",
+    "rel_png": "02_Correlation_and_Noise_Effects/07_XOR_anticorrelated_inputs_corr-0.70.png",
+    "focus": "Anti-correlated XOR (corr=-0.70): input anti-correlation effects on PID atoms",
+    "kwargs": {
+      "gate_type": "XOR",
+      "input_corr": -0.7,
+      "noise_prob": 0.0
+    },
+    "stdout": "H(Y)=0.6098 b | Joint MI=0.6098 b | Synergy=0.6098 b"
+  },
+  {
+    "module": "01_Information_Theory_and_PID",
+    "rel_png": "02_Correlation_and_Noise_Effects/08_XOR_noisy_channel_noise0.20.png",
+    "focus": "Noisy XOR (noise=0.20): stochastic channel degradation of Synergy",
+    "kwargs": {
+      "gate_type": "XOR",
+      "input_corr": 0.0,
+      "noise_prob": 0.2
+    },
+    "stdout": "H(Y)=1.0000 b | Joint MI=0.2781 b | Synergy=0.2781 b"
+  },
+  {
+    "module": "01_Information_Theory_and_PID",
+    "rel_png": "02_Correlation_and_Noise_Effects/09_AND_noisy_channel_noise0.15.png",
+    "focus": "Noisy AND (noise=0.15): channel noise attenuating redundancy and synergy",
+    "kwargs": {
+      "gate_type": "AND",
+      "input_corr": 0.0,
+      "noise_prob": 0.15
+    },
+    "stdout": "H(Y)=0.9097 b | Joint MI=0.2999 b | Synergy=0.1951 b"
+  },
+  {
+    "module": "02_Transfer_Entropy_and_Network_Inference",
+    "rel_png": "01_Causal_Motifs/01_Direct_Coupling_c0.70_n450.png",
+    "focus": "Direct Coupling (X -> Y at lag u=2): true link peaks at u=2 and survives conditioning",
+    "kwargs": {
+      "motif_type": "Direct_Coupling",
+      "coupling": 0.7,
+      "n_samples": 450
+    },
+    "stdout": "Motif: Direct_Coupling | Lag u=2 | Bivariate TE=0.4365 (p=0.038) | Conditional TE=0.4204 (p=0.038)"
+  },
+  {
+    "module": "02_Transfer_Entropy_and_Network_Inference",
+    "rel_png": "01_Causal_Motifs/02_Indirect_Cascade_c0.70_n450.png",
+    "focus": "Indirect Cascade (X -> Z -> Y): Conditional TE | Z filters indirect path",
+    "kwargs": {
+      "motif_type": "Indirect_Cascade",
+      "coupling": 0.7,
+      "n_samples": 450
+    },
+    "stdout": "Motif: Indirect_Cascade | Lag u=2 | Bivariate TE=0.2346 (p=0.038) | Conditional TE=0.0000 (p=1.000)"
+  },
+  {
+    "module": "02_Transfer_Entropy_and_Network_Inference",
+    "rel_png": "01_Causal_Motifs/03_Common_Driver_c0.70_n450.png",
+    "focus": "Common Driver (Z -> X, Y): Conditional TE | Z removes spurious bivariate link",
+    "kwargs": {
+      "motif_type": "Common_Driver",
+      "coupling": 0.7,
+      "n_samples": 450
+    },
+    "stdout": "Motif: Common_Driver | Lag u=1 | Bivariate TE=0.1293 (p=0.038) | Conditional TE=0.0798 (p=0.038)"
+  },
+  {
+    "module": "02_Transfer_Entropy_and_Network_Inference",
+    "rel_png": "01_Causal_Motifs/04_Unobserved_Confounder_c0.70_n450.png",
+    "focus": "Unobserved Confounder (hidden U -> X, Y): failure mode where conditioning on Z cannot remove spurious link",
+    "kwargs": {
+      "motif_type": "Unobserved_Confounder",
+      "coupling": 0.7,
+      "n_samples": 450
+    },
+    "stdout": "Motif: Unobserved_Confounder | Lag u=1 | Bivariate TE=0.1990 (p=0.038) | Conditional TE=0.1923 (p=0.038)"
+  },
+  {
+    "module": "02_Transfer_Entropy_and_Network_Inference",
+    "rel_png": "02_Sensitivity_Coupling_and_SampleSize/05_Direct_Coupling_weak_c0.30_n450.png",
+    "focus": "Weak Direct Coupling (c=0.30): reduced TE approaching surrogate null floor",
+    "kwargs": {
+      "motif_type": "Direct_Coupling",
+      "coupling": 0.3,
+      "n_samples": 450
+    },
+    "stdout": "Motif: Direct_Coupling | Lag u=2 | Bivariate TE=0.1178 (p=0.038) | Conditional TE=0.0893 (p=0.038)"
+  },
+  {
+    "module": "02_Transfer_Entropy_and_Network_Inference",
+    "rel_png": "02_Sensitivity_Coupling_and_SampleSize/06_Direct_Coupling_strong_c0.85_n450.png",
+    "focus": "Strong Direct Coupling (c=0.85): sharp delay peak at u=2 well above null",
+    "kwargs": {
+      "motif_type": "Direct_Coupling",
+      "coupling": 0.85,
+      "n_samples": 450
+    },
+    "stdout": "Motif: Direct_Coupling | Lag u=2 | Bivariate TE=0.5627 (p=0.038) | Conditional TE=0.5140 (p=0.038)"
+  },
+  {
+    "module": "02_Transfer_Entropy_and_Network_Inference",
+    "rel_png": "02_Sensitivity_Coupling_and_SampleSize/07_Common_Driver_small_sample_n250.png",
+    "focus": "Small Sample Regime (n=250): elevated surrogate variance on Common Driver",
+    "kwargs": {
+      "motif_type": "Common_Driver",
+      "coupling": 0.7,
+      "n_samples": 250
+    },
+    "stdout": "Motif: Common_Driver | Lag u=1 | Bivariate TE=0.1400 (p=0.038) | Conditional TE=0.0446 (p=0.154)"
+  },
+  {
+    "module": "02_Transfer_Entropy_and_Network_Inference",
+    "rel_png": "02_Sensitivity_Coupling_and_SampleSize/08_Direct_Coupling_large_sample_n800.png",
+    "focus": "Large Sample Regime (n=800): tight surrogate cutoff and clean lag resolution",
+    "kwargs": {
+      "motif_type": "Direct_Coupling",
+      "coupling": 0.7,
+      "n_samples": 800
+    },
+    "stdout": "Motif: Direct_Coupling | Lag u=2 | Bivariate TE=0.4717 (p=0.038) | Conditional TE=0.4134 (p=0.038)"
+  },
+  {
+    "module": "03_Cellular_Automata_and_Particle_Computation",
+    "rel_png": "01_Rule54_Domain_Filter_and_Collisions/01_Rule54_collision_setup_filtered.png",
+    "focus": "Rule 54 Collision Setup + Hanson-Crutchfield Domain Filter (particles & vertices)",
+    "kwargs": {
+      "rule_number": 54,
+      "init_type": "collision_setup",
+      "show_filter": true
+    },
+    "stdout": "=====================================================================================\nRule 54 Ether Filtered | Particle Density = 0.001 | Detected Collision Events = 0\nKnown Rule 54 Particle Velocities: alpha (v = 0), beta (v = 0), gamma+ (v = +1/2), gamma- (v = -1/2)\n====================================================================================="
+  },
+  {
+    "module": "03_Cellular_Automata_and_Particle_Computation",
+    "rel_png": "01_Rule54_Domain_Filter_and_Collisions/02_Rule54_random_init_filtered.png",
+    "focus": "Rule 54 Random Init + Domain Filter (emergent ether domains & spontaneous collisions)",
+    "kwargs": {
+      "rule_number": 54,
+      "init_type": "random",
+      "show_filter": true
+    },
+    "stdout": "=====================================================================================\nRule 54 Ether Filtered | Particle Density = 0.007 | Detected Collision Events = 23\nKnown Rule 54 Particle Velocities: alpha (v = 0), beta (v = 0), gamma+ (v = +1/2), gamma- (v = -1/2)\n====================================================================================="
+  },
+  {
+    "module": "03_Cellular_Automata_and_Particle_Computation",
+    "rel_png": "01_Rule54_Domain_Filter_and_Collisions/03_Rule54_collision_setup_perturbation.png",
+    "focus": "Rule 54 Collision Setup + Single-Bit Perturbation Damage Spread",
+    "kwargs": {
+      "rule_number": 54,
+      "init_type": "collision_setup",
+      "show_filter": false
+    },
+    "stdout": "=====================================================================================\nRule 54 | Note: Rule 54 Domain Filter is language-specific; showing perturbation spread for Rule 54.\nKnown Rule 54 Particle Velocities: alpha (v = 0), beta (v = 0), gamma+ (v = +1/2), gamma- (v = -1/2)\n====================================================================================="
+  },
+  {
+    "module": "03_Cellular_Automata_and_Particle_Computation",
+    "rel_png": "01_Rule54_Domain_Filter_and_Collisions/04_Rule54_single_seed_perturbation.png",
+    "focus": "Rule 54 Single Seed Growth + Perturbation Cone",
+    "kwargs": {
+      "rule_number": 54,
+      "init_type": "single_seed",
+      "show_filter": false
+    },
+    "stdout": "=====================================================================================\nRule 54 | Note: Rule 54 Domain Filter is language-specific; showing perturbation spread for Rule 54.\nKnown Rule 54 Particle Velocities: alpha (v = 0), beta (v = 0), gamma+ (v = +1/2), gamma- (v = -1/2)\n====================================================================================="
+  },
+  {
+    "module": "03_Cellular_Automata_and_Particle_Computation",
+    "rel_png": "02_Wolfram_Classes_Comparison/05_Rule110_Turing_Universal_random.png",
+    "focus": "Rule 110 (Class IV Turing Universal) from Random Init + Damage Spreading",
+    "kwargs": {
+      "rule_number": 110,
+      "init_type": "random",
+      "show_filter": false
+    },
+    "stdout": "=====================================================================================\nRule 110 | Note: Rule 54 Domain Filter is language-specific; showing perturbation spread for Rule 110.\nKnown Rule 54 Particle Velocities: alpha (v = 0), beta (v = 0), gamma+ (v = +1/2), gamma- (v = -1/2)\n====================================================================================="
+  },
+  {
+    "module": "03_Cellular_Automata_and_Particle_Computation",
+    "rel_png": "02_Wolfram_Classes_Comparison/06_Rule110_Turing_Universal_single_seed.png",
+    "focus": "Rule 110 (Class IV) Asymmetric Evolution from Single Seed",
+    "kwargs": {
+      "rule_number": 110,
+      "init_type": "single_seed",
+      "show_filter": false
+    },
+    "stdout": "=====================================================================================\nRule 110 | Note: Rule 54 Domain Filter is language-specific; showing perturbation spread for Rule 110.\nKnown Rule 54 Particle Velocities: alpha (v = 0), beta (v = 0), gamma+ (v = +1/2), gamma- (v = -1/2)\n====================================================================================="
+  },
+  {
+    "module": "03_Cellular_Automata_and_Particle_Computation",
+    "rel_png": "02_Wolfram_Classes_Comparison/07_Rule30_Chaotic_single_seed.png",
+    "focus": "Rule 30 (Class III Chaotic) from Single Seed + Light-Cone Damage Spread",
+    "kwargs": {
+      "rule_number": 30,
+      "init_type": "single_seed",
+      "show_filter": false
+    },
+    "stdout": "=====================================================================================\nRule 30 | Note: Rule 54 Domain Filter is language-specific; showing perturbation spread for Rule 30.\nKnown Rule 54 Particle Velocities: alpha (v = 0), beta (v = 0), gamma+ (v = +1/2), gamma- (v = -1/2)\n====================================================================================="
+  },
+  {
+    "module": "03_Cellular_Automata_and_Particle_Computation",
+    "rel_png": "02_Wolfram_Classes_Comparison/08_Rule30_Chaotic_random.png",
+    "focus": "Rule 30 (Class III Chaotic) from Random Init + Rapid Butterfly Effect",
+    "kwargs": {
+      "rule_number": 30,
+      "init_type": "random",
+      "show_filter": false
+    },
+    "stdout": "=====================================================================================\nRule 30 | Note: Rule 54 Domain Filter is language-specific; showing perturbation spread for Rule 30.\nKnown Rule 54 Particle Velocities: alpha (v = 0), beta (v = 0), gamma+ (v = +1/2), gamma- (v = -1/2)\n====================================================================================="
+  },
+  {
+    "module": "03_Cellular_Automata_and_Particle_Computation",
+    "rel_png": "02_Wolfram_Classes_Comparison/09_Rule90_Fractal_Linear_single_seed.png",
+    "focus": "Rule 90 (Additive / Sierpinski Fractal) from Single Seed + Linear XOR Cone",
+    "kwargs": {
+      "rule_number": 90,
+      "init_type": "single_seed",
+      "show_filter": false
+    },
+    "stdout": "=====================================================================================\nRule 90 | Note: Rule 54 Domain Filter is language-specific; showing perturbation spread for Rule 90.\nKnown Rule 54 Particle Velocities: alpha (v = 0), beta (v = 0), gamma+ (v = +1/2), gamma- (v = -1/2)\n====================================================================================="
+  },
+  {
+    "module": "03_Cellular_Automata_and_Particle_Computation",
+    "rel_png": "02_Wolfram_Classes_Comparison/10_Rule90_Fractal_Linear_random.png",
+    "focus": "Rule 90 (Additive / Linear) from Random Init + Deterministic XOR Cone",
+    "kwargs": {
+      "rule_number": 90,
+      "init_type": "random",
+      "show_filter": false
+    },
+    "stdout": "=====================================================================================\nRule 90 | Note: Rule 54 Domain Filter is language-specific; showing perturbation spread for Rule 90.\nKnown Rule 54 Particle Velocities: alpha (v = 0), beta (v = 0), gamma+ (v = +1/2), gamma- (v = -1/2)\n====================================================================================="
+  },
+  {
+    "module": "04_Evolutionary_Computation_and_Edge_of_Chaos",
+    "rel_png": "01_Innovation_Epochs_and_Density_Classification/01_Epoch1_Naive_Majority_rho0.54.png",
+    "focus": "Epoch 1 (Naive Local Majority, rho_0=0.54): frozen domain walls stall classification",
+    "kwargs": {
+      "checkpoint": "Epoch 1: Naive Local Majority",
+      "init_density": 0.54,
+      "run_short_ga": false
+    },
+    "stdout": "======================================================================================\nSelected Rule: Epoch 1: Naive Local Majority | Uniform-Density Acc: 30.00% | Unbiased Acc: 0.00%\nHolland Schema Theorem Example (m_t=4, f(H)/f_avg=1.50, delta=12, o(H)=3) => E[m(H, t+1)] >= 5.44\n======================================================================================"
+  },
+  {
+    "module": "04_Evolutionary_Computation_and_Edge_of_Chaos",
+    "rel_png": "01_Innovation_Epochs_and_Density_Classification/02_Epoch1_Naive_Majority_rho0.46.png",
+    "focus": "Epoch 1 (Naive Local Majority, rho_0=0.46): symmetric failure with frozen blocks",
+    "kwargs": {
+      "checkpoint": "Epoch 1: Naive Local Majority",
+      "init_density": 0.46,
+      "run_short_ga": false
+    },
+    "stdout": "======================================================================================\nSelected Rule: Epoch 1: Naive Local Majority | Uniform-Density Acc: 30.00% | Unbiased Acc: 0.00%\nHolland Schema Theorem Example (m_t=4, f(H)/f_avg=1.50, delta=12, o(H)=3) => E[m(H, t+1)] >= 5.44\n======================================================================================"
+  },
+  {
+    "module": "04_Evolutionary_Computation_and_Edge_of_Chaos",
+    "rel_png": "01_Innovation_Epochs_and_Density_Classification/03_Epoch2_Block_Expander_rho0.54.png",
+    "focus": "Epoch 2 (Asymmetric Block Expander, rho_0=0.54): expands 1-blocks toward ALL-1s",
+    "kwargs": {
+      "checkpoint": "Epoch 2: Asymmetric Block Expander",
+      "init_density": 0.54,
+      "run_short_ga": false
+    },
+    "stdout": "======================================================================================\nSelected Rule: Epoch 2: Asymmetric Block Expander | Uniform-Density Acc: 30.00% | Unbiased Acc: 0.00%\nHolland Schema Theorem Example (m_t=4, f(H)/f_avg=1.50, delta=12, o(H)=3) => E[m(H, t+1)] >= 5.44\n======================================================================================"
+  },
+  {
+    "module": "04_Evolutionary_Computation_and_Edge_of_Chaos",
+    "rel_png": "01_Innovation_Epochs_and_Density_Classification/04_Epoch2_Block_Expander_rho0.46_symmetry_bias.png",
+    "focus": "Epoch 2 Failure Mode (rho_0=0.46): symmetry-breaking bias misclassifies majority-0 density",
+    "kwargs": {
+      "checkpoint": "Epoch 2: Asymmetric Block Expander",
+      "init_density": 0.46,
+      "run_short_ga": false
+    },
+    "stdout": "======================================================================================\nSelected Rule: Epoch 2: Asymmetric Block Expander | Uniform-Density Acc: 30.00% | Unbiased Acc: 0.00%\nHolland Schema Theorem Example (m_t=4, f(H)/f_avg=1.50, delta=12, o(H)=3) => E[m(H, t+1)] >= 5.44\n======================================================================================"
+  },
+  {
+    "module": "04_Evolutionary_Computation_and_Edge_of_Chaos",
+    "rel_png": "01_Innovation_Epochs_and_Density_Classification/05_Epoch3_4_GKL_Particle_Logic_rho0.54.png",
+    "focus": "Epoch 3/4 (GKL Particle Logic, rho_0=0.54): particle signals classify ALL-1s",
+    "kwargs": {
+      "checkpoint": "Epoch 3/4: GKL Particle Logic",
+      "init_density": 0.54,
+      "run_short_ga": false
+    },
+    "stdout": "======================================================================================\nSelected Rule: Epoch 3/4: GKL Particle Logic | Uniform-Density Acc: 94.00% | Unbiased Acc: 90.00%\nHolland Schema Theorem Example (m_t=4, f(H)/f_avg=1.50, delta=12, o(H)=3) => E[m(H, t+1)] >= 5.44\n======================================================================================"
+  },
+  {
+    "module": "04_Evolutionary_Computation_and_Edge_of_Chaos",
+    "rel_png": "01_Innovation_Epochs_and_Density_Classification/06_Epoch3_4_GKL_Particle_Logic_rho0.46.png",
+    "focus": "Epoch 3/4 (GKL Particle Logic, rho_0=0.46): particle signals classify ALL-0s",
+    "kwargs": {
+      "checkpoint": "Epoch 3/4: GKL Particle Logic",
+      "init_density": 0.46,
+      "run_short_ga": false
+    },
+    "stdout": "======================================================================================\nSelected Rule: Epoch 3/4: GKL Particle Logic | Uniform-Density Acc: 94.00% | Unbiased Acc: 90.00%\nHolland Schema Theorem Example (m_t=4, f(H)/f_avg=1.50, delta=12, o(H)=3) => E[m(H, t+1)] >= 5.44\n======================================================================================"
+  },
+  {
+    "module": "04_Evolutionary_Computation_and_Edge_of_Chaos",
+    "rel_png": "01_Innovation_Epochs_and_Density_Classification/07_Epoch3_4_GKL_Particle_Logic_rho0.70.png",
+    "focus": "Epoch 3/4 (GKL Particle Logic, rho_0=0.70): rapid convergence on high density",
+    "kwargs": {
+      "checkpoint": "Epoch 3/4: GKL Particle Logic",
+      "init_density": 0.7,
+      "run_short_ga": false
+    },
+    "stdout": "======================================================================================\nSelected Rule: Epoch 3/4: GKL Particle Logic | Uniform-Density Acc: 94.00% | Unbiased Acc: 90.00%\nHolland Schema Theorem Example (m_t=4, f(H)/f_avg=1.50, delta=12, o(H)=3) => E[m(H, t+1)] >= 5.44\n======================================================================================"
+  },
+  {
+    "module": "04_Evolutionary_Computation_and_Edge_of_Chaos",
+    "rel_png": "01_Innovation_Epochs_and_Density_Classification/08_Epoch3_4_GKL_Particle_Logic_rho0.30.png",
+    "focus": "Epoch 3/4 (GKL Particle Logic, rho_0=0.30): rapid convergence on low density",
+    "kwargs": {
+      "checkpoint": "Epoch 3/4: GKL Particle Logic",
+      "init_density": 0.3,
+      "run_short_ga": false
+    },
+    "stdout": "======================================================================================\nSelected Rule: Epoch 3/4: GKL Particle Logic | Uniform-Density Acc: 94.00% | Unbiased Acc: 90.00%\nHolland Schema Theorem Example (m_t=4, f(H)/f_avg=1.50, delta=12, o(H)=3) => E[m(H, t+1)] >= 5.44\n======================================================================================"
+  },
+  {
+    "module": "04_Evolutionary_Computation_and_Edge_of_Chaos",
+    "rel_png": "02_Live_GA_Evolution/09_Live_GA_12Gen_Trajectory_GKL_rho0.54.png",
+    "focus": "Live 12-Generation GA Evolution Trajectory (best & population mean fitness)",
+    "kwargs": {
+      "checkpoint": "Epoch 3/4: GKL Particle Logic",
+      "init_density": 0.54,
+      "run_short_ga": true
+    },
+    "stdout": "======================================================================================\nSelected Rule: Epoch 3/4: GKL Particle Logic | Uniform-Density Acc: 94.00% | Unbiased Acc: 90.00%\nHolland Schema Theorem Example (m_t=4, f(H)/f_avg=1.50, delta=12, o(H)=3) => E[m(H, t+1)] >= 5.44\n======================================================================================"
+  },
+  {
+    "module": "05_RBN_and_Immune_Cognition",
+    "rel_png": "01_RBN_Phase_Transitions_and_Derrida_Curves/01_Ordered_Phase_K1_p0.50.png",
+    "focus": "Ordered Regime (K=1, p=0.50, s=0.50 < 1): perturbations die out below diagonal",
+    "kwargs": {
+      "mode": "1. RBN Dynamics & Derrida Curve",
+      "k_inputs": 1,
+      "bias_p": 0.5,
+      "knockout_gene": false
+    },
+    "stdout": "Regime: ORDERED (s < 1) | Sensitivity s = 0.500 | Sync Attractors = 1 | Async Point-Attractor Convergence = 100.0%"
+  },
+  {
+    "module": "05_RBN_and_Immune_Cognition",
+    "rel_png": "01_RBN_Phase_Transitions_and_Derrida_Curves/02_Ordered_Canalizing_Bias_K3_p0.15.png",
+    "focus": "Ordered via Canalizing Bias (K=3, p=0.15, s=0.765 < 1): bias stabilizes high connectivity",
+    "kwargs": {
+      "mode": "1. RBN Dynamics & Derrida Curve",
+      "k_inputs": 3,
+      "bias_p": 0.15,
+      "knockout_gene": false
+    },
+    "stdout": "Regime: ORDERED (s < 1) | Sensitivity s = 0.765 | Sync Attractors = 1 | Async Point-Attractor Convergence = 100.0%"
+  },
+  {
+    "module": "05_RBN_and_Immune_Cognition",
+    "rel_png": "01_RBN_Phase_Transitions_and_Derrida_Curves/03_Critical_Edge_K2_p0.50.png",
+    "focus": "Critical Edge of Chaos (K=2, p=0.50, s=1.00): Derrida tangent to neutral line",
+    "kwargs": {
+      "mode": "1. RBN Dynamics & Derrida Curve",
+      "k_inputs": 2,
+      "bias_p": 0.5,
+      "knockout_gene": false
+    },
+    "stdout": "Regime: CRITICAL EDGE (s ~ 1) | Sensitivity s = 1.000 | Sync Attractors = 3 | Async Point-Attractor Convergence = 90.8%"
+  },
+  {
+    "module": "05_RBN_and_Immune_Cognition",
+    "rel_png": "01_RBN_Phase_Transitions_and_Derrida_Curves/04_Critical_Edge_Tuned_Bias_K3_p0.20.png",
+    "focus": "Near-Critical Tuned Bias (K=3, p=0.20, s=0.96): critical boundary at higher in-degree",
+    "kwargs": {
+      "mode": "1. RBN Dynamics & Derrida Curve",
+      "k_inputs": 3,
+      "bias_p": 0.2,
+      "knockout_gene": false
+    },
+    "stdout": "Regime: CRITICAL EDGE (s ~ 1) | Sensitivity s = 0.960 | Sync Attractors = 1 | Async Point-Attractor Convergence = 100.0%"
+  },
+  {
+    "module": "05_RBN_and_Immune_Cognition",
+    "rel_png": "01_RBN_Phase_Transitions_and_Derrida_Curves/05_Chaotic_Phase_K3_p0.50.png",
+    "focus": "Chaotic Regime (K=3, p=0.50, s=1.50 > 1): damage amplification & longer cycles",
+    "kwargs": {
+      "mode": "1. RBN Dynamics & Derrida Curve",
+      "k_inputs": 3,
+      "bias_p": 0.5,
+      "knockout_gene": false
+    },
+    "stdout": "Regime: CHAOTIC (s > 1) | Sensitivity s = 1.500 | Sync Attractors = 2 | Async Point-Attractor Convergence = 72.5%"
+  },
+  {
+    "module": "05_RBN_and_Immune_Cognition",
+    "rel_png": "01_RBN_Phase_Transitions_and_Derrida_Curves/06_Deep_Chaos_K4_p0.50.png",
+    "focus": "Deep Chaos Regime (K=4, p=0.50, s=2.00): steep Derrida curve & long L=26 attractor",
+    "kwargs": {
+      "mode": "1. RBN Dynamics & Derrida Curve",
+      "k_inputs": 4,
+      "bias_p": 0.5,
+      "knockout_gene": false
+    },
+    "stdout": "Regime: CHAOTIC (s > 1) | Sensitivity s = 2.000 | Sync Attractors = 2 | Async Point-Attractor Convergence = 52.5%"
+  },
+  {
+    "module": "05_RBN_and_Immune_Cognition",
+    "rel_png": "01_RBN_Phase_Transitions_and_Derrida_Curves/07_MultiAttractor_Chaos_K5_p0.50.png",
+    "focus": "Multi-Attractor Chaos (K=5, p=0.50, s=2.50): 7 coexisting basins & 25% async fixed-point convergence",
+    "kwargs": {
+      "mode": "1. RBN Dynamics & Derrida Curve",
+      "k_inputs": 5,
+      "bias_p": 0.5,
+      "knockout_gene": false
+    },
+    "stdout": "Regime: CHAOTIC (s > 1) | Sensitivity s = 2.500 | Sync Attractors = 7 | Async Point-Attractor Convergence = 25.8%"
+  },
+  {
+    "module": "05_RBN_and_Immune_Cognition",
+    "rel_png": "02_Gene_Knockout_Attractor_Shifts/08_Knockout_Node0_Critical_K2_p0.50.png",
+    "focus": "Gene Knockout (Node 0) in Critical K=2 RBN: robustness preserving 3 basins & cycle periods",
+    "kwargs": {
+      "mode": "1. RBN Dynamics & Derrida Curve",
+      "k_inputs": 2,
+      "bias_p": 0.5,
+      "knockout_gene": true
+    },
+    "stdout": "Regime: CRITICAL EDGE (s ~ 1) | Sensitivity s = 1.000 | Sync Attractors = 3 | Async Point-Attractor Convergence = 90.8%"
+  },
+  {
+    "module": "05_RBN_and_Immune_Cognition",
+    "rel_png": "02_Gene_Knockout_Attractor_Shifts/09_Knockout_Node0_Chaotic_K3_p0.50.png",
+    "focus": "Gene Knockout (Node 0) in Chaotic K=3 RBN: attractor cycle shrinks from L=16 to L=5",
+    "kwargs": {
+      "mode": "1. RBN Dynamics & Derrida Curve",
+      "k_inputs": 3,
+      "bias_p": 0.5,
+      "knockout_gene": true
+    },
+    "stdout": "Regime: CHAOTIC (s > 1) | Sensitivity s = 1.500 | Sync Attractors = 2 | Async Point-Attractor Convergence = 72.5%"
+  },
+  {
+    "module": "05_RBN_and_Immune_Cognition",
+    "rel_png": "02_Gene_Knockout_Attractor_Shifts/10_Knockout_Node0_DeepChaos_K4_p0.50.png",
+    "focus": "Gene Knockout (Node 0) in Deep Chaos K=4 RBN: dramatic basin split (1017->536) & cycle drop (L=26->4)",
+    "kwargs": {
+      "mode": "1. RBN Dynamics & Derrida Curve",
+      "k_inputs": 4,
+      "bias_p": 0.5,
+      "knockout_gene": true
+    },
+    "stdout": "Regime: CHAOTIC (s > 1) | Sensitivity s = 2.000 | Sync Attractors = 2 | Async Point-Attractor Convergence = 52.5%"
+  },
+  {
+    "module": "05_RBN_and_Immune_Cognition",
+    "rel_png": "02_Gene_Knockout_Attractor_Shifts/11_Knockout_Node0_MultiAttractor_K5_p0.50.png",
+    "focus": "Gene Knockout (Node 0) in K=5 RBN: 7 attractors reorganize into 3 long cycles (L=20,18,2)",
+    "kwargs": {
+      "mode": "1. RBN Dynamics & Derrida Curve",
+      "k_inputs": 5,
+      "bias_p": 0.5,
+      "knockout_gene": true
+    },
+    "stdout": "Regime: CHAOTIC (s > 1) | Sensitivity s = 2.500 | Sync Attractors = 3 | Async Point-Attractor Convergence = 25.8%"
+  },
+  {
+    "module": "05_RBN_and_Immune_Cognition",
+    "rel_png": "03_Immune_Clonal_Selection_and_Proofreading/12_Immune_Clonal_Selection_and_Kinetic_Proofreading.png",
+    "focus": "Distributed Immune Clonal Selection (affinity maturation) & McKeithan Kinetic Proofreading",
+    "kwargs": {
+      "mode": "2. Immune Clonal Selection & Proofreading",
+      "k_inputs": 2,
+      "bias_p": 0.5,
+      "knockout_gene": false
+    },
+    "stdout": "Final Clonal Affinity = 0.870 | 8-Step Proofreading Specificity Gain = 110.2x"
+  },
+  {
+    "module": "06_Physarum_Contagion_and_Flocking",
+    "rel_png": "01_Physarum_Tokyo_Rail_Solver/01_Physarum_fault_tolerant_mesh_gamma0.50.png",
+    "focus": "Physarum Fault-Tolerant Mesh (gamma=0.50): 100% single-edge fault tolerance & 1.29x efficiency",
+    "kwargs": {
+      "mode": "1. Physarum Tokyo Rail Solver",
+      "gamma_or_noise": 0.5,
+      "disrupt_or_rewire": false
+    },
+    "stdout": "Physarum Cost/MST = 2.93x | Efficiency/MST = 1.29x | Single-Edge Fault Tolerance = 100.0% (vs MST 0.0%)"
+  },
+  {
+    "module": "06_Physarum_Contagion_and_Flocking",
+    "rel_png": "01_Physarum_Tokyo_Rail_Solver/02_Physarum_balanced_backbone_gamma0.60.png",
+    "focus": "Physarum Balanced Backbone (gamma=0.60): matches MST global efficiency (1.03x) across planar loops",
+    "kwargs": {
+      "mode": "1. Physarum Tokyo Rail Solver",
+      "gamma_or_noise": 0.6,
+      "disrupt_or_rewire": false
+    },
+    "stdout": "Physarum Cost/MST = 2.08x | Efficiency/MST = 1.03x | Single-Edge Fault Tolerance = 0.0% (vs MST 0.0%)"
+  },
+  {
+    "module": "06_Physarum_Contagion_and_Flocking",
+    "rel_png": "01_Physarum_Tokyo_Rail_Solver/03_Physarum_weak_feedback_gamma0.70.png",
+    "focus": "Physarum Moderate Pruning (gamma=0.70): Cost=1.05x MST with emergent arterial loops",
+    "kwargs": {
+      "mode": "1. Physarum Tokyo Rail Solver",
+      "gamma_or_noise": 0.7,
+      "disrupt_or_rewire": false
+    },
+    "stdout": "Physarum Cost/MST = 1.05x | Efficiency/MST = 0.69x | Single-Edge Fault Tolerance = 0.0% (vs MST 0.0%)"
+  },
+  {
+    "module": "06_Physarum_Contagion_and_Flocking",
+    "rel_png": "01_Physarum_Tokyo_Rail_Solver/04_Physarum_optimal_default_gamma1.40.png",
+    "focus": "Physarum Default Gamma (gamma=1.40): strong hub pruning around central Tokyo station",
+    "kwargs": {
+      "mode": "1. Physarum Tokyo Rail Solver",
+      "gamma_or_noise": 1.4,
+      "disrupt_or_rewire": false
+    },
+    "stdout": "Physarum Cost/MST = 0.19x | Efficiency/MST = 0.11x | Single-Edge Fault Tolerance = 0.0% (vs MST 0.0%)"
+  },
+  {
+    "module": "06_Physarum_Contagion_and_Flocking",
+    "rel_png": "01_Physarum_Tokyo_Rail_Solver/05_Physarum_strong_pruning_gamma2.00.png",
+    "focus": "Physarum Strong Pruning (gamma=2.00): aggressive pruning toward minimal hub core",
+    "kwargs": {
+      "mode": "1. Physarum Tokyo Rail Solver",
+      "gamma_or_noise": 2.0,
+      "disrupt_or_rewire": false
+    },
+    "stdout": "Physarum Cost/MST = 0.20x | Efficiency/MST = 0.11x | Single-Edge Fault Tolerance = 0.0% (vs MST 0.0%)"
+  },
+  {
+    "module": "06_Physarum_Contagion_and_Flocking",
+    "rel_png": "01_Physarum_Tokyo_Rail_Solver/06_Physarum_hub_disruption_recovery_gamma0.60.png",
+    "focus": "Physarum Hub Disruption Recovery (gamma=0.60, Cut=True): bypass rerouting after trunk severing",
+    "kwargs": {
+      "mode": "1. Physarum Tokyo Rail Solver",
+      "gamma_or_noise": 0.6,
+      "disrupt_or_rewire": true
+    },
+    "stdout": "Physarum Cost/MST = 2.01x | Efficiency/MST = 1.04x | Single-Edge Fault Tolerance = 0.0% (vs MST 0.0%)"
+  },
+  {
+    "module": "06_Physarum_Contagion_and_Flocking",
+    "rel_png": "01_Physarum_Tokyo_Rail_Solver/07_Physarum_hub_disruption_recovery_gamma1.40.png",
+    "focus": "Physarum Hub Disruption Recovery (gamma=1.40, Cut=True): rerouting under strong feedback",
+    "kwargs": {
+      "mode": "1. Physarum Tokyo Rail Solver",
+      "gamma_or_noise": 1.4,
+      "disrupt_or_rewire": true
+    },
+    "stdout": "Physarum Cost/MST = 0.28x | Efficiency/MST = 0.17x | Single-Edge Fault Tolerance = 0.0% (vs MST 0.0%)"
+  },
+  {
+    "module": "06_Physarum_Contagion_and_Flocking",
+    "rel_png": "02_Simple_vs_Complex_Contagion/08_Contagion_Clustered_Lattice_p0.02.png",
+    "focus": "Clustered Lattice (rewire p=0.02): high local clustering enables Complex Contagion spread",
+    "kwargs": {
+      "mode": "2. Simple vs. Complex Contagion",
+      "gamma_or_noise": 1.4,
+      "disrupt_or_rewire": false
+    },
+    "stdout": "INSIGHT: Random shortcuts accelerate Simple Contagion, but destroy local clustering needed for Complex Contagion!"
+  },
+  {
+    "module": "06_Physarum_Contagion_and_Flocking",
+    "rel_png": "02_Simple_vs_Complex_Contagion/09_Contagion_Small_World_Shortcuts_p0.35.png",
+    "focus": "Small-World Shortcuts (rewire p=0.35): Simple Contagion accelerates while Complex Contagion collapses",
+    "kwargs": {
+      "mode": "2. Simple vs. Complex Contagion",
+      "gamma_or_noise": 1.4,
+      "disrupt_or_rewire": true
+    },
+    "stdout": "INSIGHT: Random shortcuts accelerate Simple Contagion, but destroy local clustering needed for Complex Contagion!"
+  },
+  {
+    "module": "06_Physarum_Contagion_and_Flocking",
+    "rel_png": "03_Vicsek_Collective_Flocking/10_Vicsek_Ordered_Flocking_low_noise_eta0.40.png",
+    "focus": "Vicsek Ordered Flocking (low noise eta=0.40): coherent collective polarization (Phi -> 1)",
+    "kwargs": {
+      "mode": "3. Vicsek Collective Flocking",
+      "gamma_or_noise": 0.2,
+      "disrupt_or_rewire": false
+    },
+    "stdout": "Vicsek Flocking | Noise eta = 0.40 | Final Polarization Order Parameter Phi = 0.993"
+  },
+  {
+    "module": "06_Physarum_Contagion_and_Flocking",
+    "rel_png": "03_Vicsek_Collective_Flocking/11_Vicsek_SliderMin_Flocking_eta1.00.png",
+    "focus": "Vicsek Coherent Phase (slider min, noise eta=1.00): strong global alignment",
+    "kwargs": {
+      "mode": "3. Vicsek Collective Flocking",
+      "gamma_or_noise": 0.5,
+      "disrupt_or_rewire": false
+    },
+    "stdout": "Vicsek Flocking | Noise eta = 1.00 | Final Polarization Order Parameter Phi = 0.922"
+  },
+  {
+    "module": "06_Physarum_Contagion_and_Flocking",
+    "rel_png": "03_Vicsek_Collective_Flocking/12_Vicsek_Transition_Regime_eta2.80.png",
+    "focus": "Vicsek Transition Regime (noise eta=2.80): partial local clusters & fluctuating order parameter",
+    "kwargs": {
+      "mode": "3. Vicsek Collective Flocking",
+      "gamma_or_noise": 1.4,
+      "disrupt_or_rewire": false
+    },
+    "stdout": "Vicsek Flocking | Noise eta = 2.80 | Final Polarization Order Parameter Phi = 0.646"
+  },
+  {
+    "module": "06_Physarum_Contagion_and_Flocking",
+    "rel_png": "03_Vicsek_Collective_Flocking/13_Vicsek_Disordered_Gas_high_noise_eta4.40.png",
+    "focus": "Vicsek Disordered Gas (high noise eta=4.40): random headings & collapsed polarization",
+    "kwargs": {
+      "mode": "3. Vicsek Collective Flocking",
+      "gamma_or_noise": 2.2,
+      "disrupt_or_rewire": false
+    },
+    "stdout": "Vicsek Flocking | Noise eta = 4.40 | Final Polarization Order Parameter Phi = 0.181"
+  },
+  {
+    "module": "07_Collective_Wisdom_Opinion_and_El_Farol",
+    "rel_png": "01_Diversity_Prediction_Theorem/01_DPT_Low_Correlation_rho0.05.png",
+    "focus": "DPT Low Error Correlation (rho=0.05): high diversity yields drastic collective error reduction",
+    "kwargs": {
+      "study": "1. Diversity Prediction Theorem",
+      "param_val": 0.05,
+      "herding_ext": false
+    },
+    "stdout": "Single-Trial Algebraic Identity Check: E_indiv (86.01) - Diversity (85.71) = E_coll (0.31)"
+  },
+  {
+    "module": "07_Collective_Wisdom_Opinion_and_El_Farol",
+    "rel_png": "01_Diversity_Prediction_Theorem/02_DPT_Moderate_Correlation_rho0.25.png",
+    "focus": "DPT Moderate Error Correlation (rho=0.25): partial diversity benefit",
+    "kwargs": {
+      "study": "1. Diversity Prediction Theorem",
+      "param_val": 0.25,
+      "herding_ext": false
+    },
+    "stdout": "Single-Trial Algebraic Identity Check: E_indiv (67.84) - Diversity (67.66) = E_coll (0.18)"
+  },
+  {
+    "module": "07_Collective_Wisdom_Opinion_and_El_Farol",
+    "rel_png": "01_Diversity_Prediction_Theorem/03_DPT_High_Correlation_Groupthink_rho0.80.png",
+    "focus": "DPT High Correlation / Groupthink (rho=0.80): diversity collapses & collective error approaches individual error",
+    "kwargs": {
+      "study": "1. Diversity Prediction Theorem",
+      "param_val": 0.8,
+      "herding_ext": false
+    },
+    "stdout": "Single-Trial Algebraic Identity Check: E_indiv (22.70) - Diversity (18.04) = E_coll (4.66)"
+  },
+  {
+    "module": "07_Collective_Wisdom_Opinion_and_El_Farol",
+    "rel_png": "02_Bounded_Confidence_Opinion_Dynamics/04_HK_Fragmentation_eps0.08.png",
+    "focus": "Hegselmann-Krause Fragmentation (eps=0.08): multiple isolated echo chambers",
+    "kwargs": {
+      "study": "2. Bounded Confidence (HK vs DeGroot)",
+      "param_val": 0.08,
+      "herding_ext": false
+    },
+    "stdout": "HK Bounded Confidence eps=0.08 -> Converged into 4 distinct opinion cluster(s)."
+  },
+  {
+    "module": "07_Collective_Wisdom_Opinion_and_El_Farol",
+    "rel_png": "02_Bounded_Confidence_Opinion_Dynamics/05_HK_Polarization_eps0.18.png",
+    "focus": "Hegselmann-Krause Polarization (eps=0.18): bipolar / tripolar clustering",
+    "kwargs": {
+      "study": "2. Bounded Confidence (HK vs DeGroot)",
+      "param_val": 0.18,
+      "herding_ext": false
+    },
+    "stdout": "HK Bounded Confidence eps=0.18 -> Converged into 2 distinct opinion cluster(s)."
+  },
+  {
+    "module": "07_Collective_Wisdom_Opinion_and_El_Farol",
+    "rel_png": "02_Bounded_Confidence_Opinion_Dynamics/06_HK_Critical_Transition_eps0.25.png",
+    "focus": "Hegselmann-Krause Near-Consensus Transition (eps=0.25): bifurcation toward consensus",
+    "kwargs": {
+      "study": "2. Bounded Confidence (HK vs DeGroot)",
+      "param_val": 0.25,
+      "herding_ext": false
+    },
+    "stdout": "HK Bounded Confidence eps=0.25 -> Converged into 1 distinct opinion cluster(s)."
+  },
+  {
+    "module": "07_Collective_Wisdom_Opinion_and_El_Farol",
+    "rel_png": "02_Bounded_Confidence_Opinion_Dynamics/07_HK_Full_Consensus_eps0.40.png",
+    "focus": "Hegselmann-Krause Full Consensus (eps=0.40): converges to single DeGroot-like consensus",
+    "kwargs": {
+      "study": "2. Bounded Confidence (HK vs DeGroot)",
+      "param_val": 0.4,
+      "herding_ext": false
+    },
+    "stdout": "HK Bounded Confidence eps=0.40 -> Converged into 1 distinct opinion cluster(s)."
+  },
+  {
+    "module": "07_Collective_Wisdom_Opinion_and_El_Farol",
+    "rel_png": "03_El_Farol_and_Minority_Game/08_El_Farol_and_MG_Independent_M3.png",
+    "focus": "El Farol Bar (M=3) & Original Minority Game (independent agents beat coin-flip volatility)",
+    "kwargs": {
+      "study": "3. El Farol Bar & Minority Game",
+      "param_val": 0.25,
+      "herding_ext": false
+    },
+    "stdout": "El Farol Mean Attendance = 58.00 (Threshold=60) | MG Memory M=3 (alpha=0.079)"
+  },
+  {
+    "module": "07_Collective_Wisdom_Opinion_and_El_Farol",
+    "rel_png": "03_El_Farol_and_Minority_Game/09_El_Farol_and_MG_Herding_Extension_M3.png",
+    "focus": "El Farol (M=3) & Minority Game with Networked Herding Extension (q=0.35 spikes volatility)",
+    "kwargs": {
+      "study": "3. El Farol Bar & Minority Game",
+      "param_val": 0.25,
+      "herding_ext": true
+    },
+    "stdout": "El Farol Mean Attendance = 58.00 (Threshold=60) | MG Memory M=3 (alpha=0.079)"
+  },
+  {
+    "module": "07_Collective_Wisdom_Opinion_and_El_Farol",
+    "rel_png": "03_El_Farol_and_Minority_Game/10_El_Farol_and_MG_Long_Memory_M5_Herding.png",
+    "focus": "El Farol Longer Memory (M=5) & Minority Game with Herding Overlay",
+    "kwargs": {
+      "study": "3. El Farol Bar & Minority Game",
+      "param_val": 0.75,
+      "herding_ext": true
+    },
+    "stdout": "El Farol Mean Attendance = 58.76 (Threshold=60) | MG Memory M=5 (alpha=0.317)"
+  },
+  {
+    "module": "08_Research_Design_and_Validation_Lab",
+    "rel_png": "01_Track_A_Observational_FDR_and_Power/01_TrackA_LowSNR0.55_T100.png",
+    "focus": "Track A Notebook Default (SNR=0.55, T=100): uncorrected false positives while BH-FDR power=0% (underpowered)",
+    "kwargs": {
+      "paper_choice": "1. Schreiber (2000) - Transfer Entropy",
+      "track": "Track A: Observational FDR & Power",
+      "sample_size": 100
+    },
+    "stdout": "========================================================================================\n8-QUESTION PAPER AUDIT PROTOCOL | 1. Schreiber (2000) - Transfer Entropy\n========================================================================================\n1. Problem: Symmetric mutual information cannot distinguish directional information flow from shared static correlation.\n2. Hypothesis: Conditioning on target past history isolates directed predictive information T_{Y->X}.\n3. Model: Conditional mutual information I(Y_past; X_future | X_past) estimated via kernel or k-NN estimators.\n4. Assumptions: Local stationarity, Markov order k, and absence of unobserved common drivers.\n5. Key Result: Asymmetric coupling detection in coupled chaotic maps and physiological bivariate series.\n6. Reproducibility Target: Elimination of spurious links in Common Driver & Cascade motifs via Conditional TE.\n7. Limitations: Bivariate TE fails under confounders; high-dimensional conditioning suffers curse of dimensionality.\n8. Open Question: How does iterative greedy conditioning scale under non-stationary regime shifts?\n========================================================================================"
+  },
+  {
+    "module": "08_Research_Design_and_Validation_Lab",
+    "rel_png": "01_Track_A_Observational_FDR_and_Power/02_TrackA_LowSNR0.55_T300.png",
+    "focus": "Track A Notebook Default (SNR=0.55, T=300): uncorrected TPR=25%, FPR=2.4%; BH-FDR stays conservative (power=0%)",
+    "kwargs": {
+      "paper_choice": "1. Schreiber (2000) - Transfer Entropy",
+      "track": "Track A: Observational FDR & Power",
+      "sample_size": 300
+    },
+    "stdout": "========================================================================================\n8-QUESTION PAPER AUDIT PROTOCOL | 1. Schreiber (2000) - Transfer Entropy\n========================================================================================\n1. Problem: Symmetric mutual information cannot distinguish directional information flow from shared static correlation.\n2. Hypothesis: Conditioning on target past history isolates directed predictive information T_{Y->X}.\n3. Model: Conditional mutual information I(Y_past; X_future | X_past) estimated via kernel or k-NN estimators.\n4. Assumptions: Local stationarity, Markov order k, and absence of unobserved common drivers.\n5. Key Result: Asymmetric coupling detection in coupled chaotic maps and physiological bivariate series.\n6. Reproducibility Target: Elimination of spurious links in Common Driver & Cascade motifs via Conditional TE.\n7. Limitations: Bivariate TE fails under confounders; high-dimensional conditioning suffers curse of dimensionality.\n8. Open Question: How does iterative greedy conditioning scale under non-stationary regime shifts?\n========================================================================================"
+  },
+  {
+    "module": "08_Research_Design_and_Validation_Lab",
+    "rel_png": "01_Track_A_Observational_FDR_and_Power/03_TrackA_LowSNR0.55_T800.png",
+    "focus": "Track A Notebook Default (SNR=0.55, T=800): weak SNR remains underpowered under 50-test BH-FDR up to T=1200",
+    "kwargs": {
+      "paper_choice": "1. Schreiber (2000) - Transfer Entropy",
+      "track": "Track A: Observational FDR & Power",
+      "sample_size": 800
+    },
+    "stdout": "========================================================================================\n8-QUESTION PAPER AUDIT PROTOCOL | 1. Schreiber (2000) - Transfer Entropy\n========================================================================================\n1. Problem: Symmetric mutual information cannot distinguish directional information flow from shared static correlation.\n2. Hypothesis: Conditioning on target past history isolates directed predictive information T_{Y->X}.\n3. Model: Conditional mutual information I(Y_past; X_future | X_past) estimated via kernel or k-NN estimators.\n4. Assumptions: Local stationarity, Markov order k, and absence of unobserved common drivers.\n5. Key Result: Asymmetric coupling detection in coupled chaotic maps and physiological bivariate series.\n6. Reproducibility Target: Elimination of spurious links in Common Driver & Cascade motifs via Conditional TE.\n7. Limitations: Bivariate TE fails under confounders; high-dimensional conditioning suffers curse of dimensionality.\n8. Open Question: How does iterative greedy conditioning scale under non-stationary regime shifts?\n========================================================================================"
+  },
+  {
+    "module": "08_Research_Design_and_Validation_Lab",
+    "rel_png": "01_Track_A_Observational_FDR_and_Power/04_TrackA_Calibrated_SNR1.25_T1200.png",
+    "focus": "Track A Calibrated SNR=1.25 (T=1200): BH-FDR achieves 87.5% power (>80% benchmark) with 0.0% false positives",
+    "kwargs": {
+      "signal_snr": 1.25,
+      "sample_size": 1200,
+      "n_tests": 50,
+      "true_edges": 8
+    },
+    "stdout": "[Supplementary Calibrated Run using Module 08 simulate_fdr_validation] SNR=1.25, T=1200 | Raw TPR=1.000, FPR=0.024 | BH-FDR TPR=0.875, FPR=0.000"
+  },
+  {
+    "module": "08_Research_Design_and_Validation_Lab",
+    "rel_png": "02_Track_B_Generative_ABM_vs_Null_Model/05_TrackB_ABM_vs_Null_Baseline.png",
+    "focus": "Track B Generative ABM vs. Randomized Null Baseline & Cohen's d Falsifiability Profile",
+    "kwargs": {
+      "paper_choice": "5. Tero et al. (2010) - Physarum Tokyo Rail",
+      "track": "Track B: Generative ABM vs Null Model",
+      "sample_size": 300
+    },
+    "stdout": "========================================================================================\n8-QUESTION PAPER AUDIT PROTOCOL | 5. Tero et al. (2010) - Physarum Tokyo Rail\n========================================================================================\n1. Problem: Can a decentralized tubular organism design transport networks balancing cost, efficiency, and fault tolerance?\n2. Hypothesis: Positive feedback between flux Q_ij and tube conductance D_ij self-organizes near-optimal planar graphs.\n3. Model: Kirchhoff flow network coupled with adaptive ODE dD_ij/dt = |Q_ij|^gamma / (1 + |Q_ij|^gamma) - D_ij.\n4. Assumptions: Quasi-steady laminar flow and sequential random source-sink demand pairs.\n5. Key Result: Reconstructed networks match Tokyo rail efficiency and fault tolerance at comparable total length.\n6. Reproducibility Target: Multi-objective comparison (Cost, Global Efficiency, Fault Tolerance) against MST baseline.\n7. Limitations: Dynamic edge-cutting self-healing is an experimental model extension beyond static topology comparison.\n8. Open Question: How does non-uniform traffic demand weighting alter optimal feedback exponent gamma?\n========================================================================================"
+  }
+]
